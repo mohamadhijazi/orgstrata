@@ -1,0 +1,148 @@
+{
+  "Version": 1,
+  "Hash": "zLjDAhpdw2m0WIg9KqLI3o1oPPhihn9RBV2mLB5kAfY=",
+  "Source": "OrgStrataApp",
+  "BasePath": "_content/OrgStrataApp",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [
+    {
+      "Identity": "C:\\ws\\github\\orgstrata\\HyTheme\\HyTheme.csproj",
+      "Version": 2,
+      "Source": "HyTheme",
+      "GetPublishAssetsTargets": "ComputeReferencedStaticWebAssetsPublishManifest;GetCurrentProjectPublishStaticWebAssetItems",
+      "AdditionalPublishProperties": "",
+      "AdditionalPublishPropertiesToRemove": "WebPublishProfileFile;TargetFramework;RuntimeIdentifier;SelfContained",
+      "GetBuildAssetsTargets": "GetCurrentProjectBuildStaticWebAssetItems",
+      "AdditionalBuildProperties": "",
+      "AdditionalBuildPropertiesToRemove": "WebPublishProfileFile;TargetFramework;RuntimeIdentifier;SelfContained"
+    },
+    {
+      "Identity": "C:\\ws\\github\\orgstrata\\MyModule\\MyModule.csproj",
+      "Version": 2,
+      "Source": "MyModule",
+      "GetPublishAssetsTargets": "ComputeReferencedStaticWebAssetsPublishManifest;GetCurrentProjectPublishStaticWebAssetItems",
+      "AdditionalPublishProperties": "",
+      "AdditionalPublishPropertiesToRemove": "WebPublishProfileFile;TargetFramework;RuntimeIdentifier;SelfContained",
+      "GetBuildAssetsTargets": "GetCurrentProjectBuildStaticWebAssetItems",
+      "AdditionalBuildProperties": "",
+      "AdditionalBuildPropertiesToRemove": "WebPublishProfileFile;TargetFramework;RuntimeIdentifier;SelfContained"
+    }
+  ],
+  "DiscoveryPatterns": [
+    {
+      "Name": "OrgStrataApp\\wwwroot",
+      "Source": "OrgStrataApp",
+      "ContentRoot": "C:\\ws\\github\\orgstrata\\OrgStrataApp\\wwwroot\\",
+      "BasePath": "_content/OrgStrataApp",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "C:\\ws\\github\\orgstrata\\OrgStrataApp\\wwwroot\\.placeholder",
+      "SourceId": "OrgStrataApp",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\ws\\github\\orgstrata\\OrgStrataApp\\wwwroot\\",
+      "BasePath": "_content/OrgStrataApp",
+      "RelativePath": "#[.{fingerprint}]?.placeholder",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "xruiijgd00",
+      "Integrity": "s9UQ7wQnXKjmmOWzy7Ds45Se+SUvDNyDnp7jR0CaIgk=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\.placeholder"
+    }
+  ],
+  "Endpoints": [
+    {
+      "Route": ".placeholder",
+      "AssetFile": "C:\\ws\\github\\orgstrata\\OrgStrataApp\\wwwroot\\.placeholder",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/octet-stream"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"s9UQ7wQnXKjmmOWzy7Ds45Se+SUvDNyDnp7jR0CaIgk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 09 Dec 2025 16:37:22 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-s9UQ7wQnXKjmmOWzy7Ds45Se+SUvDNyDnp7jR0CaIgk="
+        }
+      ]
+    },
+    {
+      "Route": ".xruiijgd00.placeholder",
+      "AssetFile": "C:\\ws\\github\\orgstrata\\OrgStrataApp\\wwwroot\\.placeholder",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/octet-stream"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"s9UQ7wQnXKjmmOWzy7Ds45Se+SUvDNyDnp7jR0CaIgk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 09 Dec 2025 16:37:22 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "xruiijgd00"
+        },
+        {
+          "Name": "label",
+          "Value": ".placeholder"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-s9UQ7wQnXKjmmOWzy7Ds45Se+SUvDNyDnp7jR0CaIgk="
+        }
+      ]
+    }
+  ]
+}

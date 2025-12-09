@@ -1,0 +1,16 @@
+﻿<Project>
+  <ItemGroup>
+    <StaticWebAssetEndpoint Include="_content/OrgStrataApp/.placeholder">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\.placeholder'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-s9UQ7wQnXKjmmOWzy7Ds45Se\u002BSUvDNyDnp7jR0CaIgk="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"2"},{"Name":"Content-Type","Value":"application/octet-stream"},{"Name":"ETag","Value":"\u0022s9UQ7wQnXKjmmOWzy7Ds45Se\u002BSUvDNyDnp7jR0CaIgk=\u0022"},{"Name":"Last-Modified","Value":"Tue, 09 Dec 2025 16:37:22 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/OrgStrataApp/.xruiijgd00.placeholder">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\.placeholder'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"xruiijgd00"},{"Name":"integrity","Value":"sha256-s9UQ7wQnXKjmmOWzy7Ds45Se\u002BSUvDNyDnp7jR0CaIgk="},{"Name":"label","Value":"_content/OrgStrataApp/.placeholder"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"2"},{"Name":"Content-Type","Value":"application/octet-stream"},{"Name":"ETag","Value":"\u0022s9UQ7wQnXKjmmOWzy7Ds45Se\u002BSUvDNyDnp7jR0CaIgk=\u0022"},{"Name":"Last-Modified","Value":"Tue, 09 Dec 2025 16:37:22 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+  </ItemGroup>
+</Project>
