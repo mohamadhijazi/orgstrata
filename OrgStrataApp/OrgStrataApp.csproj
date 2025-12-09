@@ -27,4 +27,18 @@
   <ProjectReference Include="..\MyModule\MyModule.csproj" />
 </ItemGroup>
 
+<ItemGroup>
+  <ProjectReference Include="..\..\StatCan\StatCan.OrchardCore\src\Themes\DigitalAdmin\DigitalAdmin.csproj" />
+  <ProjectReference Include="..\..\StatCan\StatCan.OrchardCore\src\Themes\VuetifyTheme\VuetifyTheme.csproj" />
+  <ProjectReference Include="..\..\StatCan\StatCan.OrchardCore\src\Modules\StatCan.OrchardCore.Vuetify\StatCan.OrchardCore.Vuetify.csproj" />
+  <ProjectReference Include="..\..\StatCan\StatCan.OrchardCore\src\Modules\StatCan.OrchardCore.Menu\StatCan.OrchardCore.Menu.csproj" />
+  <ProjectReference Include="..\..\StatCan\StatCan.OrchardCore\src\Modules\StatCan.OrchardCore.CommonTypes\StatCan.OrchardCore.CommonTypes.csproj" />
+  <ProjectReference Include="..\..\StatCan\StatCan.OrchardCore\src\Modules\StatCan.OrchardCore.DisplayHelpers\StatCan.OrchardCore.DisplayHelpers.csproj" />
+  <ProjectReference Include="..\..\StatCan\StatCan.OrchardCore\src\Modules\StatCan.OrchardCore.FIP\StatCan.OrchardCore.FIP.csproj" />
+  <ProjectReference Include="..\..\StatCan\StatCan.OrchardCore\src\Modules\StatCan.OrchardCore.ContentPermissions\StatCan.OrchardCore.ContentPermissions.csproj" />
+  <ProjectReference Include="..\..\StatCan\StatCan.OrchardCore\src\Modules\StatCan.OrchardCore.Scripting\StatCan.OrchardCore.Scripting.csproj" />
+  <ProjectReference Include="..\..\StatCan\StatCan.OrchardCore\src\Modules\StatCan.OrchardCore.ContentFields\StatCan.OrchardCore.ContentFields.csproj" />
+  
+</ItemGroup>
+
 </Project>
