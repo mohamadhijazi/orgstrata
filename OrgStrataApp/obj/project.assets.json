@@ -11148,6 +11148,40 @@
           "Microsoft.AspNetCore.App"
         ]
       },
+      "StatCan.OrchardCore.VueForms/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "HtmlSanitizer": "8.2.871-beta",
+          "Newtonsoft.Json": "13.0.3",
+          "OrchardCore.ContentManagement.Abstractions": "2.2.1",
+          "OrchardCore.Contents": "2.2.1",
+          "OrchardCore.Data.Abstractions": "2.2.1",
+          "OrchardCore.DisplayManagement": "2.2.1",
+          "OrchardCore.Flows": "2.2.1",
+          "OrchardCore.Liquid.Abstractions": "2.2.1",
+          "OrchardCore.Module.Targets": "2.2.1",
+          "OrchardCore.Navigation.Core": "2.2.1",
+          "OrchardCore.ResourceManagement": "2.2.1",
+          "OrchardCore.Scripting.JavaScript": "2.2.1",
+          "OrchardCore.Shortcodes.Abstractions": "2.2.1",
+          "OrchardCore.Title": "2.2.1",
+          "OrchardCore.Workflows": "2.2.1",
+          "StatCan.OrchardCore.ContentPermissions": "1.0.0",
+          "StatCan.OrchardCore.DisplayHelpers": "1.0.0",
+          "StatCan.OrchardCore.Extensions": "1.0.0",
+          "StatCan.OrchardCore.Manifest": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/StatCan.OrchardCore.VueForms.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/StatCan.OrchardCore.VueForms.dll": {}
+        },
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ]
+      },
       "StatCan.OrchardCore.Vuetify/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
@@ -27152,6 +27186,11 @@
       "path": "../../StatCan/StatCan.OrchardCore/src/Modules/StatCan.OrchardCore.Scripting/StatCan.OrchardCore.Scripting.csproj",
       "msbuildProject": "../../StatCan/StatCan.OrchardCore/src/Modules/StatCan.OrchardCore.Scripting/StatCan.OrchardCore.Scripting.csproj"
     },
+    "StatCan.OrchardCore.VueForms/1.0.0": {
+      "type": "project",
+      "path": "../../StatCan/StatCan.OrchardCore/src/Modules/StatCan.OrchardCore.VueForms/StatCan.OrchardCore.VueForms.csproj",
+      "msbuildProject": "../../StatCan/StatCan.OrchardCore/src/Modules/StatCan.OrchardCore.VueForms/StatCan.OrchardCore.VueForms.csproj"
+    },
     "StatCan.OrchardCore.Vuetify/1.0.0": {
       "type": "project",
       "path": "../../StatCan/StatCan.OrchardCore/src/Modules/StatCan.OrchardCore.Vuetify/StatCan.OrchardCore.Vuetify.csproj",
@@ -27177,6 +27216,7 @@
       "StatCan.OrchardCore.FIP >= 1.0.0",
       "StatCan.OrchardCore.Menu >= 1.0.0",
       "StatCan.OrchardCore.Scripting >= 1.0.0",
+      "StatCan.OrchardCore.VueForms >= 1.0.0",
       "StatCan.OrchardCore.Vuetify >= 1.0.0",
       "VuetifyTheme >= 1.0.0"
     ]
@@ -27232,6 +27272,9 @@
             },
             "C:\\ws\\github\\StatCan\\StatCan.OrchardCore\\src\\Modules\\StatCan.OrchardCore.Scripting\\StatCan.OrchardCore.Scripting.csproj": {
               "projectPath": "C:\\ws\\github\\StatCan\\StatCan.OrchardCore\\src\\Modules\\StatCan.OrchardCore.Scripting\\StatCan.OrchardCore.Scripting.csproj"
+            },
+            "C:\\ws\\github\\StatCan\\StatCan.OrchardCore\\src\\Modules\\StatCan.OrchardCore.VueForms\\StatCan.OrchardCore.VueForms.csproj": {
+              "projectPath": "C:\\ws\\github\\StatCan\\StatCan.OrchardCore\\src\\Modules\\StatCan.OrchardCore.VueForms\\StatCan.OrchardCore.VueForms.csproj"
             },
             "C:\\ws\\github\\StatCan\\StatCan.OrchardCore\\src\\Modules\\StatCan.OrchardCore.Vuetify\\StatCan.OrchardCore.Vuetify.csproj": {
               "projectPath": "C:\\ws\\github\\StatCan\\StatCan.OrchardCore\\src\\Modules\\StatCan.OrchardCore.Vuetify\\StatCan.OrchardCore.Vuetify.csproj"

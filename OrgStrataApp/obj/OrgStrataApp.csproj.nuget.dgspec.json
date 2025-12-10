@@ -241,6 +241,9 @@
               "C:\\ws\\github\\StatCan\\StatCan.OrchardCore\\src\\Modules\\StatCan.OrchardCore.Scripting\\StatCan.OrchardCore.Scripting.csproj": {
                 "projectPath": "C:\\ws\\github\\StatCan\\StatCan.OrchardCore\\src\\Modules\\StatCan.OrchardCore.Scripting\\StatCan.OrchardCore.Scripting.csproj"
               },
+              "C:\\ws\\github\\StatCan\\StatCan.OrchardCore\\src\\Modules\\StatCan.OrchardCore.VueForms\\StatCan.OrchardCore.VueForms.csproj": {
+                "projectPath": "C:\\ws\\github\\StatCan\\StatCan.OrchardCore\\src\\Modules\\StatCan.OrchardCore.VueForms\\StatCan.OrchardCore.VueForms.csproj"
+              },
               "C:\\ws\\github\\StatCan\\StatCan.OrchardCore\\src\\Modules\\StatCan.OrchardCore.Vuetify\\StatCan.OrchardCore.Vuetify.csproj": {
                 "projectPath": "C:\\ws\\github\\StatCan\\StatCan.OrchardCore\\src\\Modules\\StatCan.OrchardCore.Vuetify\\StatCan.OrchardCore.Vuetify.csproj"
               },
@@ -1364,6 +1367,161 @@
               "version": "[2.2.1, )"
             },
             "OrchardCore.Users": {
+              "target": "Package",
+              "version": "[2.2.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[8.0.11, 8.0.11]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[8.0.11, 8.0.11]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Ref",
+              "version": "[8.0.11, 8.0.11]"
+            }
+          ],
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.101/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\ws\\github\\StatCan\\StatCan.OrchardCore\\src\\Modules\\StatCan.OrchardCore.VueForms\\StatCan.OrchardCore.VueForms.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\ws\\github\\StatCan\\StatCan.OrchardCore\\src\\Modules\\StatCan.OrchardCore.VueForms\\StatCan.OrchardCore.VueForms.csproj",
+        "projectName": "StatCan.OrchardCore.VueForms",
+        "projectPath": "C:\\ws\\github\\StatCan\\StatCan.OrchardCore\\src\\Modules\\StatCan.OrchardCore.VueForms\\StatCan.OrchardCore.VueForms.csproj",
+        "packagesPath": "C:\\Users\\Mohammad\\.nuget\\packages\\",
+        "outputPath": "C:\\ws\\github\\StatCan\\StatCan.OrchardCore\\src\\Modules\\StatCan.OrchardCore.VueForms\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\ws\\github\\StatCan\\StatCan.OrchardCore\\NuGet.Config",
+          "C:\\Users\\Mohammad\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {},
+          "https://nuget.cloudsmith.io/orchardcore/preview/v3/index.json": {},
+          "https://nuget.cloudsmith.io/statcan-digitalinnovation/statcan-orchardcore/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "C:\\ws\\github\\StatCan\\StatCan.OrchardCore\\src\\Lib\\StatCan.OrchardCore.Extensions\\StatCan.OrchardCore.Extensions.csproj": {
+                "projectPath": "C:\\ws\\github\\StatCan\\StatCan.OrchardCore\\src\\Lib\\StatCan.OrchardCore.Extensions\\StatCan.OrchardCore.Extensions.csproj"
+              },
+              "C:\\ws\\github\\StatCan\\StatCan.OrchardCore\\src\\Lib\\StatCan.OrchardCore.Manifest\\StatCan.OrchardCore.Manifest.csproj": {
+                "projectPath": "C:\\ws\\github\\StatCan\\StatCan.OrchardCore\\src\\Lib\\StatCan.OrchardCore.Manifest\\StatCan.OrchardCore.Manifest.csproj"
+              },
+              "C:\\ws\\github\\StatCan\\StatCan.OrchardCore\\src\\Modules\\StatCan.OrchardCore.ContentPermissions\\StatCan.OrchardCore.ContentPermissions.csproj": {
+                "projectPath": "C:\\ws\\github\\StatCan\\StatCan.OrchardCore\\src\\Modules\\StatCan.OrchardCore.ContentPermissions\\StatCan.OrchardCore.ContentPermissions.csproj"
+              },
+              "C:\\ws\\github\\StatCan\\StatCan.OrchardCore\\src\\Modules\\StatCan.OrchardCore.DisplayHelpers\\StatCan.OrchardCore.DisplayHelpers.csproj": {
+                "projectPath": "C:\\ws\\github\\StatCan\\StatCan.OrchardCore\\src\\Modules\\StatCan.OrchardCore.DisplayHelpers\\StatCan.OrchardCore.DisplayHelpers.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "allWarningsAsErrors": true,
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.100"
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "HtmlSanitizer": {
+              "target": "Package",
+              "version": "[8.2.871-beta, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.3, )"
+            },
+            "OrchardCore.ContentManagement.Abstractions": {
+              "target": "Package",
+              "version": "[2.2.1, )"
+            },
+            "OrchardCore.Contents": {
+              "target": "Package",
+              "version": "[2.2.1, )"
+            },
+            "OrchardCore.Data.Abstractions": {
+              "target": "Package",
+              "version": "[2.2.1, )"
+            },
+            "OrchardCore.DisplayManagement": {
+              "target": "Package",
+              "version": "[2.2.1, )"
+            },
+            "OrchardCore.Flows": {
+              "target": "Package",
+              "version": "[2.2.1, )"
+            },
+            "OrchardCore.Liquid.Abstractions": {
+              "target": "Package",
+              "version": "[2.2.1, )"
+            },
+            "OrchardCore.Module.Targets": {
+              "target": "Package",
+              "version": "[2.2.1, )"
+            },
+            "OrchardCore.Navigation.Core": {
+              "target": "Package",
+              "version": "[2.2.1, )"
+            },
+            "OrchardCore.ResourceManagement": {
+              "target": "Package",
+              "version": "[2.2.1, )"
+            },
+            "OrchardCore.Scripting.JavaScript": {
+              "target": "Package",
+              "version": "[2.2.1, )"
+            },
+            "OrchardCore.Shortcodes.Abstractions": {
+              "target": "Package",
+              "version": "[2.2.1, )"
+            },
+            "OrchardCore.Title": {
+              "target": "Package",
+              "version": "[2.2.1, )"
+            },
+            "OrchardCore.Workflows": {
               "target": "Package",
               "version": "[2.2.1, )"
             }
