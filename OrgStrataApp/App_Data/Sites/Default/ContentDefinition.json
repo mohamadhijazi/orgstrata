@@ -1,0 +1,156 @@
+{
+  "ContentTypeDefinitionRecords": [
+    {
+      "Name": "HtmlDashboardWidget",
+      "DisplayName": "Html Dashboard Widget",
+      "Settings": {
+        "ContentTypeSettings": {
+          "Draftable": true,
+          "Versionable": true,
+          "Stereotype": "DashboardWidget",
+          "Securable": true
+        },
+        "FullTextAspectSettings": {}
+      },
+      "ContentTypePartDefinitionRecords": [
+        {
+          "PartName": "HtmlDashboardWidget",
+          "Name": "HtmlDashboardWidget",
+          "Settings": {
+            "ContentTypePartSettings": {
+              "Position": "3"
+            }
+          }
+        },
+        {
+          "PartName": "DashboardPart",
+          "Name": "DashboardPart",
+          "Settings": {
+            "ContentTypePartSettings": {
+              "Position": "2"
+            }
+          }
+        },
+        {
+          "PartName": "HtmlBodyPart",
+          "Name": "HtmlBodyPart",
+          "Settings": {
+            "ContentTypePartSettings": {
+              "Position": "1",
+              "Editor": "Wysiwyg"
+            },
+            "GraphQLContentTypePartSettings": {},
+            "HtmlBodyPartSettings": {}
+          }
+        },
+        {
+          "PartName": "TitlePart",
+          "Name": "TitlePart",
+          "Settings": {
+            "ContentTypePartSettings": {
+              "Position": "0"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "Name": "UserProfile",
+      "DisplayName": "UserProfile",
+      "Settings": {
+        "ContentTypeSettings": {
+          "Stereotype": "CustomUserSettings"
+        },
+        "FullTextAspectSettings": {
+          "IncludeBodyAspect": false,
+          "IncludeDisplayText": false
+        }
+      },
+      "ContentTypePartDefinitionRecords": [
+        {
+          "PartName": "UserProfile",
+          "Name": "UserProfile",
+          "Settings": {
+            "ContentTypePartSettings": {
+              "Position": "0"
+            }
+          }
+        }
+      ]
+    }
+  ],
+  "ContentPartDefinitionRecords": [
+    {
+      "Name": "UserProfile",
+      "Settings": {},
+      "ContentPartFieldDefinitionRecords": [
+        {
+          "FieldName": "TextField",
+          "Name": "FirstName",
+          "Settings": {
+            "ContentPartFieldSettings": {
+              "DisplayName": "First Name",
+              "Position": "0"
+            }
+          }
+        },
+        {
+          "FieldName": "TextField",
+          "Name": "LastName",
+          "Settings": {
+            "ContentPartFieldSettings": {
+              "DisplayName": "Last Name",
+              "Position": "1"
+            },
+            "TextFieldSettings": {},
+            "TextFieldPredefinedListEditorSettings": {
+              "Options": [
+                {
+                  "name": "English",
+                  "value": "en"
+                },
+                {
+                  "name": "French",
+                  "value": "fr"
+                },
+                {
+                  "name": "Billingual",
+                  "value": "both"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "FieldName": "TextField",
+          "Name": "Language",
+          "Settings": {
+            "ContentPartFieldSettings": {
+              "DisplayName": "Language",
+              "Editor": "PredefinedList",
+              "Position": "2"
+            },
+            "TextFieldSettings": {},
+            "TextFieldPredefinedListEditorSettings": {
+              "Options": [
+                {
+                  "name": "English",
+                  "value": "en"
+                },
+                {
+                  "name": "French",
+                  "value": "fr"
+                },
+                {
+                  "name": "Billingual",
+                  "value": "both"
+                }
+              ]
+            }
+          }
+        }
+      ]
+    }
+  ],
+  "Identifier": "465sy3r2x5sfe7pk8rcrtsnvnw"
+}

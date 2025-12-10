@@ -5,6 +5,7 @@ using OrchardCore.Modules;
 using MyModule.Migration;
 using OrchardCore.Data.Migration;
 
+
 namespace MyModule;
 
 public sealed class Startup : StartupBase
