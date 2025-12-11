@@ -3777,3 +3777,31 @@
    at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
    at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
 2025-12-11 03:29:28.2300||||Microsoft.Hosting.Lifetime|INFO|Application is shutting down... 
+2025-12-11 03:30:06.0107|||8|Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServer|WARN|The ASP.NET Core developer certificate is not trusted. For information about trusting the ASP.NET Core developer certificate, see https://aka.ms/aspnet/https-trust-dev-cert. 
+2025-12-11 03:30:06.1270|||14|Microsoft.Hosting.Lifetime|INFO|Now listening on: https://localhost:5001 
+2025-12-11 03:30:06.1270|||14|Microsoft.Hosting.Lifetime|INFO|Now listening on: http://localhost:5000 
+2025-12-11 03:30:06.1389||||Microsoft.Hosting.Lifetime|INFO|Application started. Press Ctrl+C to shut down. 
+2025-12-11 03:30:06.1389||||Microsoft.Hosting.Lifetime|INFO|Hosting environment: Development 
+2025-12-11 03:30:06.1389||||Microsoft.Hosting.Lifetime|INFO|Content root path: C:\ws\github\orgstrata\OrgStrataApp 
+2025-12-11 04:11:49.7630||||Microsoft.Hosting.Lifetime|INFO|Application is shutting down... 
+2025-12-11 04:12:32.9677|||8|Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServer|WARN|The ASP.NET Core developer certificate is not trusted. For information about trusting the ASP.NET Core developer certificate, see https://aka.ms/aspnet/https-trust-dev-cert. 
+2025-12-11 04:12:33.0801|||14|Microsoft.Hosting.Lifetime|INFO|Now listening on: https://localhost:5001 
+2025-12-11 04:12:33.0801|||14|Microsoft.Hosting.Lifetime|INFO|Now listening on: http://localhost:5000 
+2025-12-11 04:12:33.0929||||Microsoft.Hosting.Lifetime|INFO|Application started. Press Ctrl+C to shut down. 
+2025-12-11 04:12:33.0929||||Microsoft.Hosting.Lifetime|INFO|Hosting environment: Development 
+2025-12-11 04:12:33.0929||||Microsoft.Hosting.Lifetime|INFO|Content root path: C:\ws\github\orgstrata\OrgStrataApp 
+2025-12-11 04:20:10.7183||||Microsoft.Hosting.Lifetime|INFO|Application is shutting down... 
+2025-12-11 04:20:27.4255|||8|Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServer|WARN|The ASP.NET Core developer certificate is not trusted. For information about trusting the ASP.NET Core developer certificate, see https://aka.ms/aspnet/https-trust-dev-cert. 
+2025-12-11 04:20:27.5650|||14|Microsoft.Hosting.Lifetime|INFO|Now listening on: https://localhost:5001 
+2025-12-11 04:20:27.5650|||14|Microsoft.Hosting.Lifetime|INFO|Now listening on: http://localhost:5000 
+2025-12-11 04:20:27.5794||||Microsoft.Hosting.Lifetime|INFO|Application started. Press Ctrl+C to shut down. 
+2025-12-11 04:20:27.5794||||Microsoft.Hosting.Lifetime|INFO|Hosting environment: Development 
+2025-12-11 04:20:27.5794||||Microsoft.Hosting.Lifetime|INFO|Content root path: C:\ws\github\orgstrata\OrgStrataApp 
+2025-12-11 04:25:19.5921||||Microsoft.Hosting.Lifetime|INFO|Application is shutting down... 
+2025-12-11 04:25:43.7716|||8|Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServer|WARN|The ASP.NET Core developer certificate is not trusted. For information about trusting the ASP.NET Core developer certificate, see https://aka.ms/aspnet/https-trust-dev-cert. 
+2025-12-11 04:25:43.8831|||14|Microsoft.Hosting.Lifetime|INFO|Now listening on: https://localhost:5001 
+2025-12-11 04:25:43.8881|||14|Microsoft.Hosting.Lifetime|INFO|Now listening on: http://localhost:5000 
+2025-12-11 04:25:43.8881||||Microsoft.Hosting.Lifetime|INFO|Application started. Press Ctrl+C to shut down. 
+2025-12-11 04:25:43.8881||||Microsoft.Hosting.Lifetime|INFO|Hosting environment: Development 
+2025-12-11 04:25:43.8881||||Microsoft.Hosting.Lifetime|INFO|Content root path: C:\ws\github\orgstrata\OrgStrataApp 
+2025-12-11 05:07:26.6087||||Microsoft.Hosting.Lifetime|INFO|Application is shutting down... 
