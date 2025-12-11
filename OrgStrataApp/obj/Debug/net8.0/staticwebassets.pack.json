@@ -1,0 +1,301 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\ws\\github\\orgstrata\\OrgStrataApp\\wwwroot\\.placeholder",
+      "PackagePath": "staticwebassets\\.placeholder"
+    },
+    {
+      "Id": "C:\\ws\\github\\orgstrata\\OrgStrataApp\\wwwroot\\Default\\is-cache\\0\\2\\d\\7\\e\\4\\5\\a\\7\\f\\d\\c\\02d7e45a7fdc.meta",
+      "PackagePath": "staticwebassets\\Default\\is-cache\\0\\2\\d\\7\\e\\4\\5\\a\\7\\f\\d\\c\\02d7e45a7fdc.meta"
+    },
+    {
+      "Id": "C:\\ws\\github\\orgstrata\\OrgStrataApp\\wwwroot\\Default\\is-cache\\0\\2\\d\\7\\e\\4\\5\\a\\7\\f\\d\\c\\02d7e45a7fdc.png",
+      "PackagePath": "staticwebassets\\Default\\is-cache\\0\\2\\d\\7\\e\\4\\5\\a\\7\\f\\d\\c\\02d7e45a7fdc.png"
+    },
+    {
+      "Id": "C:\\ws\\github\\orgstrata\\OrgStrataApp\\wwwroot\\Default\\is-cache\\0\\9\\6\\3\\a\\e\\f\\9\\2\\f\\4\\6\\0963aef92f46.meta",
+      "PackagePath": "staticwebassets\\Default\\is-cache\\0\\9\\6\\3\\a\\e\\f\\9\\2\\f\\4\\6\\0963aef92f46.meta"
+    },
+    {
+      "Id": "C:\\ws\\github\\orgstrata\\OrgStrataApp\\wwwroot\\Default\\is-cache\\0\\9\\6\\3\\a\\e\\f\\9\\2\\f\\4\\6\\0963aef92f46.png",
+      "PackagePath": "staticwebassets\\Default\\is-cache\\0\\9\\6\\3\\a\\e\\f\\9\\2\\f\\4\\6\\0963aef92f46.png"
+    },
+    {
+      "Id": "C:\\ws\\github\\orgstrata\\OrgStrataApp\\wwwroot\\Default\\is-cache\\0\\d\\5\\5\\9\\a\\f\\f\\d\\2\\4\\5\\0d559affd245.jpg",
+      "PackagePath": "staticwebassets\\Default\\is-cache\\0\\d\\5\\5\\9\\a\\f\\f\\d\\2\\4\\5\\0d559affd245.jpg"
+    },
+    {
+      "Id": "C:\\ws\\github\\orgstrata\\OrgStrataApp\\wwwroot\\Default\\is-cache\\0\\d\\5\\5\\9\\a\\f\\f\\d\\2\\4\\5\\0d559affd245.meta",
+      "PackagePath": "staticwebassets\\Default\\is-cache\\0\\d\\5\\5\\9\\a\\f\\f\\d\\2\\4\\5\\0d559affd245.meta"
+    },
+    {
+      "Id": "C:\\ws\\github\\orgstrata\\OrgStrataApp\\wwwroot\\Default\\is-cache\\1\\a\\a\\6\\0\\a\\e\\0\\9\\d\\f\\7\\1aa60ae09df7.jpg",
+      "PackagePath": "staticwebassets\\Default\\is-cache\\1\\a\\a\\6\\0\\a\\e\\0\\9\\d\\f\\7\\1aa60ae09df7.jpg"
+    },
+    {
+      "Id": "C:\\ws\\github\\orgstrata\\OrgStrataApp\\wwwroot\\Default\\is-cache\\1\\a\\a\\6\\0\\a\\e\\0\\9\\d\\f\\7\\1aa60ae09df7.meta",
+      "PackagePath": "staticwebassets\\Default\\is-cache\\1\\a\\a\\6\\0\\a\\e\\0\\9\\d\\f\\7\\1aa60ae09df7.meta"
+    },
+    {
+      "Id": "C:\\ws\\github\\orgstrata\\OrgStrataApp\\wwwroot\\Default\\is-cache\\1\\a\\c\\9\\8\\1\\8\\c\\e\\7\\c\\4\\1ac9818ce7c4.jpg",
+      "PackagePath": "staticwebassets\\Default\\is-cache\\1\\a\\c\\9\\8\\1\\8\\c\\e\\7\\c\\4\\1ac9818ce7c4.jpg"
+    },
+    {
+      "Id": "C:\\ws\\github\\orgstrata\\OrgStrataApp\\wwwroot\\Default\\is-cache\\1\\a\\c\\9\\8\\1\\8\\c\\e\\7\\c\\4\\1ac9818ce7c4.meta",
+      "PackagePath": "staticwebassets\\Default\\is-cache\\1\\a\\c\\9\\8\\1\\8\\c\\e\\7\\c\\4\\1ac9818ce7c4.meta"
+    },
+    {
+      "Id": "C:\\ws\\github\\orgstrata\\OrgStrataApp\\wwwroot\\Default\\is-cache\\2\\0\\0\\4\\8\\3\\e\\8\\f\\4\\5\\2\\200483e8f452.jpg",
+      "PackagePath": "staticwebassets\\Default\\is-cache\\2\\0\\0\\4\\8\\3\\e\\8\\f\\4\\5\\2\\200483e8f452.jpg"
+    },
+    {
+      "Id": "C:\\ws\\github\\orgstrata\\OrgStrataApp\\wwwroot\\Default\\is-cache\\2\\0\\0\\4\\8\\3\\e\\8\\f\\4\\5\\2\\200483e8f452.meta",
+      "PackagePath": "staticwebassets\\Default\\is-cache\\2\\0\\0\\4\\8\\3\\e\\8\\f\\4\\5\\2\\200483e8f452.meta"
+    },
+    {
+      "Id": "C:\\ws\\github\\orgstrata\\OrgStrataApp\\wwwroot\\Default\\is-cache\\2\\1\\6\\7\\4\\d\\c\\5\\c\\d\\2\\a\\21674dc5cd2a.jpg",
+      "PackagePath": "staticwebassets\\Default\\is-cache\\2\\1\\6\\7\\4\\d\\c\\5\\c\\d\\2\\a\\21674dc5cd2a.jpg"
+    },
+    {
+      "Id": "C:\\ws\\github\\orgstrata\\OrgStrataApp\\wwwroot\\Default\\is-cache\\2\\1\\6\\7\\4\\d\\c\\5\\c\\d\\2\\a\\21674dc5cd2a.meta",
+      "PackagePath": "staticwebassets\\Default\\is-cache\\2\\1\\6\\7\\4\\d\\c\\5\\c\\d\\2\\a\\21674dc5cd2a.meta"
+    },
+    {
+      "Id": "C:\\ws\\github\\orgstrata\\OrgStrataApp\\wwwroot\\Default\\is-cache\\2\\1\\7\\6\\5\\e\\4\\f\\b\\8\\a\\2\\21765e4fb8a2.jpg",
+      "PackagePath": "staticwebassets\\Default\\is-cache\\2\\1\\7\\6\\5\\e\\4\\f\\b\\8\\a\\2\\21765e4fb8a2.jpg"
+    },
+    {
+      "Id": "C:\\ws\\github\\orgstrata\\OrgStrataApp\\wwwroot\\Default\\is-cache\\2\\1\\7\\6\\5\\e\\4\\f\\b\\8\\a\\2\\21765e4fb8a2.meta",
+      "PackagePath": "staticwebassets\\Default\\is-cache\\2\\1\\7\\6\\5\\e\\4\\f\\b\\8\\a\\2\\21765e4fb8a2.meta"
+    },
+    {
+      "Id": "C:\\ws\\github\\orgstrata\\OrgStrataApp\\wwwroot\\Default\\is-cache\\3\\6\\6\\6\\8\\0\\1\\4\\3\\4\\8\\5\\366680143485.jpg",
+      "PackagePath": "staticwebassets\\Default\\is-cache\\3\\6\\6\\6\\8\\0\\1\\4\\3\\4\\8\\5\\366680143485.jpg"
+    },
+    {
+      "Id": "C:\\ws\\github\\orgstrata\\OrgStrataApp\\wwwroot\\Default\\is-cache\\3\\6\\6\\6\\8\\0\\1\\4\\3\\4\\8\\5\\366680143485.meta",
+      "PackagePath": "staticwebassets\\Default\\is-cache\\3\\6\\6\\6\\8\\0\\1\\4\\3\\4\\8\\5\\366680143485.meta"
+    },
+    {
+      "Id": "C:\\ws\\github\\orgstrata\\OrgStrataApp\\wwwroot\\Default\\is-cache\\3\\7\\d\\5\\f\\3\\8\\f\\a\\1\\3\\9\\37d5f38fa139.jpg",
+      "PackagePath": "staticwebassets\\Default\\is-cache\\3\\7\\d\\5\\f\\3\\8\\f\\a\\1\\3\\9\\37d5f38fa139.jpg"
+    },
+    {
+      "Id": "C:\\ws\\github\\orgstrata\\OrgStrataApp\\wwwroot\\Default\\is-cache\\3\\7\\d\\5\\f\\3\\8\\f\\a\\1\\3\\9\\37d5f38fa139.meta",
+      "PackagePath": "staticwebassets\\Default\\is-cache\\3\\7\\d\\5\\f\\3\\8\\f\\a\\1\\3\\9\\37d5f38fa139.meta"
+    },
+    {
+      "Id": "C:\\ws\\github\\orgstrata\\OrgStrataApp\\wwwroot\\Default\\is-cache\\3\\f\\2\\a\\b\\7\\7\\f\\2\\b\\e\\6\\3f2ab77f2be6.jpg",
+      "PackagePath": "staticwebassets\\Default\\is-cache\\3\\f\\2\\a\\b\\7\\7\\f\\2\\b\\e\\6\\3f2ab77f2be6.jpg"
+    },
+    {
+      "Id": "C:\\ws\\github\\orgstrata\\OrgStrataApp\\wwwroot\\Default\\is-cache\\3\\f\\2\\a\\b\\7\\7\\f\\2\\b\\e\\6\\3f2ab77f2be6.meta",
+      "PackagePath": "staticwebassets\\Default\\is-cache\\3\\f\\2\\a\\b\\7\\7\\f\\2\\b\\e\\6\\3f2ab77f2be6.meta"
+    },
+    {
+      "Id": "C:\\ws\\github\\orgstrata\\OrgStrataApp\\wwwroot\\Default\\is-cache\\4\\9\\1\\5\\d\\2\\f\\9\\d\\f\\7\\1\\4915d2f9df71.jpg",
+      "PackagePath": "staticwebassets\\Default\\is-cache\\4\\9\\1\\5\\d\\2\\f\\9\\d\\f\\7\\1\\4915d2f9df71.jpg"
+    },
+    {
+      "Id": "C:\\ws\\github\\orgstrata\\OrgStrataApp\\wwwroot\\Default\\is-cache\\4\\9\\1\\5\\d\\2\\f\\9\\d\\f\\7\\1\\4915d2f9df71.meta",
+      "PackagePath": "staticwebassets\\Default\\is-cache\\4\\9\\1\\5\\d\\2\\f\\9\\d\\f\\7\\1\\4915d2f9df71.meta"
+    },
+    {
+      "Id": "C:\\ws\\github\\orgstrata\\OrgStrataApp\\wwwroot\\Default\\is-cache\\5\\4\\e\\0\\0\\4\\5\\c\\2\\b\\3\\b\\54e0045c2b3b.jpg",
+      "PackagePath": "staticwebassets\\Default\\is-cache\\5\\4\\e\\0\\0\\4\\5\\c\\2\\b\\3\\b\\54e0045c2b3b.jpg"
+    },
+    {
+      "Id": "C:\\ws\\github\\orgstrata\\OrgStrataApp\\wwwroot\\Default\\is-cache\\5\\4\\e\\0\\0\\4\\5\\c\\2\\b\\3\\b\\54e0045c2b3b.meta",
+      "PackagePath": "staticwebassets\\Default\\is-cache\\5\\4\\e\\0\\0\\4\\5\\c\\2\\b\\3\\b\\54e0045c2b3b.meta"
+    },
+    {
+      "Id": "C:\\ws\\github\\orgstrata\\OrgStrataApp\\wwwroot\\Default\\is-cache\\5\\b\\f\\1\\6\\3\\d\\c\\1\\7\\0\\c\\5bf163dc170c.jpg",
+      "PackagePath": "staticwebassets\\Default\\is-cache\\5\\b\\f\\1\\6\\3\\d\\c\\1\\7\\0\\c\\5bf163dc170c.jpg"
+    },
+    {
+      "Id": "C:\\ws\\github\\orgstrata\\OrgStrataApp\\wwwroot\\Default\\is-cache\\5\\b\\f\\1\\6\\3\\d\\c\\1\\7\\0\\c\\5bf163dc170c.meta",
+      "PackagePath": "staticwebassets\\Default\\is-cache\\5\\b\\f\\1\\6\\3\\d\\c\\1\\7\\0\\c\\5bf163dc170c.meta"
+    },
+    {
+      "Id": "C:\\ws\\github\\orgstrata\\OrgStrataApp\\wwwroot\\Default\\is-cache\\5\\f\\9\\a\\a\\f\\c\\c\\c\\1\\a\\4\\5f9aafccc1a4.jpg",
+      "PackagePath": "staticwebassets\\Default\\is-cache\\5\\f\\9\\a\\a\\f\\c\\c\\c\\1\\a\\4\\5f9aafccc1a4.jpg"
+    },
+    {
+      "Id": "C:\\ws\\github\\orgstrata\\OrgStrataApp\\wwwroot\\Default\\is-cache\\5\\f\\9\\a\\a\\f\\c\\c\\c\\1\\a\\4\\5f9aafccc1a4.meta",
+      "PackagePath": "staticwebassets\\Default\\is-cache\\5\\f\\9\\a\\a\\f\\c\\c\\c\\1\\a\\4\\5f9aafccc1a4.meta"
+    },
+    {
+      "Id": "C:\\ws\\github\\orgstrata\\OrgStrataApp\\wwwroot\\Default\\is-cache\\6\\7\\d\\6\\5\\d\\3\\1\\9\\f\\2\\0\\67d65d319f20.jpg",
+      "PackagePath": "staticwebassets\\Default\\is-cache\\6\\7\\d\\6\\5\\d\\3\\1\\9\\f\\2\\0\\67d65d319f20.jpg"
+    },
+    {
+      "Id": "C:\\ws\\github\\orgstrata\\OrgStrataApp\\wwwroot\\Default\\is-cache\\6\\7\\d\\6\\5\\d\\3\\1\\9\\f\\2\\0\\67d65d319f20.meta",
+      "PackagePath": "staticwebassets\\Default\\is-cache\\6\\7\\d\\6\\5\\d\\3\\1\\9\\f\\2\\0\\67d65d319f20.meta"
+    },
+    {
+      "Id": "C:\\ws\\github\\orgstrata\\OrgStrataApp\\wwwroot\\Default\\is-cache\\6\\a\\a\\d\\1\\4\\4\\f\\8\\7\\e\\7\\6aad144f87e7.jpg",
+      "PackagePath": "staticwebassets\\Default\\is-cache\\6\\a\\a\\d\\1\\4\\4\\f\\8\\7\\e\\7\\6aad144f87e7.jpg"
+    },
+    {
+      "Id": "C:\\ws\\github\\orgstrata\\OrgStrataApp\\wwwroot\\Default\\is-cache\\6\\a\\a\\d\\1\\4\\4\\f\\8\\7\\e\\7\\6aad144f87e7.meta",
+      "PackagePath": "staticwebassets\\Default\\is-cache\\6\\a\\a\\d\\1\\4\\4\\f\\8\\7\\e\\7\\6aad144f87e7.meta"
+    },
+    {
+      "Id": "C:\\ws\\github\\orgstrata\\OrgStrataApp\\wwwroot\\Default\\is-cache\\7\\c\\a\\6\\e\\1\\8\\f\\a\\0\\d\\1\\7ca6e18fa0d1.jpg",
+      "PackagePath": "staticwebassets\\Default\\is-cache\\7\\c\\a\\6\\e\\1\\8\\f\\a\\0\\d\\1\\7ca6e18fa0d1.jpg"
+    },
+    {
+      "Id": "C:\\ws\\github\\orgstrata\\OrgStrataApp\\wwwroot\\Default\\is-cache\\7\\c\\a\\6\\e\\1\\8\\f\\a\\0\\d\\1\\7ca6e18fa0d1.meta",
+      "PackagePath": "staticwebassets\\Default\\is-cache\\7\\c\\a\\6\\e\\1\\8\\f\\a\\0\\d\\1\\7ca6e18fa0d1.meta"
+    },
+    {
+      "Id": "C:\\ws\\github\\orgstrata\\OrgStrataApp\\wwwroot\\Default\\is-cache\\7\\c\\f\\3\\7\\5\\a\\5\\c\\8\\4\\a\\7cf375a5c84a.jpg",
+      "PackagePath": "staticwebassets\\Default\\is-cache\\7\\c\\f\\3\\7\\5\\a\\5\\c\\8\\4\\a\\7cf375a5c84a.jpg"
+    },
+    {
+      "Id": "C:\\ws\\github\\orgstrata\\OrgStrataApp\\wwwroot\\Default\\is-cache\\7\\c\\f\\3\\7\\5\\a\\5\\c\\8\\4\\a\\7cf375a5c84a.meta",
+      "PackagePath": "staticwebassets\\Default\\is-cache\\7\\c\\f\\3\\7\\5\\a\\5\\c\\8\\4\\a\\7cf375a5c84a.meta"
+    },
+    {
+      "Id": "C:\\ws\\github\\orgstrata\\OrgStrataApp\\wwwroot\\Default\\is-cache\\8\\3\\2\\9\\e\\2\\c\\1\\b\\5\\5\\1\\8329e2c1b551.jpg",
+      "PackagePath": "staticwebassets\\Default\\is-cache\\8\\3\\2\\9\\e\\2\\c\\1\\b\\5\\5\\1\\8329e2c1b551.jpg"
+    },
+    {
+      "Id": "C:\\ws\\github\\orgstrata\\OrgStrataApp\\wwwroot\\Default\\is-cache\\8\\3\\2\\9\\e\\2\\c\\1\\b\\5\\5\\1\\8329e2c1b551.meta",
+      "PackagePath": "staticwebassets\\Default\\is-cache\\8\\3\\2\\9\\e\\2\\c\\1\\b\\5\\5\\1\\8329e2c1b551.meta"
+    },
+    {
+      "Id": "C:\\ws\\github\\orgstrata\\OrgStrataApp\\wwwroot\\Default\\is-cache\\8\\5\\4\\6\\c\\1\\4\\b\\a\\6\\9\\b\\8546c14ba69b.jpg",
+      "PackagePath": "staticwebassets\\Default\\is-cache\\8\\5\\4\\6\\c\\1\\4\\b\\a\\6\\9\\b\\8546c14ba69b.jpg"
+    },
+    {
+      "Id": "C:\\ws\\github\\orgstrata\\OrgStrataApp\\wwwroot\\Default\\is-cache\\8\\5\\4\\6\\c\\1\\4\\b\\a\\6\\9\\b\\8546c14ba69b.meta",
+      "PackagePath": "staticwebassets\\Default\\is-cache\\8\\5\\4\\6\\c\\1\\4\\b\\a\\6\\9\\b\\8546c14ba69b.meta"
+    },
+    {
+      "Id": "C:\\ws\\github\\orgstrata\\OrgStrataApp\\wwwroot\\Default\\is-cache\\8\\7\\9\\d\\9\\a\\6\\6\\8\\a\\9\\4\\879d9a668a94.jpg",
+      "PackagePath": "staticwebassets\\Default\\is-cache\\8\\7\\9\\d\\9\\a\\6\\6\\8\\a\\9\\4\\879d9a668a94.jpg"
+    },
+    {
+      "Id": "C:\\ws\\github\\orgstrata\\OrgStrataApp\\wwwroot\\Default\\is-cache\\8\\7\\9\\d\\9\\a\\6\\6\\8\\a\\9\\4\\879d9a668a94.meta",
+      "PackagePath": "staticwebassets\\Default\\is-cache\\8\\7\\9\\d\\9\\a\\6\\6\\8\\a\\9\\4\\879d9a668a94.meta"
+    },
+    {
+      "Id": "C:\\ws\\github\\orgstrata\\OrgStrataApp\\wwwroot\\Default\\is-cache\\8\\8\\b\\a\\b\\7\\d\\2\\a\\c\\b\\0\\88bab7d2acb0.jpg",
+      "PackagePath": "staticwebassets\\Default\\is-cache\\8\\8\\b\\a\\b\\7\\d\\2\\a\\c\\b\\0\\88bab7d2acb0.jpg"
+    },
+    {
+      "Id": "C:\\ws\\github\\orgstrata\\OrgStrataApp\\wwwroot\\Default\\is-cache\\8\\8\\b\\a\\b\\7\\d\\2\\a\\c\\b\\0\\88bab7d2acb0.meta",
+      "PackagePath": "staticwebassets\\Default\\is-cache\\8\\8\\b\\a\\b\\7\\d\\2\\a\\c\\b\\0\\88bab7d2acb0.meta"
+    },
+    {
+      "Id": "C:\\ws\\github\\orgstrata\\OrgStrataApp\\wwwroot\\Default\\is-cache\\9\\6\\c\\3\\d\\e\\7\\e\\2\\8\\f\\0\\96c3de7e28f0.jpg",
+      "PackagePath": "staticwebassets\\Default\\is-cache\\9\\6\\c\\3\\d\\e\\7\\e\\2\\8\\f\\0\\96c3de7e28f0.jpg"
+    },
+    {
+      "Id": "C:\\ws\\github\\orgstrata\\OrgStrataApp\\wwwroot\\Default\\is-cache\\9\\6\\c\\3\\d\\e\\7\\e\\2\\8\\f\\0\\96c3de7e28f0.meta",
+      "PackagePath": "staticwebassets\\Default\\is-cache\\9\\6\\c\\3\\d\\e\\7\\e\\2\\8\\f\\0\\96c3de7e28f0.meta"
+    },
+    {
+      "Id": "C:\\ws\\github\\orgstrata\\OrgStrataApp\\wwwroot\\Default\\is-cache\\a\\6\\7\\f\\0\\8\\8\\a\\c\\0\\f\\2\\a67f088ac0f2.jpg",
+      "PackagePath": "staticwebassets\\Default\\is-cache\\a\\6\\7\\f\\0\\8\\8\\a\\c\\0\\f\\2\\a67f088ac0f2.jpg"
+    },
+    {
+      "Id": "C:\\ws\\github\\orgstrata\\OrgStrataApp\\wwwroot\\Default\\is-cache\\a\\6\\7\\f\\0\\8\\8\\a\\c\\0\\f\\2\\a67f088ac0f2.meta",
+      "PackagePath": "staticwebassets\\Default\\is-cache\\a\\6\\7\\f\\0\\8\\8\\a\\c\\0\\f\\2\\a67f088ac0f2.meta"
+    },
+    {
+      "Id": "C:\\ws\\github\\orgstrata\\OrgStrataApp\\wwwroot\\Default\\is-cache\\a\\7\\a\\b\\3\\4\\1\\b\\1\\a\\5\\d\\a7ab341b1a5d.jpg",
+      "PackagePath": "staticwebassets\\Default\\is-cache\\a\\7\\a\\b\\3\\4\\1\\b\\1\\a\\5\\d\\a7ab341b1a5d.jpg"
+    },
+    {
+      "Id": "C:\\ws\\github\\orgstrata\\OrgStrataApp\\wwwroot\\Default\\is-cache\\a\\7\\a\\b\\3\\4\\1\\b\\1\\a\\5\\d\\a7ab341b1a5d.meta",
+      "PackagePath": "staticwebassets\\Default\\is-cache\\a\\7\\a\\b\\3\\4\\1\\b\\1\\a\\5\\d\\a7ab341b1a5d.meta"
+    },
+    {
+      "Id": "C:\\ws\\github\\orgstrata\\OrgStrataApp\\wwwroot\\Default\\is-cache\\b\\5\\1\\c\\1\\8\\9\\1\\a\\9\\b\\3\\b51c1891a9b3.jpg",
+      "PackagePath": "staticwebassets\\Default\\is-cache\\b\\5\\1\\c\\1\\8\\9\\1\\a\\9\\b\\3\\b51c1891a9b3.jpg"
+    },
+    {
+      "Id": "C:\\ws\\github\\orgstrata\\OrgStrataApp\\wwwroot\\Default\\is-cache\\b\\5\\1\\c\\1\\8\\9\\1\\a\\9\\b\\3\\b51c1891a9b3.meta",
+      "PackagePath": "staticwebassets\\Default\\is-cache\\b\\5\\1\\c\\1\\8\\9\\1\\a\\9\\b\\3\\b51c1891a9b3.meta"
+    },
+    {
+      "Id": "C:\\ws\\github\\orgstrata\\OrgStrataApp\\wwwroot\\Default\\is-cache\\b\\c\\6\\1\\5\\c\\e\\e\\0\\c\\5\\0\\bc615cee0c50.jpg",
+      "PackagePath": "staticwebassets\\Default\\is-cache\\b\\c\\6\\1\\5\\c\\e\\e\\0\\c\\5\\0\\bc615cee0c50.jpg"
+    },
+    {
+      "Id": "C:\\ws\\github\\orgstrata\\OrgStrataApp\\wwwroot\\Default\\is-cache\\b\\c\\6\\1\\5\\c\\e\\e\\0\\c\\5\\0\\bc615cee0c50.meta",
+      "PackagePath": "staticwebassets\\Default\\is-cache\\b\\c\\6\\1\\5\\c\\e\\e\\0\\c\\5\\0\\bc615cee0c50.meta"
+    },
+    {
+      "Id": "C:\\ws\\github\\orgstrata\\OrgStrataApp\\wwwroot\\Default\\is-cache\\b\\c\\d\\b\\7\\7\\6\\8\\d\\9\\5\\2\\bcdb7768d952.jpg",
+      "PackagePath": "staticwebassets\\Default\\is-cache\\b\\c\\d\\b\\7\\7\\6\\8\\d\\9\\5\\2\\bcdb7768d952.jpg"
+    },
+    {
+      "Id": "C:\\ws\\github\\orgstrata\\OrgStrataApp\\wwwroot\\Default\\is-cache\\b\\c\\d\\b\\7\\7\\6\\8\\d\\9\\5\\2\\bcdb7768d952.meta",
+      "PackagePath": "staticwebassets\\Default\\is-cache\\b\\c\\d\\b\\7\\7\\6\\8\\d\\9\\5\\2\\bcdb7768d952.meta"
+    },
+    {
+      "Id": "C:\\ws\\github\\orgstrata\\OrgStrataApp\\wwwroot\\Default\\is-cache\\d\\4\\a\\7\\0\\d\\5\\e\\c\\c\\6\\c\\d4a70d5ecc6c.jpg",
+      "PackagePath": "staticwebassets\\Default\\is-cache\\d\\4\\a\\7\\0\\d\\5\\e\\c\\c\\6\\c\\d4a70d5ecc6c.jpg"
+    },
+    {
+      "Id": "C:\\ws\\github\\orgstrata\\OrgStrataApp\\wwwroot\\Default\\is-cache\\d\\4\\a\\7\\0\\d\\5\\e\\c\\c\\6\\c\\d4a70d5ecc6c.meta",
+      "PackagePath": "staticwebassets\\Default\\is-cache\\d\\4\\a\\7\\0\\d\\5\\e\\c\\c\\6\\c\\d4a70d5ecc6c.meta"
+    },
+    {
+      "Id": "C:\\ws\\github\\orgstrata\\OrgStrataApp\\wwwroot\\Default\\is-cache\\d\\d\\b\\1\\0\\d\\d\\0\\9\\3\\2\\4\\ddb10dd09324.jpg",
+      "PackagePath": "staticwebassets\\Default\\is-cache\\d\\d\\b\\1\\0\\d\\d\\0\\9\\3\\2\\4\\ddb10dd09324.jpg"
+    },
+    {
+      "Id": "C:\\ws\\github\\orgstrata\\OrgStrataApp\\wwwroot\\Default\\is-cache\\d\\d\\b\\1\\0\\d\\d\\0\\9\\3\\2\\4\\ddb10dd09324.meta",
+      "PackagePath": "staticwebassets\\Default\\is-cache\\d\\d\\b\\1\\0\\d\\d\\0\\9\\3\\2\\4\\ddb10dd09324.meta"
+    },
+    {
+      "Id": "C:\\ws\\github\\orgstrata\\OrgStrataApp\\wwwroot\\Default\\is-cache\\e\\8\\6\\4\\e\\c\\1\\c\\2\\7\\1\\e\\e864ec1c271e.jpg",
+      "PackagePath": "staticwebassets\\Default\\is-cache\\e\\8\\6\\4\\e\\c\\1\\c\\2\\7\\1\\e\\e864ec1c271e.jpg"
+    },
+    {
+      "Id": "C:\\ws\\github\\orgstrata\\OrgStrataApp\\wwwroot\\Default\\is-cache\\e\\8\\6\\4\\e\\c\\1\\c\\2\\7\\1\\e\\e864ec1c271e.meta",
+      "PackagePath": "staticwebassets\\Default\\is-cache\\e\\8\\6\\4\\e\\c\\1\\c\\2\\7\\1\\e\\e864ec1c271e.meta"
+    },
+    {
+      "Id": "C:\\ws\\github\\orgstrata\\OrgStrataApp\\wwwroot\\Default\\is-cache\\e\\b\\6\\0\\1\\d\\4\\a\\6\\5\\9\\4\\eb601d4a6594.jpg",
+      "PackagePath": "staticwebassets\\Default\\is-cache\\e\\b\\6\\0\\1\\d\\4\\a\\6\\5\\9\\4\\eb601d4a6594.jpg"
+    },
+    {
+      "Id": "C:\\ws\\github\\orgstrata\\OrgStrataApp\\wwwroot\\Default\\is-cache\\e\\b\\6\\0\\1\\d\\4\\a\\6\\5\\9\\4\\eb601d4a6594.meta",
+      "PackagePath": "staticwebassets\\Default\\is-cache\\e\\b\\6\\0\\1\\d\\4\\a\\6\\5\\9\\4\\eb601d4a6594.meta"
+    },
+    {
+      "Id": "C:\\ws\\github\\orgstrata\\OrgStrataApp\\wwwroot\\Default\\is-cache\\f\\2\\f\\5\\2\\9\\f\\1\\e\\0\\f\\1\\f2f529f1e0f1.jpg",
+      "PackagePath": "staticwebassets\\Default\\is-cache\\f\\2\\f\\5\\2\\9\\f\\1\\e\\0\\f\\1\\f2f529f1e0f1.jpg"
+    },
+    {
+      "Id": "C:\\ws\\github\\orgstrata\\OrgStrataApp\\wwwroot\\Default\\is-cache\\f\\2\\f\\5\\2\\9\\f\\1\\e\\0\\f\\1\\f2f529f1e0f1.meta",
+      "PackagePath": "staticwebassets\\Default\\is-cache\\f\\2\\f\\5\\2\\9\\f\\1\\e\\0\\f\\1\\f2f529f1e0f1.meta"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.OrgStrataApp.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssetEndpoints.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.OrgStrataApp.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.OrgStrataApp.props",
+      "PackagePath": "build\\OrgStrataApp.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.OrgStrataApp.props",
+      "PackagePath": "buildMultiTargeting\\OrgStrataApp.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.OrgStrataApp.props",
+      "PackagePath": "buildTransitive\\OrgStrataApp.props"
+    }
+  ],
+  "ElementsToRemove": []
+}
