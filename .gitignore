@@ -1,1 +1,17 @@
 OrgStrataApp/App_Data/logs/orchard-log-2025-12-11.log
+**obj/Debug
+**/Release/
+bin
+obj
+
+.gitignore
+HyTheme/obj/Debug/net8.0/HyTheme.AssemblyInfo.cs
+HyTheme/obj/Debug/net8.0/HyTheme.AssemblyInfoInputs.cache
+HyTheme/obj/Debug/net8.0/HyTheme.csproj.FileListAbsolute.txt
+MyModule/obj/Debug/net8.0/MyModule.assets.cache
+MyModule/obj/Debug/net8.0/MyModule.csproj.FileListAbsolute.txt
+OrgStrataApp/App_Data/logs/orchard-log-2025-12-12.log
+
+OrgStrataApp/obj/Debug/net8.0/apphost.exe
+OrgStrataApp/obj/Debug/net8.0/OrgStrataApp.assets.cache
+OrgStrataApp/obj/Debug/net8.0/OrgStrataApp.csproj.FileListAbsolute.txt
