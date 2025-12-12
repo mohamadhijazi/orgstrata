@@ -1,0 +1,21 @@
+<v-footer name="footer" app >
+
+    
+    <footer-component></footer-component>
+
+    <script >
+        {% raw %}
+vueapp.component('FooterComponent',{
+    data: () => ({
+      year: (new Date()).getFullYear()
+    }),
+    template: `
+      <div>        
+        <h3>Copy rights @, {{year}}</h3>
+      </div>
+    `
+  });
+ {% endraw %}
+</script> 
+
+</v-footer>

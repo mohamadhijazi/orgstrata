@@ -1,0 +1,114 @@
+.top-nav {
+  background-color: #333;
+  color: #fff;
+}
+
+.main-menu {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.main-menu li {
+  margin-right: 20px;
+}
+
+.main-menu a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.submenu {
+  display: none;
+  position: absolute;
+  background-color: #444;
+  padding: 10px;
+}
+
+.has-submenu:hover .submenu {
+  display: block;
+}
+
+.username {
+  text-align: center;
+}
+
+
+.userItem {
+  border: 1px solid gray;
+  margin: 10px 0px;
+  box-shadow: 10 px gray;
+  border-radius: 5px;
+  box-shadow: -7px -2px 38px 5px rgba(0, 0, 0, 0.26);
+  background-color: #fafafa;
+  height: 400px;
+  max-height: 400px;
+  overflow: hidden;
+}
+.userdetails {
+    text-align: center;
+    clear: both;
+}
+
+span.gender {
+    margin: 5px;
+    background-color: #d0d0d0;
+    padding: 0px 10px;
+    border-radius: 5px;
+}
+
+span.inteam {
+    margin: 5px;
+    background-color: #e78334;
+    padding: 0px 10px;
+    color: white;
+    border-radius: 5px;
+}
+
+.userBio {
+    overflow: hidden;
+    padding: 0 10px;
+}
+.userpic > img { 
+  border-radius: 50%; 
+}
+
+.userpic {
+  width: 100px;
+  margin: 0 auto;
+  border-radius: 50%;
+  background: #0d5803;
+  padding: 5px;
+  margin-top: 10px;
+}
+.useractionLinks ul {
+    padding: 0;
+    margin: 0;
+    display:block;
+    text-align: center;
+    width: 315px;
+    clear:both;
+    margin: 0 auto;
+}
+.useractionLinks ul:after {
+    clear:both;
+    content:"";
+    display: block;
+}
+.useractionLinks ul li {
+    padding: 0;
+    margin: 0px 10px;
+    padding: 0px 10px;
+    float:left;
+    border: 1px black solid;
+}
+
+.useractionLinks {
+    text-align: center;
+}
+.useractionLinks:after {
+    clear:both;
+    content:"";
+    display: block;
+}

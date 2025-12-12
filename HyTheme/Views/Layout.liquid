@@ -7,21 +7,130 @@
     {% resources type: "Meta" %}
 
     <!-- INSERT REQUIRED RESOURCES HERE -->
+
+    <!-- Load required Bootstrap and BootstrapVue CSS -->
+  {% style src: "~/HyTheme/scripts/bootstrap.min.css" %}
+  {% style src: "~/HyTheme/scripts/bootstrap-vue.min.css" %}
+  {% style src: "~/HyTheme/scripts/custom.css" %}
+  {% style src: "~/HyTheme/scripts/vuetify.min.css" %}
+
+  <!-- Load polyfills to support older browsers -->
+  
+   {% script src: "~/HyTheme/scripts/polyfill.min.js" %}
+  <!--  For Vue 3 -->
+  {% script src: "~/HyTheme/scripts/vue@3.js" %}
+  {% script src: "~/HyTheme/scripts/bootstrap-vue.min.js" %}
+  {% script src: "~/HyTheme/scripts/vuetify.min.js" %}
+  <!--  Vuelidate -->
+  {% script src: "~/HyTheme/scripts/vue-demi.js" %}
+  {% script src: "~/HyTheme/scripts/core.js" %}
+  {% script src: "~/HyTheme/scripts/validators.js" %}
+
     
     {% resources type: "HeadLink" %}
     {% resources type: "Stylesheet" %}
     {% resources type: "HeadScript" %}
+
+    
+<script>
+    
+ const {createApp, ref} = Vue;
+
+ const {createVuetify} = Vuetify;
+
+ const vuetify = createVuetify(); 
+ //const QrcodeVue=QrcodeVue.default;
+//Vue.use(BootstrapVue);
+
+ vueapp =createApp( {
+    data: function(){
+      return{
+      tab:"index.html",
+      }
+    },
+    mounted:function(){
+      let split=window.location.pathname.split("/"); 
+      let pagename=split[split.length-1];
+      this.tab=pagename;
+    }
+  });
+  
+</script>
 </head>
 <body dir="{{ Culture.Dir }}">
 
-    {% render_body %}
+<div v-cloak class="main__wrapper" id="app">
+<v-layout ref="app" class="rounded rounded-md">
+
+<v-app-bar app clipped-left>
+  {% comment %} This icon allows the show/hide of the drawer in mobile mode {% endcomment %}
+  <v-app-bar-nav-icon  @click="drawer = !drawer"></v-app-bar-nav-icon>
+ 
+    <a class="d-none d-sm-flex" href="{{ '~/' | href }}">
+      <img src="" style="max-height:56px; width:240px;" alt="logo">
+    </a>
+    <a class="d-flex d-sm-none" href="{{ '~/' | href }}">
+      <img src="" style="max-height:48px; width:170px;" alt="logo" >
+    </a>
+
+  <v-toolbar-title>
+   SiteName
+  </v-toolbar-title>
+
+  <v-spacer></v-spacer>
+ 
+  <v-tooltip v-if="!$vuetify.theme.dark" bottom>
+    <template v-slot:activator="{ on }">
+      <v-btn v-on="on" icon @click="darkMode">
+        <v-icon class="mr-1">mdi-moon-waxing-crescent</v-icon>
+      </v-btn>
+    </template>
+    <span>{{ "Dark mode" | t }}</span>
+  </v-tooltip>
+  <v-tooltip v-else bottom>
+    <template v-slot:activator="{ on }">
+      <v-btn v-on="on" icon @click="darkMode">
+        <v-icon >mdi-white-balance-sunny</v-icon>
+      </v-btn>
+    </template>
+    <span>{{"Light mode" | t }}</span>
+  </v-tooltip> 
+  
+</v-app-bar>
+
+
+
+    {% render_section "Header", required: false %}
+        
+    {% render_section "NavigationDrawer", required: false %}
+    {% render_section "Breadcrumb", required: false %}
     
-    <footer>
-    {% render_section "Footer", required: false %}
-    </footer>
-    
-    {% script name:"jquery", use_cdn:"true", at:"Foot" %}
-    
+     <v-main class="d-flex align-center justify-center" style="min-height: 300px;">
+     {% render_body %}
+    </v-main>
+
+    <!----vue mount-Footer---->
+      
+    {% render_section "Footer", required: false %}   
+
+    </v-layout>
+
+</div>
+ 
+    {% render_section "DynamicComponentZone", required: false %}
     {% resources type: "FootScript" %}
+
+<!----vue mount-scripts---->
+  <script >
+
+
+ 
+document.addEventListener("DOMContentLoaded", function() {
+   
+vueapp.config.warnHandler = () => {};
+  vueapp.use(vuetify).mount('#app');
+});
+
+  </script>
 </body>
 </html>
