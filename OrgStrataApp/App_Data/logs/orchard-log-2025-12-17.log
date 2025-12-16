@@ -1,0 +1,5 @@
+2025-12-17 00:43:43.0633|Default|00-ea47547952c9a5365386a1c6aaf40121-ad79fe1dfc9ab74e-00||OrchardCore.Apis.GraphQL.GraphQLMiddleware|ERROR|An error occurred while processing the GraphQL query. System.InvalidOperationException: The 'query' query string parameter is missing
+   at OrchardCore.Apis.GraphQL.GraphQLMiddleware.CreateRequestFromQueryString(HttpContext context, Boolean validateQueryKey)
+   at OrchardCore.Apis.GraphQL.GraphQLMiddleware.ExecuteAsync(HttpContext context)    at OrchardCore.Apis.GraphQL.GraphQLMiddleware.CreateRequestFromQueryString(HttpContext context, Boolean validateQueryKey)
+   at OrchardCore.Apis.GraphQL.GraphQLMiddleware.ExecuteAsync(HttpContext context)
+2025-12-17 01:18:05.5597||||Microsoft.Hosting.Lifetime|INFO|Application is shutting down... 

@@ -17,6 +17,8 @@ using System.Reflection;
     "blueprint"))]
 [assembly: OrchardCore.Modules.Manifest.ModuleAssetAttribute(("Areas\\HyTheme\\vuetemplates\\footer|C:\\ws\\github\\orgstrata\\HyTheme\\vuetemplates\\foo" +
     "ter"))]
+[assembly: OrchardCore.Modules.Manifest.ModuleAssetAttribute(("Areas\\HyTheme\\vuetemplates\\readsample|C:\\ws\\github\\orgstrata\\HyTheme\\vuetemplates" +
+    "\\readsample"))]
 [assembly: OrchardCore.Modules.Manifest.ModuleAssetAttribute(("Areas\\HyTheme\\vuetemplates\\v-navigationdrawer|C:\\ws\\github\\orgstrata\\HyTheme\\vuet" +
     "emplates\\v-navigationdrawer"))]
 [assembly: OrchardCore.Modules.Manifest.ModuleAssetAttribute(("Areas\\HyTheme\\wwwroot\\blueprint3d\\css\\bootstrap.css|C:\\ws\\github\\orgstrata\\HyThem" +
@@ -414,7 +416,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("HyTheme")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f045286d67cbd7f1ad9144c060c81a0b9404c3a8")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+dfb5ba68f8568c212772beddc66cf0fd6a736320")]
 [assembly: System.Reflection.AssemblyProductAttribute("HyTheme")]
 [assembly: System.Reflection.AssemblyTitleAttribute("HyTheme")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

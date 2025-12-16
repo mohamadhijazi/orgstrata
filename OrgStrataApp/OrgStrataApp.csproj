@@ -20,6 +20,7 @@
   <ItemGroup>
     <PackageReference Include="OrchardCore.Logging.NLog" Version="2.2.1" />
     <PackageReference Include="OrchardCore.Application.Cms.Targets" Version="2.2.1" />
+    <PackageReference Include="OrchardCore.Contents" Version="2.2.1" />
   </ItemGroup>
 
   <ItemGroup>

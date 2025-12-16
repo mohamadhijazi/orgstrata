@@ -1,0 +1,22 @@
+async function runGraphQL2() {
+  const query = `
+    {
+      contentItem( contentItemId: "4wnf1x0484m2bx4vsz14q1wcws") {
+        contentItemId
+        displayText
+      }
+    }
+  `;
+
+  const response = await fetch('/api/graphql', {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json'
+      // Add Authorization header if required
+    },
+    body: JSON.stringify({ query })
+  });
+
+  const result = await response.json();
+  console.log(result);
+}

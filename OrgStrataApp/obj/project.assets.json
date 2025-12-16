@@ -26793,6 +26793,7 @@
       "HyTheme >= 1.0.0",
       "MyModule >= 1.0.0",
       "OrchardCore.Application.Cms.Targets >= 2.2.1",
+      "OrchardCore.Contents >= 2.2.1",
       "OrchardCore.Logging.NLog >= 2.2.1"
     ]
   },
@@ -26847,6 +26848,10 @@
         "targetAlias": "net8.0",
         "dependencies": {
           "OrchardCore.Application.Cms.Targets": {
+            "target": "Package",
+            "version": "[2.2.1, )"
+          },
+          "OrchardCore.Contents": {
             "target": "Package",
             "version": "[2.2.1, )"
           },
