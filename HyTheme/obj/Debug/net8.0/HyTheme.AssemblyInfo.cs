@@ -15,6 +15,8 @@ using System.Reflection;
     "uid"))]
 [assembly: OrchardCore.Modules.Manifest.ModuleAssetAttribute(("Areas\\HyTheme\\vuetemplates\\footer|C:\\ws\\github\\orgstrata\\HyTheme\\vuetemplates\\foo" +
     "ter"))]
+[assembly: OrchardCore.Modules.Manifest.ModuleAssetAttribute(("Areas\\HyTheme\\vuetemplates\\v-navigationdrawer|C:\\ws\\github\\orgstrata\\HyTheme\\vuet" +
+    "emplates\\v-navigationdrawer"))]
 [assembly: OrchardCore.Modules.Manifest.ModuleAssetAttribute(("Areas\\HyTheme\\wwwroot\\mdi-icons\\css\\materialdesignicons.css|C:\\ws\\github\\orgstrat" +
     "a\\HyTheme\\wwwroot\\mdi-icons\\css\\materialdesignicons.css"))]
 [assembly: OrchardCore.Modules.Manifest.ModuleAssetAttribute(("Areas\\HyTheme\\wwwroot\\mdi-icons\\css\\materialdesignicons.css.map|C:\\ws\\github\\orgs" +
@@ -41,6 +43,10 @@ using System.Reflection;
     "pts\\core.js"))]
 [assembly: OrchardCore.Modules.Manifest.ModuleAssetAttribute(("Areas\\HyTheme\\wwwroot\\scripts\\custom.css|C:\\ws\\github\\orgstrata\\HyTheme\\wwwroot\\s" +
     "cripts\\custom.css"))]
+[assembly: OrchardCore.Modules.Manifest.ModuleAssetAttribute(("Areas\\HyTheme\\wwwroot\\scripts\\logo-white.png|C:\\ws\\github\\orgstrata\\HyTheme\\wwwro" +
+    "ot\\scripts\\logo-white.png"))]
+[assembly: OrchardCore.Modules.Manifest.ModuleAssetAttribute(("Areas\\HyTheme\\wwwroot\\scripts\\Media (7).jfif|C:\\ws\\github\\orgstrata\\HyTheme\\wwwro" +
+    "ot\\scripts\\Media (7).jfif"))]
 [assembly: OrchardCore.Modules.Manifest.ModuleAssetAttribute(("Areas\\HyTheme\\wwwroot\\scripts\\polyfill.min.js|C:\\ws\\github\\orgstrata\\HyTheme\\wwwr" +
     "oot\\scripts\\polyfill.min.js"))]
 [assembly: OrchardCore.Modules.Manifest.ModuleAssetAttribute(("Areas\\HyTheme\\wwwroot\\scripts\\qrcode.vue.browser.min.js|C:\\ws\\github\\orgstrata\\Hy" +
@@ -58,7 +64,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("HyTheme")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1f532784d1c2e79db1be363d6f2cc517e4f5e6a4")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3ee456e07344bd7216265dc77ef732c75382b6f8")]
 [assembly: System.Reflection.AssemblyProductAttribute("HyTheme")]
 [assembly: System.Reflection.AssemblyTitleAttribute("HyTheme")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
