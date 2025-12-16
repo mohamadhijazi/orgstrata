@@ -15,6 +15,22 @@ using System.Reflection;
     "uid"))]
 [assembly: OrchardCore.Modules.Manifest.ModuleAssetAttribute(("Areas\\HyTheme\\vuetemplates\\footer|C:\\ws\\github\\orgstrata\\HyTheme\\vuetemplates\\foo" +
     "ter"))]
+[assembly: OrchardCore.Modules.Manifest.ModuleAssetAttribute(("Areas\\HyTheme\\wwwroot\\mdi-icons\\css\\materialdesignicons.css|C:\\ws\\github\\orgstrat" +
+    "a\\HyTheme\\wwwroot\\mdi-icons\\css\\materialdesignicons.css"))]
+[assembly: OrchardCore.Modules.Manifest.ModuleAssetAttribute(("Areas\\HyTheme\\wwwroot\\mdi-icons\\css\\materialdesignicons.css.map|C:\\ws\\github\\orgs" +
+    "trata\\HyTheme\\wwwroot\\mdi-icons\\css\\materialdesignicons.css.map"))]
+[assembly: OrchardCore.Modules.Manifest.ModuleAssetAttribute(("Areas\\HyTheme\\wwwroot\\mdi-icons\\css\\materialdesignicons.min.css|C:\\ws\\github\\orgs" +
+    "trata\\HyTheme\\wwwroot\\mdi-icons\\css\\materialdesignicons.min.css"))]
+[assembly: OrchardCore.Modules.Manifest.ModuleAssetAttribute(("Areas\\HyTheme\\wwwroot\\mdi-icons\\css\\materialdesignicons.min.css.map|C:\\ws\\github\\" +
+    "orgstrata\\HyTheme\\wwwroot\\mdi-icons\\css\\materialdesignicons.min.css.map"))]
+[assembly: OrchardCore.Modules.Manifest.ModuleAssetAttribute(("Areas\\HyTheme\\wwwroot\\mdi-icons\\fonts\\materialdesignicons-webfont.eot|C:\\ws\\githu" +
+    "b\\orgstrata\\HyTheme\\wwwroot\\mdi-icons\\fonts\\materialdesignicons-webfont.eot"))]
+[assembly: OrchardCore.Modules.Manifest.ModuleAssetAttribute(("Areas\\HyTheme\\wwwroot\\mdi-icons\\fonts\\materialdesignicons-webfont.ttf|C:\\ws\\githu" +
+    "b\\orgstrata\\HyTheme\\wwwroot\\mdi-icons\\fonts\\materialdesignicons-webfont.ttf"))]
+[assembly: OrchardCore.Modules.Manifest.ModuleAssetAttribute(("Areas\\HyTheme\\wwwroot\\mdi-icons\\fonts\\materialdesignicons-webfont.woff|C:\\ws\\gith" +
+    "ub\\orgstrata\\HyTheme\\wwwroot\\mdi-icons\\fonts\\materialdesignicons-webfont.woff"))]
+[assembly: OrchardCore.Modules.Manifest.ModuleAssetAttribute(("Areas\\HyTheme\\wwwroot\\mdi-icons\\fonts\\materialdesignicons-webfont.woff2|C:\\ws\\git" +
+    "hub\\orgstrata\\HyTheme\\wwwroot\\mdi-icons\\fonts\\materialdesignicons-webfont.woff2"))]
 [assembly: OrchardCore.Modules.Manifest.ModuleAssetAttribute(("Areas\\HyTheme\\wwwroot\\scripts\\bootstrap-vue.min.css|C:\\ws\\github\\orgstrata\\HyThem" +
     "e\\wwwroot\\scripts\\bootstrap-vue.min.css"))]
 [assembly: OrchardCore.Modules.Manifest.ModuleAssetAttribute(("Areas\\HyTheme\\wwwroot\\scripts\\bootstrap-vue.min.js|C:\\ws\\github\\orgstrata\\HyTheme" +
@@ -42,7 +58,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("HyTheme")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+01e491b00ea9a4d73edf671a62f92d19e467c6b0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1f532784d1c2e79db1be363d6f2cc517e4f5e6a4")]
 [assembly: System.Reflection.AssemblyProductAttribute("HyTheme")]
 [assembly: System.Reflection.AssemblyTitleAttribute("HyTheme")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

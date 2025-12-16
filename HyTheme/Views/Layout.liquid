@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="{{ Culture.Name }}">
+<html lang="{{ Culture.Name }}" data-theme="" data-display-mode="picker">
 <head>
     <meta charset="utf-8">
     <title>{% page_title Site.SiteName, position: "before", separator: " - " %}</title>
@@ -13,6 +13,8 @@
   {% style src: "~/HyTheme/scripts/bootstrap-vue.min.css" %}
   {% style src: "~/HyTheme/scripts/custom.css" %}
   {% style src: "~/HyTheme/scripts/vuetify.min.css" %}
+
+  {% style src: "~/HyTheme/mdi-icons/css/materialdesignicons.min.css" %}
 
   <!-- Load polyfills to support older browsers -->
   
@@ -36,17 +38,51 @@
     
  const {createApp, ref} = Vue;
 
- const {createVuetify} = Vuetify;
-
- const vuetify = createVuetify(); 
+ const {createVuetify,useTheme } = Vuetify;
+const localtheme=localStorage.getItem("VuetifyThemeDarkMode")
+ const vuetify = createVuetify({
+  theme: {
+    defaultTheme:localtheme!=null?localtheme:'light',
+    themes: {
+      light: {
+        dark: false,
+        colors: {
+          background: '#FFFFFF',
+          primary: '#1976D2',
+        },
+      },
+      dark: {
+        dark: true,
+        colors: {
+          background: '#121212',
+          primary: '#BB86FC',
+        },
+      },
+    },
+  },
+  }); 
  //const QrcodeVue=QrcodeVue.default;
 //Vue.use(BootstrapVue);
+
 
  vueapp =createApp( {
     data: function(){
       return{
       tab:"index.html",
+      drawer: false,
+      
       }
+    },
+     methods: {
+      darkMode() {
+        
+        theme.global.name.value = theme.global.current.value.dark ? 'light' : 'dark'
+        //this.$vuetify.theme.dark = !this.$vuetify.theme.dark;
+        localStorage.setItem("VuetifyThemeDarkMode", theme.global.name.value );
+      }
+    },
+    setup:function(){
+     theme = useTheme();
     },
     mounted:function(){
       let split=window.location.pathname.split("/"); 
