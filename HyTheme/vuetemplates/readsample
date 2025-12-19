@@ -20,3 +20,41 @@ async function runGraphQL2() {
   const result = await response.json();
   console.log(result);
 }
+
+$.ajax({
+    url: "/api/Hycontent/",   // ContentItemId
+    type: "POST",                                      // Use PUT for update
+    contentType: "application/json",
+    headers: {
+        // The header name typically expected by server-side frameworks
+        'RequestVerificationToken': $("input[name='__RequestVerificationToken']").val()
+    },
+    data: JSON.stringify({
+        // Content type name is required
+        "ContentType": "floor",
+    "DisplayText": "Floo3 title",
+    "Latest": true,
+    "Published": true,     
+    "Owner": "4mcsr8e425d90v7zqgvz0ps6nd",
+    "Author": "admin",
+    "floor": {
+        "text": {
+            "Text": "Floor2 text"
+        }
+    },    
+    "LiquidPart": {
+        "Liquid": "Floor 2 bbody"
+    },
+    "TitlePart": {
+        "Title": "Floo2 title"
+    }
+    }),
+    success: function (response) {
+        console.log("Update successful:", response);
+       
+    },
+    error: function (xhr) {
+        console.error("Error updating content:", xhr.responseText);
+        
+    }
+});
