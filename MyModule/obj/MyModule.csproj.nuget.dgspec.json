@@ -44,11 +44,27 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
+            "GraphQL": {
+              "target": "Package",
+              "version": "[7.9.0, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.3, )"
+            },
+            "OrchardCore.Apis.GraphQL": {
+              "target": "Package",
+              "version": "[2.2.1, )"
+            },
             "OrchardCore.ContentManagement": {
               "target": "Package",
               "version": "[2.2.1, )"
             },
             "OrchardCore.ContentTypes.Abstractions": {
+              "target": "Package",
+              "version": "[2.2.1, )"
+            },
+            "OrchardCore.Contents": {
               "target": "Package",
               "version": "[2.2.1, )"
             },

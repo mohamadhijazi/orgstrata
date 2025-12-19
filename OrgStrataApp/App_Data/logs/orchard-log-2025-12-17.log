@@ -3,3 +3,17 @@
    at OrchardCore.Apis.GraphQL.GraphQLMiddleware.ExecuteAsync(HttpContext context)    at OrchardCore.Apis.GraphQL.GraphQLMiddleware.CreateRequestFromQueryString(HttpContext context, Boolean validateQueryKey)
    at OrchardCore.Apis.GraphQL.GraphQLMiddleware.ExecuteAsync(HttpContext context)
 2025-12-17 01:18:05.5597||||Microsoft.Hosting.Lifetime|INFO|Application is shutting down... 
+2025-12-17 01:18:46.5605|||8|Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServer|WARN|The ASP.NET Core developer certificate is not trusted. For information about trusting the ASP.NET Core developer certificate, see https://aka.ms/aspnet/https-trust-dev-cert. 
+2025-12-17 01:18:46.7272|||14|Microsoft.Hosting.Lifetime|INFO|Now listening on: https://localhost:5001 
+2025-12-17 01:18:46.7349|||14|Microsoft.Hosting.Lifetime|INFO|Now listening on: http://localhost:5000 
+2025-12-17 01:18:46.7349||||Microsoft.Hosting.Lifetime|INFO|Application started. Press Ctrl+C to shut down. 
+2025-12-17 01:18:46.7466||||Microsoft.Hosting.Lifetime|INFO|Hosting environment: Development 
+2025-12-17 01:18:46.7466||||Microsoft.Hosting.Lifetime|INFO|Content root path: C:\ws\github\orgstrata\OrgStrataApp 
+2025-12-17 03:52:53.6247||||Microsoft.Hosting.Lifetime|INFO|Application is shutting down... 
+2025-12-17 17:33:43.8328|||8|Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServer|WARN|The ASP.NET Core developer certificate is not trusted. For information about trusting the ASP.NET Core developer certificate, see https://aka.ms/aspnet/https-trust-dev-cert. 
+2025-12-17 17:33:44.0506|||14|Microsoft.Hosting.Lifetime|INFO|Now listening on: https://localhost:5001 
+2025-12-17 17:33:44.0506|||14|Microsoft.Hosting.Lifetime|INFO|Now listening on: http://localhost:5000 
+2025-12-17 17:33:44.0725||||Microsoft.Hosting.Lifetime|INFO|Application started. Press Ctrl+C to shut down. 
+2025-12-17 17:33:44.0790||||Microsoft.Hosting.Lifetime|INFO|Hosting environment: Development 
+2025-12-17 17:33:44.0790||||Microsoft.Hosting.Lifetime|INFO|Content root path: C:\ws\github\orgstrata\OrgStrataApp 
+2025-12-17 17:40:07.4565||||Microsoft.Hosting.Lifetime|INFO|Application is shutting down... 

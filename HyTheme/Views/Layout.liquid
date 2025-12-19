@@ -147,7 +147,7 @@ const localtheme=localStorage.getItem("VuetifyThemeDarkMode")
     </v-layout>
 
 </div>
- 
+ {% antiforgerytoken %}
     {% render_section "DynamicComponentZone", required: false %}
     {% resources type: "FootScript" %}
 

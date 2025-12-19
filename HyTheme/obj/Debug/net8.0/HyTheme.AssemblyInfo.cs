@@ -416,7 +416,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("HyTheme")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+dfb5ba68f8568c212772beddc66cf0fd6a736320")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c7fa378cf264e32ef184657d0f41afe4c52c7e18")]
 [assembly: System.Reflection.AssemblyProductAttribute("HyTheme")]
 [assembly: System.Reflection.AssemblyTitleAttribute("HyTheme")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

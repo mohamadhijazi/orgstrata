@@ -92,6 +92,88 @@
           }
         }
       },
+      "GraphQL/7.9.0": {
+        "type": "package",
+        "dependencies": {
+          "GraphQL-Parser": "8.4.2",
+          "GraphQL.Analyzers": "7.9.0"
+        },
+        "compile": {
+          "lib/net6.0/GraphQL.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/GraphQL.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "GraphQL-Parser/8.4.2": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/GraphQLParser.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/GraphQLParser.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "GraphQL.Analyzers/7.9.0": {
+        "type": "package"
+      },
+      "GraphQL.DataLoader/7.9.0": {
+        "type": "package",
+        "dependencies": {
+          "GraphQL": "[7.9.0, 8.0.0)"
+        },
+        "compile": {
+          "lib/netstandard2.0/GraphQL.DataLoader.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/GraphQL.DataLoader.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "GraphQL.MicrosoftDI/7.9.0": {
+        "type": "package",
+        "dependencies": {
+          "GraphQL": "[7.9.0, 8.0.0)",
+          "Microsoft.Extensions.Options": "2.0.0"
+        },
+        "compile": {
+          "lib/net5.0/GraphQL.MicrosoftDI.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net5.0/GraphQL.MicrosoftDI.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "GraphQL.SystemTextJson/7.9.0": {
+        "type": "package",
+        "dependencies": {
+          "GraphQL": "[7.9.0, 8.0.0)"
+        },
+        "compile": {
+          "lib/net6.0/GraphQL.SystemTextJson.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/GraphQL.SystemTextJson.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "Json.More.Net/2.0.2": {
         "type": "package",
         "compile": {
@@ -578,7 +660,7 @@
           "Microsoft.Extensions.Primitives": "8.0.0"
         },
         "compile": {
-          "lib/net8.0/_._": {
+          "lib/net8.0/Microsoft.Extensions.Options.dll": {
             "related": ".xml"
           }
         },
@@ -788,6 +870,19 @@
           }
         }
       },
+      "Newtonsoft.Json/13.0.3": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/Newtonsoft.Json.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/Newtonsoft.Json.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "Npgsql/9.0.3": {
         "type": "package",
         "dependencies": {
@@ -818,6 +913,146 @@
         },
         "runtime": {
           "lib/net8.0/OrchardCore.Abstractions.dll": {
+            "related": ".xml"
+          }
+        },
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ]
+      },
+      "OrchardCore.Admin.Abstractions/2.2.1": {
+        "type": "package",
+        "dependencies": {
+          "JsonPath.Net": "1.1.6",
+          "Microsoft.IO.RecyclableMemoryStream": "3.0.1",
+          "OrchardCore.Abstractions": "2.2.1",
+          "OrchardCore.Infrastructure.Abstractions": "2.2.1",
+          "ZString": "2.6.0"
+        },
+        "compile": {
+          "lib/net8.0/OrchardCore.Admin.Abstractions.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/OrchardCore.Admin.Abstractions.dll": {
+            "related": ".xml"
+          }
+        },
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ]
+      },
+      "OrchardCore.AdminMenu.Abstractions/2.2.1": {
+        "type": "package",
+        "dependencies": {
+          "Castle.Core": "5.1.1",
+          "Fluid.Core": "2.25.0",
+          "JsonPath.Net": "1.1.6",
+          "Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation": "8.0.11",
+          "Microsoft.IO.RecyclableMemoryStream": "3.0.1",
+          "OrchardCore.Navigation.Core": "2.2.1",
+          "ZString": "2.6.0"
+        },
+        "compile": {
+          "lib/net8.0/OrchardCore.AdminMenu.Abstractions.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/OrchardCore.AdminMenu.Abstractions.dll": {
+            "related": ".xml"
+          }
+        },
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ]
+      },
+      "OrchardCore.Apis.GraphQL/2.2.1": {
+        "type": "package",
+        "dependencies": {
+          "Castle.Core": "5.1.1",
+          "Fluid.Core": "2.25.0",
+          "GraphQL": "7.9.0",
+          "GraphQL.DataLoader": "7.9.0",
+          "GraphQL.MicrosoftDI": "7.9.0",
+          "GraphQL.SystemTextJson": "7.9.0",
+          "JsonPath.Net": "1.1.6",
+          "Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation": "8.0.11",
+          "Microsoft.IO.RecyclableMemoryStream": "3.0.1",
+          "OrchardCore.Admin.Abstractions": "2.2.1",
+          "OrchardCore.Apis.GraphQL.Abstractions": "2.2.1",
+          "OrchardCore.DisplayManagement": "2.2.1",
+          "OrchardCore.Module.Targets": "2.2.1",
+          "OrchardCore.Navigation.Core": "2.2.1",
+          "OrchardCore.ResourceManagement": "2.2.1",
+          "YesSql.Abstractions": "5.4.6",
+          "ZString": "2.6.0"
+        },
+        "compile": {
+          "lib/net8.0/OrchardCore.Apis.GraphQL.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/OrchardCore.Apis.GraphQL.dll": {
+            "related": ".xml"
+          }
+        },
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ],
+        "build": {
+          "build/OrchardCore.Apis.GraphQL.props": {}
+        }
+      },
+      "OrchardCore.Apis.GraphQL.Abstractions/2.2.1": {
+        "type": "package",
+        "dependencies": {
+          "GraphQL": "7.9.0",
+          "GraphQL.DataLoader": "7.9.0",
+          "JsonPath.Net": "1.1.6",
+          "Microsoft.IO.RecyclableMemoryStream": "3.0.1",
+          "OrchardCore.DisplayManagement.Abstractions": "2.2.1",
+          "OrchardCore.Infrastructure.Abstractions": "2.2.1",
+          "ZString": "2.6.0"
+        },
+        "compile": {
+          "lib/net8.0/OrchardCore.Apis.GraphQL.Abstractions.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/OrchardCore.Apis.GraphQL.Abstractions.dll": {
+            "related": ".xml"
+          }
+        },
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ]
+      },
+      "OrchardCore.AuditTrail.Abstractions/2.2.1": {
+        "type": "package",
+        "dependencies": {
+          "Castle.Core": "5.1.1",
+          "Fluid.Core": "2.25.0",
+          "JsonPath.Net": "1.1.6",
+          "Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation": "8.0.11",
+          "Microsoft.IO.RecyclableMemoryStream": "3.0.1",
+          "OrchardCore.ContentManagement.Abstractions": "2.2.1",
+          "OrchardCore.ContentManagement.Display": "2.2.1",
+          "YesSql.Abstractions": "5.4.6",
+          "YesSql.Filters.Abstractions": "5.4.6",
+          "YesSql.Filters.Query": "5.4.6",
+          "ZString": "2.6.0"
+        },
+        "compile": {
+          "lib/net8.0/OrchardCore.AuditTrail.Abstractions.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/OrchardCore.AuditTrail.Abstractions.dll": {
             "related": ".xml"
           }
         },
@@ -904,6 +1139,165 @@
         },
         "runtime": {
           "lib/net8.0/OrchardCore.ContentManagement.Display.dll": {
+            "related": ".xml"
+          }
+        },
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ]
+      },
+      "OrchardCore.ContentManagement.GraphQL/2.2.1": {
+        "type": "package",
+        "dependencies": {
+          "Azure.Identity": "1.13.2",
+          "Castle.Core": "5.1.1",
+          "Fluid.Core": "2.25.0",
+          "GraphQL": "7.9.0",
+          "GraphQL.DataLoader": "7.9.0",
+          "JsonPath.Net": "1.1.6",
+          "Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation": "8.0.11",
+          "Microsoft.Extensions.Caching.Memory": "8.0.1",
+          "Microsoft.IO.RecyclableMemoryStream": "3.0.1",
+          "Microsoft.IdentityModel.Protocols.OpenIdConnect": "8.12.0",
+          "OrchardCore.Apis.GraphQL.Abstractions": "2.2.1",
+          "OrchardCore.ContentManagement": "2.2.1",
+          "OrchardCore.ContentManagement.Abstractions": "2.2.1",
+          "OrchardCore.ContentManagement.Display": "2.2.1",
+          "OrchardCore.ContentTypes.Abstractions": "2.2.1",
+          "OrchardCore.Contents.Core": "2.2.1",
+          "System.Text.Json": "8.0.5",
+          "YesSql": "5.4.6",
+          "YesSql.Abstractions": "5.4.6",
+          "YesSql.Core": "5.4.6",
+          "YesSql.Filters.Abstractions": "5.4.6",
+          "YesSql.Filters.Query": "5.4.6",
+          "ZString": "2.6.0"
+        },
+        "compile": {
+          "lib/net8.0/OrchardCore.ContentManagement.GraphQL.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/OrchardCore.ContentManagement.GraphQL.dll": {
+            "related": ".xml"
+          }
+        },
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ]
+      },
+      "OrchardCore.Contents/2.2.1": {
+        "type": "package",
+        "dependencies": {
+          "Azure.Identity": "1.13.2",
+          "Castle.Core": "5.1.1",
+          "Fluid.Core": "2.25.0",
+          "GraphQL": "7.9.0",
+          "GraphQL.DataLoader": "7.9.0",
+          "JsonPath.Net": "1.1.6",
+          "Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation": "8.0.11",
+          "Microsoft.Extensions.Caching.Memory": "8.0.1",
+          "Microsoft.IO.RecyclableMemoryStream": "3.0.1",
+          "Microsoft.IdentityModel.Protocols.OpenIdConnect": "8.12.0",
+          "OrchardCore.Admin.Abstractions": "2.2.1",
+          "OrchardCore.AdminMenu.Abstractions": "2.2.1",
+          "OrchardCore.AuditTrail.Abstractions": "2.2.1",
+          "OrchardCore.ContentManagement": "2.2.1",
+          "OrchardCore.ContentManagement.Display": "2.2.1",
+          "OrchardCore.ContentManagement.GraphQL": "2.2.1",
+          "OrchardCore.ContentTypes.Abstractions": "2.2.1",
+          "OrchardCore.Contents.Core": "2.2.1",
+          "OrchardCore.Contents.TagHelpers": "2.2.1",
+          "OrchardCore.Deployment.Abstractions": "2.2.1",
+          "OrchardCore.Deployment.Core": "2.2.1",
+          "OrchardCore.DisplayManagement.Liquid": "2.2.1",
+          "OrchardCore.Feeds.Abstractions": "2.2.1",
+          "OrchardCore.Indexing.Abstractions": "2.2.1",
+          "OrchardCore.Liquid.Abstractions": "2.2.1",
+          "OrchardCore.Localization.Abstractions": "2.2.1",
+          "OrchardCore.Module.Targets": "2.2.1",
+          "OrchardCore.Navigation.Core": "2.2.1",
+          "OrchardCore.Recipes.Abstractions": "2.2.1",
+          "OrchardCore.ResourceManagement": "2.2.1",
+          "OrchardCore.Settings.Core": "2.2.1",
+          "OrchardCore.Sitemaps.Abstractions": "2.2.1",
+          "OrchardCore.Users.Abstractions": "2.2.1",
+          "OrchardCore.Workflows.Abstractions": "2.2.1",
+          "System.Text.Json": "8.0.5",
+          "YesSql": "5.4.6",
+          "YesSql.Abstractions": "5.4.6",
+          "YesSql.Core": "5.4.6",
+          "YesSql.Filters.Abstractions": "5.4.6",
+          "YesSql.Filters.Query": "5.4.6",
+          "ZString": "2.6.0"
+        },
+        "compile": {
+          "lib/net8.0/OrchardCore.Contents.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/OrchardCore.Contents.dll": {
+            "related": ".xml"
+          }
+        },
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ],
+        "build": {
+          "build/OrchardCore.Contents.props": {}
+        }
+      },
+      "OrchardCore.Contents.Core/2.2.1": {
+        "type": "package",
+        "dependencies": {
+          "JsonPath.Net": "1.1.6",
+          "Microsoft.IO.RecyclableMemoryStream": "3.0.1",
+          "OrchardCore.ContentManagement.Abstractions": "2.2.1",
+          "OrchardCore.DisplayManagement.Abstractions": "2.2.1",
+          "OrchardCore.Infrastructure.Abstractions": "2.2.1",
+          "YesSql.Abstractions": "5.4.6",
+          "YesSql.Filters.Abstractions": "5.4.6",
+          "YesSql.Filters.Query": "5.4.6",
+          "ZString": "2.6.0"
+        },
+        "compile": {
+          "lib/net8.0/OrchardCore.Contents.Core.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/OrchardCore.Contents.Core.dll": {
+            "related": ".xml"
+          }
+        },
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ]
+      },
+      "OrchardCore.Contents.TagHelpers/2.2.1": {
+        "type": "package",
+        "dependencies": {
+          "Castle.Core": "5.1.1",
+          "Fluid.Core": "2.25.0",
+          "JsonPath.Net": "1.1.6",
+          "Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation": "8.0.11",
+          "Microsoft.IO.RecyclableMemoryStream": "3.0.1",
+          "OrchardCore.ContentManagement.Abstractions": "2.2.1",
+          "OrchardCore.DisplayManagement": "2.2.1",
+          "OrchardCore.DisplayManagement.Abstractions": "2.2.1",
+          "OrchardCore.Infrastructure.Abstractions": "2.2.1",
+          "YesSql.Abstractions": "5.4.6",
+          "ZString": "2.6.0"
+        },
+        "compile": {
+          "lib/net8.0/OrchardCore.Contents.TagHelpers.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/OrchardCore.Contents.TagHelpers.dll": {
             "related": ".xml"
           }
         },
@@ -1038,6 +1432,59 @@
           "Microsoft.AspNetCore.App"
         ]
       },
+      "OrchardCore.Deployment.Abstractions/2.2.1": {
+        "type": "package",
+        "dependencies": {
+          "Castle.Core": "5.1.1",
+          "Fluid.Core": "2.25.0",
+          "JsonPath.Net": "1.1.6",
+          "Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation": "8.0.11",
+          "Microsoft.IO.RecyclableMemoryStream": "3.0.1",
+          "OrchardCore.DisplayManagement": "2.2.1",
+          "OrchardCore.Recipes.Abstractions": "2.2.1",
+          "YesSql.Abstractions": "5.4.6",
+          "ZString": "2.6.0"
+        },
+        "compile": {
+          "lib/net8.0/OrchardCore.Deployment.Abstractions.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/OrchardCore.Deployment.Abstractions.dll": {
+            "related": ".xml"
+          }
+        },
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ]
+      },
+      "OrchardCore.Deployment.Core/2.2.1": {
+        "type": "package",
+        "dependencies": {
+          "Castle.Core": "5.1.1",
+          "Fluid.Core": "2.25.0",
+          "JsonPath.Net": "1.1.6",
+          "Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation": "8.0.11",
+          "Microsoft.IO.RecyclableMemoryStream": "3.0.1",
+          "OrchardCore.Deployment.Abstractions": "2.2.1",
+          "YesSql.Abstractions": "5.4.6",
+          "ZString": "2.6.0"
+        },
+        "compile": {
+          "lib/net8.0/OrchardCore.Deployment.Core.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/OrchardCore.Deployment.Core.dll": {
+            "related": ".xml"
+          }
+        },
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ]
+      },
       "OrchardCore.DisplayManagement/2.2.1": {
         "type": "package",
         "dependencies": {
@@ -1076,6 +1523,98 @@
         },
         "runtime": {
           "lib/net8.0/OrchardCore.DisplayManagement.Abstractions.dll": {
+            "related": ".xml"
+          }
+        },
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ]
+      },
+      "OrchardCore.DisplayManagement.Liquid/2.2.1": {
+        "type": "package",
+        "dependencies": {
+          "Castle.Core": "5.1.1",
+          "Fluid.Core": "2.25.0",
+          "JsonPath.Net": "1.1.6",
+          "Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation": "8.0.11",
+          "Microsoft.IO.RecyclableMemoryStream": "3.0.1",
+          "OrchardCore.DisplayManagement": "2.2.1",
+          "OrchardCore.DynamicCache.Abstractions": "2.2.1",
+          "OrchardCore.Liquid.Abstractions": "2.2.1",
+          "OrchardCore.ResourceManagement.Abstractions": "2.2.1",
+          "ZString": "2.6.0"
+        },
+        "compile": {
+          "lib/net8.0/OrchardCore.DisplayManagement.Liquid.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/OrchardCore.DisplayManagement.Liquid.dll": {
+            "related": ".xml"
+          }
+        },
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ]
+      },
+      "OrchardCore.DynamicCache.Abstractions/2.2.1": {
+        "type": "package",
+        "dependencies": {
+          "JsonPath.Net": "1.1.6",
+          "Microsoft.IO.RecyclableMemoryStream": "3.0.1",
+          "OrchardCore.Infrastructure.Abstractions": "2.2.1",
+          "ZString": "2.6.0"
+        },
+        "compile": {
+          "lib/net8.0/OrchardCore.DynamicCache.Abstractions.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/OrchardCore.DynamicCache.Abstractions.dll": {
+            "related": ".xml"
+          }
+        },
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ]
+      },
+      "OrchardCore.Feeds.Abstractions/2.2.1": {
+        "type": "package",
+        "dependencies": {
+          "OrchardCore.DisplayManagement.Abstractions": "2.2.1"
+        },
+        "compile": {
+          "lib/net8.0/OrchardCore.Feeds.Abstractions.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/OrchardCore.Feeds.Abstractions.dll": {
+            "related": ".xml"
+          }
+        },
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ]
+      },
+      "OrchardCore.Indexing.Abstractions/2.2.1": {
+        "type": "package",
+        "dependencies": {
+          "JsonPath.Net": "1.1.6",
+          "Microsoft.IO.RecyclableMemoryStream": "3.0.1",
+          "OrchardCore.ContentManagement.Abstractions": "2.2.1",
+          "YesSql.Abstractions": "5.4.6",
+          "ZString": "2.6.0"
+        },
+        "compile": {
+          "lib/net8.0/OrchardCore.Indexing.Abstractions.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/OrchardCore.Indexing.Abstractions.dll": {
             "related": ".xml"
           }
         },
@@ -1200,6 +1739,33 @@
           "Microsoft.AspNetCore.App"
         ]
       },
+      "OrchardCore.Navigation.Core/2.2.1": {
+        "type": "package",
+        "dependencies": {
+          "Castle.Core": "5.1.1",
+          "Fluid.Core": "2.25.0",
+          "JsonPath.Net": "1.1.6",
+          "Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation": "8.0.11",
+          "Microsoft.IO.RecyclableMemoryStream": "3.0.1",
+          "OrchardCore.Admin.Abstractions": "2.2.1",
+          "OrchardCore.DisplayManagement": "2.2.1",
+          "OrchardCore.Infrastructure.Abstractions": "2.2.1",
+          "ZString": "2.6.0"
+        },
+        "compile": {
+          "lib/net8.0/OrchardCore.Navigation.Core.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/OrchardCore.Navigation.Core.dll": {
+            "related": ".xml"
+          }
+        },
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ]
+      },
       "OrchardCore.Recipes.Abstractions/2.2.1": {
         "type": "package",
         "dependencies": {
@@ -1223,6 +1789,28 @@
           "Microsoft.AspNetCore.App"
         ]
       },
+      "OrchardCore.ResourceManagement/2.2.1": {
+        "type": "package",
+        "dependencies": {
+          "JsonPath.Net": "1.1.6",
+          "Microsoft.IO.RecyclableMemoryStream": "3.0.1",
+          "OrchardCore.ResourceManagement.Core": "2.2.1",
+          "ZString": "2.6.0"
+        },
+        "compile": {
+          "lib/net8.0/OrchardCore.ResourceManagement.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/OrchardCore.ResourceManagement.dll": {
+            "related": ".xml"
+          }
+        },
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ]
+      },
       "OrchardCore.ResourceManagement.Abstractions/2.2.1": {
         "type": "package",
         "compile": {
@@ -1232,6 +1820,122 @@
         },
         "runtime": {
           "lib/net8.0/OrchardCore.ResourceManagement.Abstractions.dll": {
+            "related": ".xml"
+          }
+        },
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ]
+      },
+      "OrchardCore.ResourceManagement.Core/2.2.1": {
+        "type": "package",
+        "dependencies": {
+          "JsonPath.Net": "1.1.6",
+          "Microsoft.IO.RecyclableMemoryStream": "3.0.1",
+          "OrchardCore.Abstractions": "2.2.1",
+          "OrchardCore.ResourceManagement.Abstractions": "2.2.1",
+          "ZString": "2.6.0"
+        },
+        "compile": {
+          "lib/net8.0/OrchardCore.ResourceManagement.Core.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/OrchardCore.ResourceManagement.Core.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "OrchardCore.Settings.Core/2.2.1": {
+        "type": "package",
+        "dependencies": {
+          "Castle.Core": "5.1.1",
+          "Fluid.Core": "2.25.0",
+          "JsonPath.Net": "1.1.6",
+          "Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation": "8.0.11",
+          "Microsoft.IO.RecyclableMemoryStream": "3.0.1",
+          "OrchardCore.Abstractions": "2.2.1",
+          "OrchardCore.Deployment.Abstractions": "2.2.1",
+          "YesSql.Abstractions": "5.4.6",
+          "ZString": "2.6.0"
+        },
+        "compile": {
+          "lib/net8.0/OrchardCore.Settings.Core.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/OrchardCore.Settings.Core.dll": {
+            "related": ".xml"
+          }
+        },
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ]
+      },
+      "OrchardCore.Sitemaps.Abstractions/2.2.1": {
+        "type": "package",
+        "dependencies": {
+          "JsonPath.Net": "1.1.6",
+          "Microsoft.IO.RecyclableMemoryStream": "3.0.1",
+          "OrchardCore.ContentManagement.Abstractions": "2.2.1",
+          "OrchardCore.DisplayManagement.Abstractions": "2.2.1",
+          "YesSql.Abstractions": "5.4.6",
+          "ZString": "2.6.0"
+        },
+        "compile": {
+          "lib/net8.0/OrchardCore.Sitemaps.Abstractions.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/OrchardCore.Sitemaps.Abstractions.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "OrchardCore.Users.Abstractions/2.2.1": {
+        "type": "package",
+        "dependencies": {
+          "JsonPath.Net": "1.1.6",
+          "Microsoft.IO.RecyclableMemoryStream": "3.0.1",
+          "OrchardCore.Abstractions": "2.2.1",
+          "ZString": "2.6.0"
+        },
+        "compile": {
+          "lib/net8.0/OrchardCore.Users.Abstractions.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/OrchardCore.Users.Abstractions.dll": {
+            "related": ".xml"
+          }
+        },
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ]
+      },
+      "OrchardCore.Workflows.Abstractions/2.2.1": {
+        "type": "package",
+        "dependencies": {
+          "Castle.Core": "5.1.1",
+          "Fluid.Core": "2.25.0",
+          "JsonPath.Net": "1.1.6",
+          "Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation": "8.0.11",
+          "Microsoft.IO.RecyclableMemoryStream": "3.0.1",
+          "OrchardCore.DisplayManagement": "2.2.1",
+          "OrchardCore.Liquid.Abstractions": "2.2.1",
+          "ZString": "2.6.0"
+        },
+        "compile": {
+          "lib/net8.0/OrchardCore.Workflows.Abstractions.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/OrchardCore.Workflows.Abstractions.dll": {
             "related": ".xml"
           }
         },
@@ -1740,6 +2444,39 @@
           }
         }
       },
+      "YesSql.Filters.Abstractions/5.4.6": {
+        "type": "package",
+        "dependencies": {
+          "Parlot": "1.4.0"
+        },
+        "compile": {
+          "lib/net8.0/YesSql.Filters.Abstractions.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/YesSql.Filters.Abstractions.dll": {
+            "related": ".pdb;.xml"
+          }
+        }
+      },
+      "YesSql.Filters.Query/5.4.6": {
+        "type": "package",
+        "dependencies": {
+          "YesSql.Abstractions": "5.4.6",
+          "YesSql.Filters.Abstractions": "5.4.6"
+        },
+        "compile": {
+          "lib/net8.0/YesSql.Filters.Query.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/YesSql.Filters.Query.dll": {
+            "related": ".pdb;.xml"
+          }
+        }
+      },
       "YesSql.Provider.MySql/5.4.6": {
         "type": "package",
         "dependencies": {
@@ -1927,6 +2664,124 @@
         "lib/netstandard2.0/Fluid.pdb",
         "lib/netstandard2.0/Fluid.xml",
         "logo_64x64.png"
+      ]
+    },
+    "GraphQL/7.9.0": {
+      "sha512": "VJR1sZtf3gXadaQSZdbKeyz2vv0lSE0P90Z/5Jkq7R0iSyTGX/irU/vNI5ffbbWAO8/DFsqbD/Pwqey5CGQSeg==",
+      "type": "package",
+      "path": "graphql/7.9.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.md",
+        "README.md",
+        "graphql.7.9.0.nupkg.sha512",
+        "graphql.nuspec",
+        "lib/net5.0/GraphQL.dll",
+        "lib/net5.0/GraphQL.xml",
+        "lib/net6.0/GraphQL.dll",
+        "lib/net6.0/GraphQL.xml",
+        "lib/netstandard2.0/GraphQL.dll",
+        "lib/netstandard2.0/GraphQL.xml",
+        "lib/netstandard2.1/GraphQL.dll",
+        "lib/netstandard2.1/GraphQL.xml",
+        "logo.64x64.png"
+      ]
+    },
+    "GraphQL-Parser/8.4.2": {
+      "sha512": "lztBQaZaq2g98w2XVSv3Y635AEwk/m6gwlvgmLxfIGxngpklaPSXWEIgCXcCv803qAXvUUTbvaVXuteyQdyVjw==",
+      "type": "package",
+      "path": "graphql-parser/8.4.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "README.md",
+        "graphql-parser.8.4.2.nupkg.sha512",
+        "graphql-parser.nuspec",
+        "lib/net6.0/GraphQLParser.dll",
+        "lib/net6.0/GraphQLParser.xml",
+        "lib/netstandard2.0/GraphQLParser.dll",
+        "lib/netstandard2.0/GraphQLParser.xml",
+        "lib/netstandard2.1/GraphQLParser.dll",
+        "lib/netstandard2.1/GraphQLParser.xml",
+        "logo.64x64.png"
+      ]
+    },
+    "GraphQL.Analyzers/7.9.0": {
+      "sha512": "o9bj42s8yaUASuRZ/WHA6smGgSqXkrlPzhADCr3CoTx95f0YTgkNVyNpe7EPwRQEUHN38E8xO9DfY4f+Ulkxmg==",
+      "type": "package",
+      "path": "graphql.analyzers/7.9.0",
+      "hasTools": true,
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.md",
+        "README.md",
+        "analyzers/dotnet/cs/GraphQL.Analyzers.CodeFixes.dll",
+        "analyzers/dotnet/cs/GraphQL.Analyzers.dll",
+        "graphql.analyzers.7.9.0.nupkg.sha512",
+        "graphql.analyzers.nuspec",
+        "logo.64x64.png",
+        "tools/install.ps1",
+        "tools/uninstall.ps1"
+      ]
+    },
+    "GraphQL.DataLoader/7.9.0": {
+      "sha512": "G0FNp0d0FuLhamTHVi7SL9ebFK8vjgx+rnV2s+kPAx/RMLotGS+VTC6W6ZpAPfR/SdcW0ac6ptdpaY/pHGyDhg==",
+      "type": "package",
+      "path": "graphql.dataloader/7.9.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.md",
+        "README.md",
+        "graphql.dataloader.7.9.0.nupkg.sha512",
+        "graphql.dataloader.nuspec",
+        "lib/netstandard2.0/GraphQL.DataLoader.dll",
+        "lib/netstandard2.0/GraphQL.DataLoader.xml",
+        "logo.64x64.png"
+      ]
+    },
+    "GraphQL.MicrosoftDI/7.9.0": {
+      "sha512": "GYnsUNSJYwP1ILgojca0RxI1eU1Ptj+yj4LPO5BOInhnzqmhef1QmajatFV8kUHwOQg2Kwz9om30WKSgAb1Mrg==",
+      "type": "package",
+      "path": "graphql.microsoftdi/7.9.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.md",
+        "README.md",
+        "graphql.microsoftdi.7.9.0.nupkg.sha512",
+        "graphql.microsoftdi.nuspec",
+        "lib/net5.0/GraphQL.MicrosoftDI.dll",
+        "lib/net5.0/GraphQL.MicrosoftDI.xml",
+        "lib/netstandard2.0/GraphQL.MicrosoftDI.dll",
+        "lib/netstandard2.0/GraphQL.MicrosoftDI.xml",
+        "logo.64x64.png"
+      ]
+    },
+    "GraphQL.SystemTextJson/7.9.0": {
+      "sha512": "wTbHVHwnWx7nZ0MIRoZryDDKX7iZ2ITP7ZkncFDuFwUysjlnDf/qHLxDsAIyn1J39LrlUEU6LU+FdByXiH8yEg==",
+      "type": "package",
+      "path": "graphql.systemtextjson/7.9.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.md",
+        "README.md",
+        "graphql.systemtextjson.7.9.0.nupkg.sha512",
+        "graphql.systemtextjson.nuspec",
+        "lib/net5.0/GraphQL.SystemTextJson.dll",
+        "lib/net5.0/GraphQL.SystemTextJson.xml",
+        "lib/net6.0/GraphQL.SystemTextJson.dll",
+        "lib/net6.0/GraphQL.SystemTextJson.xml",
+        "lib/netcoreapp3.1/GraphQL.SystemTextJson.dll",
+        "lib/netcoreapp3.1/GraphQL.SystemTextJson.xml",
+        "lib/netstandard2.0/GraphQL.SystemTextJson.dll",
+        "lib/netstandard2.0/GraphQL.SystemTextJson.xml",
+        "lib/netstandard2.1/GraphQL.SystemTextJson.dll",
+        "lib/netstandard2.1/GraphQL.SystemTextJson.xml",
+        "logo.64x64.png"
       ]
     },
     "Json.More.Net/2.0.2": {
@@ -2960,6 +3815,36 @@
         "mysqlconnector.nuspec"
       ]
     },
+    "Newtonsoft.Json/13.0.3": {
+      "sha512": "HrC5BXdl00IP9zeV+0Z848QWPAoCr9P3bDEZguI+gkLcBKAOxix/tLEAAHC+UvDNPv4a2d18lOReHMOagPa+zQ==",
+      "type": "package",
+      "path": "newtonsoft.json/13.0.3",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.md",
+        "README.md",
+        "lib/net20/Newtonsoft.Json.dll",
+        "lib/net20/Newtonsoft.Json.xml",
+        "lib/net35/Newtonsoft.Json.dll",
+        "lib/net35/Newtonsoft.Json.xml",
+        "lib/net40/Newtonsoft.Json.dll",
+        "lib/net40/Newtonsoft.Json.xml",
+        "lib/net45/Newtonsoft.Json.dll",
+        "lib/net45/Newtonsoft.Json.xml",
+        "lib/net6.0/Newtonsoft.Json.dll",
+        "lib/net6.0/Newtonsoft.Json.xml",
+        "lib/netstandard1.0/Newtonsoft.Json.dll",
+        "lib/netstandard1.0/Newtonsoft.Json.xml",
+        "lib/netstandard1.3/Newtonsoft.Json.dll",
+        "lib/netstandard1.3/Newtonsoft.Json.xml",
+        "lib/netstandard2.0/Newtonsoft.Json.dll",
+        "lib/netstandard2.0/Newtonsoft.Json.xml",
+        "newtonsoft.json.13.0.3.nupkg.sha512",
+        "newtonsoft.json.nuspec",
+        "packageIcon.png"
+      ]
+    },
     "Npgsql/9.0.3": {
       "sha512": "tPvY61CxOAWxNsKLEBg+oR646X4Bc8UmyQ/tJszL/7mEmIXQnnBhVJZrZEEUv0Bstu0mEsHZD5At3EO8zQRAYw==",
       "type": "package",
@@ -2989,6 +3874,77 @@
         "lib/net8.0/OrchardCore.Abstractions.xml",
         "orchardcore.abstractions.2.2.1.nupkg.sha512",
         "orchardcore.abstractions.nuspec"
+      ]
+    },
+    "OrchardCore.Admin.Abstractions/2.2.1": {
+      "sha512": "DekmY7Uj5B+gnxt0yLEZNi3rY40mYKzNGJa25kVgASbV77RQlxZob0IMPYcXQArSnI13DWhJ7llXYImkO0FbQQ==",
+      "type": "package",
+      "path": "orchardcore.admin.abstractions/2.2.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "icon.png",
+        "lib/net8.0/OrchardCore.Admin.Abstractions.dll",
+        "lib/net8.0/OrchardCore.Admin.Abstractions.xml",
+        "orchardcore.admin.abstractions.2.2.1.nupkg.sha512",
+        "orchardcore.admin.abstractions.nuspec"
+      ]
+    },
+    "OrchardCore.AdminMenu.Abstractions/2.2.1": {
+      "sha512": "cyDPEQLJkSUz3Ph+jSDFZy0r9JIwaZD6p0p4zCSnTxngp9HU/s07fgBszOdqUMh4ArV24G9bjTRHcfGRAWPQkA==",
+      "type": "package",
+      "path": "orchardcore.adminmenu.abstractions/2.2.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "icon.png",
+        "lib/net8.0/OrchardCore.AdminMenu.Abstractions.dll",
+        "lib/net8.0/OrchardCore.AdminMenu.Abstractions.xml",
+        "orchardcore.adminmenu.abstractions.2.2.1.nupkg.sha512",
+        "orchardcore.adminmenu.abstractions.nuspec"
+      ]
+    },
+    "OrchardCore.Apis.GraphQL/2.2.1": {
+      "sha512": "BhNoHSTb47A/KR9t3naG1lI4noA7jNaVs/rH0sugmJQ3RIziP7S/MO9R+lSKprS6uHrWoT60n8t/KzS6SW1+9g==",
+      "type": "package",
+      "path": "orchardcore.apis.graphql/2.2.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "build/OrchardCore.Apis.GraphQL.props",
+        "icon.png",
+        "lib/net8.0/OrchardCore.Apis.GraphQL.dll",
+        "lib/net8.0/OrchardCore.Apis.GraphQL.xml",
+        "orchardcore.apis.graphql.2.2.1.nupkg.sha512",
+        "orchardcore.apis.graphql.nuspec"
+      ]
+    },
+    "OrchardCore.Apis.GraphQL.Abstractions/2.2.1": {
+      "sha512": "rl10YT3fEuwOyJpGir2mTr4L3LlPwUQ9nKFw2apW9bL7x6+3ZdX+4Q8AiEgQtUp6Hr+CqGgHIK2+YeK6u/RL7g==",
+      "type": "package",
+      "path": "orchardcore.apis.graphql.abstractions/2.2.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "icon.png",
+        "lib/net8.0/OrchardCore.Apis.GraphQL.Abstractions.dll",
+        "lib/net8.0/OrchardCore.Apis.GraphQL.Abstractions.xml",
+        "orchardcore.apis.graphql.abstractions.2.2.1.nupkg.sha512",
+        "orchardcore.apis.graphql.abstractions.nuspec"
+      ]
+    },
+    "OrchardCore.AuditTrail.Abstractions/2.2.1": {
+      "sha512": "mVNQIDSPt9uXHgeoDsnsYHkos+ROiQhIq2V25kPMAqoPvCz4g2gcVQ9TYfaaOK1vqkUwVejMtpiV/n9uVoSGxQ==",
+      "type": "package",
+      "path": "orchardcore.audittrail.abstractions/2.2.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "icon.png",
+        "lib/net8.0/OrchardCore.AuditTrail.Abstractions.dll",
+        "lib/net8.0/OrchardCore.AuditTrail.Abstractions.xml",
+        "orchardcore.audittrail.abstractions.2.2.1.nupkg.sha512",
+        "orchardcore.audittrail.abstractions.nuspec"
       ]
     },
     "OrchardCore.ContentManagement/2.2.1": {
@@ -3031,6 +3987,63 @@
         "lib/net8.0/OrchardCore.ContentManagement.Display.xml",
         "orchardcore.contentmanagement.display.2.2.1.nupkg.sha512",
         "orchardcore.contentmanagement.display.nuspec"
+      ]
+    },
+    "OrchardCore.ContentManagement.GraphQL/2.2.1": {
+      "sha512": "3gxWvv1Mkaf3vK3xEQYaAOAZfANzSIoG/LdpRdFFx961l69eAeEw2v/mIM1oNh5NMsTH/JMv4V/1O4RyWv0GLQ==",
+      "type": "package",
+      "path": "orchardcore.contentmanagement.graphql/2.2.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "icon.png",
+        "lib/net8.0/OrchardCore.ContentManagement.GraphQL.dll",
+        "lib/net8.0/OrchardCore.ContentManagement.GraphQL.xml",
+        "orchardcore.contentmanagement.graphql.2.2.1.nupkg.sha512",
+        "orchardcore.contentmanagement.graphql.nuspec"
+      ]
+    },
+    "OrchardCore.Contents/2.2.1": {
+      "sha512": "lgiMDTsPyO8rJadttaNPo+qNyjgjYR8zIPveVAA5nZsjrADqBgGaS68IQC9ifzSizzS7w0C8+EGEXHZsEbZc/A==",
+      "type": "package",
+      "path": "orchardcore.contents/2.2.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "build/OrchardCore.Contents.props",
+        "icon.png",
+        "lib/net8.0/OrchardCore.Contents.dll",
+        "lib/net8.0/OrchardCore.Contents.xml",
+        "orchardcore.contents.2.2.1.nupkg.sha512",
+        "orchardcore.contents.nuspec"
+      ]
+    },
+    "OrchardCore.Contents.Core/2.2.1": {
+      "sha512": "skOwmcdoqi5whFvY2ULLGKfSlO71wV8AlqXRl4J/mR8ZpTiEKnbowBUdpIHAIQEjVR0y4jtTTa1IFFWpDIIC9Q==",
+      "type": "package",
+      "path": "orchardcore.contents.core/2.2.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "icon.png",
+        "lib/net8.0/OrchardCore.Contents.Core.dll",
+        "lib/net8.0/OrchardCore.Contents.Core.xml",
+        "orchardcore.contents.core.2.2.1.nupkg.sha512",
+        "orchardcore.contents.core.nuspec"
+      ]
+    },
+    "OrchardCore.Contents.TagHelpers/2.2.1": {
+      "sha512": "Oq6/99uLJuySyFzwt3rvaY0BISllm7tsk6fPhy4zlDqU6iicUH+ICoh6HUmGO+iWD5Xpq/RISEMPB8vXUQvrGg==",
+      "type": "package",
+      "path": "orchardcore.contents.taghelpers/2.2.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "icon.png",
+        "lib/net8.0/OrchardCore.Contents.TagHelpers.dll",
+        "lib/net8.0/OrchardCore.Contents.TagHelpers.xml",
+        "orchardcore.contents.taghelpers.2.2.1.nupkg.sha512",
+        "orchardcore.contents.taghelpers.nuspec"
       ]
     },
     "OrchardCore.ContentTypes.Abstractions/2.2.1": {
@@ -3103,6 +4116,34 @@
         "orchardcore.data.yessql.abstractions.nuspec"
       ]
     },
+    "OrchardCore.Deployment.Abstractions/2.2.1": {
+      "sha512": "jfMVzkXfFaqBJDkm71LTmq7r1XZ0L9LURPCGLCv3QV9ySto2ci69Rewk3SlXEgLpNuvAubm7Vvzmg2oE8v33UA==",
+      "type": "package",
+      "path": "orchardcore.deployment.abstractions/2.2.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "icon.png",
+        "lib/net8.0/OrchardCore.Deployment.Abstractions.dll",
+        "lib/net8.0/OrchardCore.Deployment.Abstractions.xml",
+        "orchardcore.deployment.abstractions.2.2.1.nupkg.sha512",
+        "orchardcore.deployment.abstractions.nuspec"
+      ]
+    },
+    "OrchardCore.Deployment.Core/2.2.1": {
+      "sha512": "m8JJoPqB0KAhZ/sSTCz35qzx01duoXZMTv/TRZrISarOFa4XeQ3r7q1OrnV2NeCGvzp7JOBABdH7BjDP3Zmh4g==",
+      "type": "package",
+      "path": "orchardcore.deployment.core/2.2.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "icon.png",
+        "lib/net8.0/OrchardCore.Deployment.Core.dll",
+        "lib/net8.0/OrchardCore.Deployment.Core.xml",
+        "orchardcore.deployment.core.2.2.1.nupkg.sha512",
+        "orchardcore.deployment.core.nuspec"
+      ]
+    },
     "OrchardCore.DisplayManagement/2.2.1": {
       "sha512": "+puGCi7swLBFPYqpPqooquwcMLtWhqvHAW55oJjKJRw3qKae72PRcPBMRxnvsMOba/bYBwPPBQst8X0C/JU90Q==",
       "type": "package",
@@ -3129,6 +4170,62 @@
         "lib/net8.0/OrchardCore.DisplayManagement.Abstractions.xml",
         "orchardcore.displaymanagement.abstractions.2.2.1.nupkg.sha512",
         "orchardcore.displaymanagement.abstractions.nuspec"
+      ]
+    },
+    "OrchardCore.DisplayManagement.Liquid/2.2.1": {
+      "sha512": "Pm+Ximgqx+tjx0TImZvTocUsN0pWfj/CGILEQDapnbWKWcfbpYFHV086QwwjK0Z2465SfV0LX4i5hmWAjZB9lw==",
+      "type": "package",
+      "path": "orchardcore.displaymanagement.liquid/2.2.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "icon.png",
+        "lib/net8.0/OrchardCore.DisplayManagement.Liquid.dll",
+        "lib/net8.0/OrchardCore.DisplayManagement.Liquid.xml",
+        "orchardcore.displaymanagement.liquid.2.2.1.nupkg.sha512",
+        "orchardcore.displaymanagement.liquid.nuspec"
+      ]
+    },
+    "OrchardCore.DynamicCache.Abstractions/2.2.1": {
+      "sha512": "cgLyYBX43jZe6/uulK4FGOOpOklD07EuDPrqHaWhXbhSQNlcBnB9JdRwHev4MzjQLDRtvWSg36xbuWx340/u8g==",
+      "type": "package",
+      "path": "orchardcore.dynamiccache.abstractions/2.2.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "icon.png",
+        "lib/net8.0/OrchardCore.DynamicCache.Abstractions.dll",
+        "lib/net8.0/OrchardCore.DynamicCache.Abstractions.xml",
+        "orchardcore.dynamiccache.abstractions.2.2.1.nupkg.sha512",
+        "orchardcore.dynamiccache.abstractions.nuspec"
+      ]
+    },
+    "OrchardCore.Feeds.Abstractions/2.2.1": {
+      "sha512": "yL4VZjKXRTRaaXl/2qGXpHSmVvFaen+YFiBVpMeXzBcHL6dMNTrQxxOKSpbxESLLprsSuMYWTh8X9XLzqJSrYQ==",
+      "type": "package",
+      "path": "orchardcore.feeds.abstractions/2.2.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "icon.png",
+        "lib/net8.0/OrchardCore.Feeds.Abstractions.dll",
+        "lib/net8.0/OrchardCore.Feeds.Abstractions.xml",
+        "orchardcore.feeds.abstractions.2.2.1.nupkg.sha512",
+        "orchardcore.feeds.abstractions.nuspec"
+      ]
+    },
+    "OrchardCore.Indexing.Abstractions/2.2.1": {
+      "sha512": "t5MYUZmjpM5G+hHbYG4/hmiDT+ElFowI1XbQkTiDNo8Q4PM0+ffuRe7OnvdLndo9/obQY43keM9kyw1xyL9NXA==",
+      "type": "package",
+      "path": "orchardcore.indexing.abstractions/2.2.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "icon.png",
+        "lib/net8.0/OrchardCore.Indexing.Abstractions.dll",
+        "lib/net8.0/OrchardCore.Indexing.Abstractions.xml",
+        "orchardcore.indexing.abstractions.2.2.1.nupkg.sha512",
+        "orchardcore.indexing.abstractions.nuspec"
       ]
     },
     "OrchardCore.Infrastructure.Abstractions/2.2.1": {
@@ -3206,6 +4303,20 @@
         "orchardcore.mvc.core.nuspec"
       ]
     },
+    "OrchardCore.Navigation.Core/2.2.1": {
+      "sha512": "SuQxatvNXKsCu3Cktk67zZpBY2FDjNWiay+35JiiPeurfmh9w0gQETNNskJN77F1HY1YWO1CKsD8dWkr+U9eBA==",
+      "type": "package",
+      "path": "orchardcore.navigation.core/2.2.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "icon.png",
+        "lib/net8.0/OrchardCore.Navigation.Core.dll",
+        "lib/net8.0/OrchardCore.Navigation.Core.xml",
+        "orchardcore.navigation.core.2.2.1.nupkg.sha512",
+        "orchardcore.navigation.core.nuspec"
+      ]
+    },
     "OrchardCore.Recipes.Abstractions/2.2.1": {
       "sha512": "txnKpHyQ30yCLAZ3WR82Iwqx4KhKK9j3uSIVhIZDS+PTYOWzCDAUO9OVpQQvudfMcn30uJpb4OScuXT1GVX4Eg==",
       "type": "package",
@@ -3220,6 +4331,20 @@
         "orchardcore.recipes.abstractions.nuspec"
       ]
     },
+    "OrchardCore.ResourceManagement/2.2.1": {
+      "sha512": "fRTyPJhgab7z57HCB0gKnMRb9C+Ri6EoW8iPYZNWjno6egL0krDLT6sc0a6InySdvvaszqv95y20XgxXtKZfHg==",
+      "type": "package",
+      "path": "orchardcore.resourcemanagement/2.2.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "icon.png",
+        "lib/net8.0/OrchardCore.ResourceManagement.dll",
+        "lib/net8.0/OrchardCore.ResourceManagement.xml",
+        "orchardcore.resourcemanagement.2.2.1.nupkg.sha512",
+        "orchardcore.resourcemanagement.nuspec"
+      ]
+    },
     "OrchardCore.ResourceManagement.Abstractions/2.2.1": {
       "sha512": "Z/0Kd2hu3BeJqWtZDCyXx5zdBc3vDSh2ugnLwPdIjew9p8UhJdD2DunsEdrFsPQupsQU/NlX52ff8Klo1M9OUw==",
       "type": "package",
@@ -3232,6 +4357,76 @@
         "lib/net8.0/OrchardCore.ResourceManagement.Abstractions.xml",
         "orchardcore.resourcemanagement.abstractions.2.2.1.nupkg.sha512",
         "orchardcore.resourcemanagement.abstractions.nuspec"
+      ]
+    },
+    "OrchardCore.ResourceManagement.Core/2.2.1": {
+      "sha512": "b1r3tPUnyZpvpEFr14nPaNLLqzgrFrNuW8pR6VUjBoh+aJBFsVqkqirhFDcam9J3A13sOgwmU1jnlqnuFVhxRw==",
+      "type": "package",
+      "path": "orchardcore.resourcemanagement.core/2.2.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "icon.png",
+        "lib/net8.0/OrchardCore.ResourceManagement.Core.dll",
+        "lib/net8.0/OrchardCore.ResourceManagement.Core.xml",
+        "orchardcore.resourcemanagement.core.2.2.1.nupkg.sha512",
+        "orchardcore.resourcemanagement.core.nuspec"
+      ]
+    },
+    "OrchardCore.Settings.Core/2.2.1": {
+      "sha512": "uW3Ru2z5nTFV+OrRAe3dhBy4pprSX7HozS3TaHbzxVLILO3xTYaU79Ubhcg47uA72gPLksUmRzZ52cKuK0FsnQ==",
+      "type": "package",
+      "path": "orchardcore.settings.core/2.2.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "icon.png",
+        "lib/net8.0/OrchardCore.Settings.Core.dll",
+        "lib/net8.0/OrchardCore.Settings.Core.xml",
+        "orchardcore.settings.core.2.2.1.nupkg.sha512",
+        "orchardcore.settings.core.nuspec"
+      ]
+    },
+    "OrchardCore.Sitemaps.Abstractions/2.2.1": {
+      "sha512": "Kd2f3Xl20llK+tIqjcc+7wuAS9IiNJ4kUOh88pd4w5gtK2uWNnIvQvu5FuY2yMxpIfz4cuAf9BewUCpIrBlpcA==",
+      "type": "package",
+      "path": "orchardcore.sitemaps.abstractions/2.2.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "icon.png",
+        "lib/net8.0/OrchardCore.Sitemaps.Abstractions.dll",
+        "lib/net8.0/OrchardCore.Sitemaps.Abstractions.xml",
+        "orchardcore.sitemaps.abstractions.2.2.1.nupkg.sha512",
+        "orchardcore.sitemaps.abstractions.nuspec"
+      ]
+    },
+    "OrchardCore.Users.Abstractions/2.2.1": {
+      "sha512": "7Z6Kxq/qn6NLqssvTnR3IrmrsD1lsgeKGFh+JFeo6YCVr9D0JeFBE8tbu9qRzWTn0WULl8tOzM5z2x/8LihH+w==",
+      "type": "package",
+      "path": "orchardcore.users.abstractions/2.2.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "icon.png",
+        "lib/net8.0/OrchardCore.Users.Abstractions.dll",
+        "lib/net8.0/OrchardCore.Users.Abstractions.xml",
+        "orchardcore.users.abstractions.2.2.1.nupkg.sha512",
+        "orchardcore.users.abstractions.nuspec"
+      ]
+    },
+    "OrchardCore.Workflows.Abstractions/2.2.1": {
+      "sha512": "xlgC32X9h8GMmS9MlKLpbD+DPRLvDLm6aA209WWzRqR+AdNMPp4CLsQJFLpGbr5MDQrgYukw+XTidr4YA1kFoA==",
+      "type": "package",
+      "path": "orchardcore.workflows.abstractions/2.2.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "icon.png",
+        "lib/net8.0/OrchardCore.Workflows.Abstractions.dll",
+        "lib/net8.0/OrchardCore.Workflows.Abstractions.xml",
+        "orchardcore.workflows.abstractions.2.2.1.nupkg.sha512",
+        "orchardcore.workflows.abstractions.nuspec"
       ]
     },
     "Parlot/1.4.0": {
@@ -3966,6 +5161,40 @@
         "yessql.core.nuspec"
       ]
     },
+    "YesSql.Filters.Abstractions/5.4.6": {
+      "sha512": "f4EjZuJYnnVbD57asJ14a6c5z9P/9yXGBuFVeMUg1vfQYnmdc0zSKcmhaYBxaMohSZgv+B+yImZ3qZvfFrDaWg==",
+      "type": "package",
+      "path": "yessql.filters.abstractions/5.4.6",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net6.0/YesSql.Filters.Abstractions.dll",
+        "lib/net6.0/YesSql.Filters.Abstractions.pdb",
+        "lib/net6.0/YesSql.Filters.Abstractions.xml",
+        "lib/net8.0/YesSql.Filters.Abstractions.dll",
+        "lib/net8.0/YesSql.Filters.Abstractions.pdb",
+        "lib/net8.0/YesSql.Filters.Abstractions.xml",
+        "yessql.filters.abstractions.5.4.6.nupkg.sha512",
+        "yessql.filters.abstractions.nuspec"
+      ]
+    },
+    "YesSql.Filters.Query/5.4.6": {
+      "sha512": "cMB9WdUaic1BnsNGjoCInGy7bQ4C4f9SqkrPKHfOBKSz28xcXGN+FEuA0yP1S9EdvxlSlx/Fs9NUVjmpTsH2CA==",
+      "type": "package",
+      "path": "yessql.filters.query/5.4.6",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net6.0/YesSql.Filters.Query.dll",
+        "lib/net6.0/YesSql.Filters.Query.pdb",
+        "lib/net6.0/YesSql.Filters.Query.xml",
+        "lib/net8.0/YesSql.Filters.Query.dll",
+        "lib/net8.0/YesSql.Filters.Query.pdb",
+        "lib/net8.0/YesSql.Filters.Query.xml",
+        "yessql.filters.query.5.4.6.nupkg.sha512",
+        "yessql.filters.query.nuspec"
+      ]
+    },
     "YesSql.Provider.MySql/5.4.6": {
       "sha512": "l+A4FaDuTxabNTj6qKPZuSXOork7tHtdrEnFpIaPkGyYSgirJY+2vc7nuhQNyNaWTS9+QtqxnjKLPexOG0lqIg==",
       "type": "package",
@@ -4057,8 +5286,12 @@
   },
   "projectFileDependencyGroups": {
     "net8.0": [
+      "GraphQL >= 7.9.0",
+      "Newtonsoft.Json >= 13.0.3",
+      "OrchardCore.Apis.GraphQL >= 2.2.1",
       "OrchardCore.ContentManagement >= 2.2.1",
       "OrchardCore.ContentTypes.Abstractions >= 2.2.1",
+      "OrchardCore.Contents >= 2.2.1",
       "OrchardCore.DisplayManagement >= 2.2.1",
       "OrchardCore.Module.Targets >= 2.2.1"
     ]
@@ -4106,11 +5339,27 @@
       "net8.0": {
         "targetAlias": "net8.0",
         "dependencies": {
+          "GraphQL": {
+            "target": "Package",
+            "version": "[7.9.0, )"
+          },
+          "Newtonsoft.Json": {
+            "target": "Package",
+            "version": "[13.0.3, )"
+          },
+          "OrchardCore.Apis.GraphQL": {
+            "target": "Package",
+            "version": "[2.2.1, )"
+          },
           "OrchardCore.ContentManagement": {
             "target": "Package",
             "version": "[2.2.1, )"
           },
           "OrchardCore.ContentTypes.Abstractions": {
+            "target": "Package",
+            "version": "[2.2.1, )"
+          },
+          "OrchardCore.Contents": {
             "target": "Package",
             "version": "[2.2.1, )"
           },
