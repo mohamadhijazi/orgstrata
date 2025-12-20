@@ -1,0 +1,232 @@
+<events-calendar></events-calendar>
+ <style>
+/* No 'scoped' here means it's global */
+article.content-item.my-page {
+    flex: auto;
+}
+</style>
+    <script >
+{%raw %}
+
+vueapp.component('EventsCalendar', {
+  props: {
+    detailsUrl: { type: String, default: '/details/' },
+    viewAllUrl: { type: String, default: '' },
+    width: { type: String, default: '100%' },
+    initialData: { type: Array, default: () => 
+      [{"startDate":"12/3/2025","endDate":"8/3/2025","Title":"Event1","Description":"Event1 Description"},
+    {"startDate":"12/3/2025","endDate":"8/3/2026","Title":"Event1.1","Description":"Event1 .1Description"},
+    {"startDate":"12/6/2025","endDate":"8/3/2026","Title":"Event2","Description":"Event2 Description"},
+    {"startDate":"12/8/2025","endDate":"8/3/2026","Title":"Event3","Description":"Event3 Description"},
+    {"startDate":"12/9/2025","endDate":"8/3/2026","Title":"Event4","Description":"Event3 Description"},
+    {"startDate":"12/8/2025","endDate":"8/3/2026","Title":"Event5","Description":"Event4 Description"},
+    {"startDate":"12/8/2026","endDate":"8/3/2026","Title":"Event5","Description":"Event4 Description"}]
+  } // Your CSV-parsed data goes here
+  },
+  data: () => ({
+    selectedDate: new Date(),
+    viewMode: 'Monthly',
+    agendaMode: 'current',
+    allEvents: [],
+    filteredEvents: [],
+    menu: false, // Controls datepicker visibility
+    // Mocking the Resources object from your original code
+    resources: {
+      methods: { Daily: 'Daily', Weekly: 'Weekly', Monthly: 'Monthly', Agenda: 'Agenda' },
+      agenda: { current: 'Current', next: 'Next', upcoming: 'Upcoming' },
+      noEvents: 'No events found.'
+    }
+  }),
+
+  computed: {
+    // Replaces drawFirstColumn's date display logic
+    dateDisplay() {
+      const d = this.selectedDate;
+      const day = d.getDate();
+      return {
+        day,
+        suffix: this.getNth(day),
+        month: d.toLocaleString('default', { month: 'long' }),
+        year: d.getFullYear()
+      };
+    },
+    // Replaces drawDays (Monthly)
+    daysInMonth() {
+      const d = this.selectedDate;
+      const total = new Date(d.getFullYear(), d.getMonth() + 1, 0).getDate();
+      return Array.from({ length: total }, (_, i) => i + 1);
+    },
+    // Replaces drawWeekDays (Weekly)
+    daysInWeek() {
+      const curr = new Date(this.selectedDate);
+      const first = curr.getDate() - curr.getDay(); 
+      return Array.from({ length: 7 }, (_, i) => {
+        const d = new Date(curr.setDate(first + i));
+        return { date: new Date(d), dayNum: d.getDate(), name: d.toLocaleDateString('default', { weekday: 'short' }) };
+      });
+    }
+  },
+
+  watch: {
+    // Re-filter whenever anything changes
+    selectedDate: 'filterEvents',
+    viewMode: 'filterEvents',
+    agendaMode: 'filterEvents'
+  },
+
+  methods: {
+    getNth(d) {
+      if (d > 3 && d < 21) return 'th';
+      switch (d % 10) {
+        case 1: return "st";
+        case 2: return "nd";
+        case 3: return "rd";
+        default: return "th";
+      }
+    },
+
+    filterEvents() {
+      const sel = this.selectedDate;
+      const now = new Date();
+
+      this.filteredEvents = this.allEvents.filter(event => {
+        const evDate = new Date(event.startDate);
+
+        if (this.viewMode === 'Daily') {
+          return evDate.toDateString() === sel.toDateString();
+        }
+
+        if (this.viewMode === 'Monthly') {
+          return evDate.getMonth() === sel.getMonth() && evDate.getFullYear() === sel.getFullYear();
+        }
+
+        if (this.viewMode === 'Weekly') {
+          const start = new Date(sel.getFullYear(), sel.getMonth(), sel.getDate() - sel.getDay());
+          const end = new Date(start);
+          end.setDate(end.getDate() + 6);
+          return evDate >= start && evDate <= end;
+        }
+
+        if (this.viewMode === 'Agenda') {
+          if (this.agendaMode === 'current') {
+            return evDate.getMonth() === now.getMonth() && evDate.getFullYear() === now.getFullYear();
+          }
+          if (this.agendaMode === 'next') {
+            const nextMonth = new Date(now.getFullYear(), now.getMonth() + 1, 1);
+            return evDate.getMonth() === nextMonth.getMonth() && evDate.getFullYear() === nextMonth.getFullYear();
+          }
+          if (this.agendaMode === 'upcoming') {
+            return evDate >= now.setHours(0,0,0,0);
+          }
+        }
+        return false;
+      });
+    },
+
+    hasEvent(dayNum) {
+      const check = new Date(this.selectedDate.getFullYear(), this.selectedDate.getMonth(), dayNum);
+      return this.allEvents.some(e => new Date(e.startDate).toDateString() === check.toDateString());
+    }
+  },
+
+  created() {
+    this.allEvents = this.initialData;
+    this.filterEvents();
+  },
+
+  template: `
+ 
+    <v-card :style="{ width: width }" class="mx-auto mt-5" elevation="3">
+      <v-toolbar color="primary" v-if="viewAllUrl">
+        <v-toolbar-title>Calendar Events</v-toolbar-title>
+        <v-spacer></v-spacer>
+        <v-btn variant="text" :href="viewAllUrl">View All</v-btn>
+      </v-toolbar>
+
+      <v-row no-gutters>
+        <v-col cols="12" md="3" class="bg-grey-lighten-4 pa-4 border-right">
+          <v-menu v-model="menu" :close-on-content-click="false" location="bottom">
+            <template v-slot:activator="{ props }">
+              <v-card v-bind="props" class="pa-4 text-center cursor-pointer mb-5" color="white" elevation="1">
+                <div class="text-subtitle-1 text-uppercase">{{ dateDisplay.month }}</div>
+                <div class="text-h3 font-weight-bold">
+                  {{ dateDisplay.day }}<small class="text-h6">{{ dateDisplay.suffix }}</small>
+                </div>
+                <div class="text-subtitle-1">{{ dateDisplay.year }}</div>
+              </v-card>
+            </template>
+            <v-date-picker v-model="selectedDate" @update:modelValue="menu = false"></v-date-picker>
+          </v-menu>
+
+          <v-list density="compact" nav color="primary">
+            <v-list-item 
+              v-for="(label, mode) in resources.methods" 
+              :key="mode"
+              :active="viewMode === mode"
+              @click="viewMode = mode"
+              rounded="lg"
+            >
+              <v-list-item-title>{{ label }}</v-list-item-title>
+            </v-list-item>
+          </v-list>
+        </v-col>
+
+        <v-col cols="12" md="9" class="pa-5">
+          
+          <div v-if="viewMode === 'Monthly'" class="d-flex flex-wrap mb-5">
+            <v-btn
+              v-for="day in daysInMonth" :key="day"
+              size="x-small" icon class="ma-1"
+              :color="selectedDate.getDate() === day ? 'primary' : ''"
+              :variant="hasEvent(day) ? 'elevated' : 'outlined'"
+              @click="selectedDate = new Date(selectedDate.getFullYear(), selectedDate.getMonth(), day)"
+            >
+              {{ day }}
+            </v-btn>
+          </div>
+
+          <div v-if="viewMode === 'Weekly'" class="d-flex justify-space-between mb-5 bg-blue-grey-lighten-5 pa-2 rounded shadow-inner">
+            <div v-for="d in daysInWeek" :key="d.date" class="text-center">
+              <div class="text-caption font-weight-bold">{{ d.name }}</div>
+              <v-btn 
+                icon size="small" variant="text" 
+                :color="selectedDate.toDateString() === d.date.toDateString() ? 'primary' : ''"
+                @click="selectedDate = d.date"
+              >
+                {{ d.dayNum }}
+              </v-btn>
+            </div>
+          </div>
+
+          <div v-if="viewMode === 'Agenda'" class="mb-5">
+            <v-tabs v-model="agendaMode" color="primary" grow>
+              <v-tab value="current">{{ resources.agenda.current }}</v-tab>
+              <v-tab value="next">{{ resources.agenda.next }}</v-tab>
+              <v-tab value="upcoming">{{ resources.agenda.upcoming }}</v-tab>
+            </v-tabs>
+          </div>
+
+          <v-row v-if="filteredEvents.length > 0">
+            <v-col v-for="(ev, i) in filteredEvents" :key="i" cols="12" sm="6">
+              <v-card variant="outlined" class="fill-height border-blue">
+                <div style="height: 5px; background-color: #2196F3;"></div> <v-card-item>
+                  <v-card-title class="text-primary">
+                    <a :href="detailsUrl + i" class="text-decoration-none">{{ ev.Title }}</a>
+                  </v-card-title>
+                  <v-card-subtitle>{{ ev.startDate }}</v-card-subtitle>
+                  <div class="mt-2 text-body-2">{{ ev.Description }}</div>
+                </v-card-item>
+              </v-card>
+            </v-col>
+          </v-row>
+
+          <v-alert v-else type="info" variant="tonal" class="mt-5">
+            {{ resources.noEvents }}
+          </v-alert>
+        </v-col>
+      </v-row>
+    </v-card>
+  `
+});
+{% endraw %}
+</script >

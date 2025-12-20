@@ -19,6 +19,8 @@ using System.Reflection;
     "ter"))]
 [assembly: OrchardCore.Modules.Manifest.ModuleAssetAttribute(("Areas\\HyTheme\\vuetemplates\\kanban|C:\\ws\\github\\orgstrata\\HyTheme\\vuetemplates\\kan" +
     "ban"))]
+[assembly: OrchardCore.Modules.Manifest.ModuleAssetAttribute(("Areas\\HyTheme\\vuetemplates\\ntwevent|C:\\ws\\github\\orgstrata\\HyTheme\\vuetemplates\\n" +
+    "twevent"))]
 [assembly: OrchardCore.Modules.Manifest.ModuleAssetAttribute(("Areas\\HyTheme\\vuetemplates\\readsample|C:\\ws\\github\\orgstrata\\HyTheme\\vuetemplates" +
     "\\readsample"))]
 [assembly: OrchardCore.Modules.Manifest.ModuleAssetAttribute(("Areas\\HyTheme\\vuetemplates\\v-navigationdrawer|C:\\ws\\github\\orgstrata\\HyTheme\\vuet" +
@@ -444,7 +446,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("HyTheme")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f8f9625036842ab9995871721c155e85b58bcf8f")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+34e33229f230b0cda934f8e9a1ea2c93e1951874")]
 [assembly: System.Reflection.AssemblyProductAttribute("HyTheme")]
 [assembly: System.Reflection.AssemblyTitleAttribute("HyTheme")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
