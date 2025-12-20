@@ -17,6 +17,8 @@ using System.Reflection;
     "blueprint"))]
 [assembly: OrchardCore.Modules.Manifest.ModuleAssetAttribute(("Areas\\HyTheme\\vuetemplates\\footer|C:\\ws\\github\\orgstrata\\HyTheme\\vuetemplates\\foo" +
     "ter"))]
+[assembly: OrchardCore.Modules.Manifest.ModuleAssetAttribute(("Areas\\HyTheme\\vuetemplates\\kanban|C:\\ws\\github\\orgstrata\\HyTheme\\vuetemplates\\kan" +
+    "ban"))]
 [assembly: OrchardCore.Modules.Manifest.ModuleAssetAttribute(("Areas\\HyTheme\\vuetemplates\\readsample|C:\\ws\\github\\orgstrata\\HyTheme\\vuetemplates" +
     "\\readsample"))]
 [assembly: OrchardCore.Modules.Manifest.ModuleAssetAttribute(("Areas\\HyTheme\\vuetemplates\\v-navigationdrawer|C:\\ws\\github\\orgstrata\\HyTheme\\vuet" +
@@ -371,6 +373,30 @@ using System.Reflection;
 [assembly: OrchardCore.Modules.Manifest.ModuleAssetAttribute(("Areas\\HyTheme\\wwwroot\\blueprint3d\\rooms\\thumbnails\\thumbnail_wallmap_yellow.png|C" +
     ":\\ws\\github\\orgstrata\\HyTheme\\wwwroot\\blueprint3d\\rooms\\thumbnails\\thumbnail_wal" +
     "lmap_yellow.png"))]
+[assembly: OrchardCore.Modules.Manifest.ModuleAssetAttribute(("Areas\\HyTheme\\wwwroot\\leaflet\\images\\layers-2x.png|C:\\ws\\github\\orgstrata\\HyTheme" +
+    "\\wwwroot\\leaflet\\images\\layers-2x.png"))]
+[assembly: OrchardCore.Modules.Manifest.ModuleAssetAttribute(("Areas\\HyTheme\\wwwroot\\leaflet\\images\\layers.png|C:\\ws\\github\\orgstrata\\HyTheme\\ww" +
+    "wroot\\leaflet\\images\\layers.png"))]
+[assembly: OrchardCore.Modules.Manifest.ModuleAssetAttribute(("Areas\\HyTheme\\wwwroot\\leaflet\\images\\marker-icon-2x.png|C:\\ws\\github\\orgstrata\\Hy" +
+    "Theme\\wwwroot\\leaflet\\images\\marker-icon-2x.png"))]
+[assembly: OrchardCore.Modules.Manifest.ModuleAssetAttribute(("Areas\\HyTheme\\wwwroot\\leaflet\\images\\marker-icon.png|C:\\ws\\github\\orgstrata\\HyThe" +
+    "me\\wwwroot\\leaflet\\images\\marker-icon.png"))]
+[assembly: OrchardCore.Modules.Manifest.ModuleAssetAttribute(("Areas\\HyTheme\\wwwroot\\leaflet\\images\\marker-shadow.png|C:\\ws\\github\\orgstrata\\HyT" +
+    "heme\\wwwroot\\leaflet\\images\\marker-shadow.png"))]
+[assembly: OrchardCore.Modules.Manifest.ModuleAssetAttribute(("Areas\\HyTheme\\wwwroot\\leaflet\\images\\spritesheet-2x.png|C:\\ws\\github\\orgstrata\\Hy" +
+    "Theme\\wwwroot\\leaflet\\images\\spritesheet-2x.png"))]
+[assembly: OrchardCore.Modules.Manifest.ModuleAssetAttribute(("Areas\\HyTheme\\wwwroot\\leaflet\\images\\spritesheet.png|C:\\ws\\github\\orgstrata\\HyThe" +
+    "me\\wwwroot\\leaflet\\images\\spritesheet.png"))]
+[assembly: OrchardCore.Modules.Manifest.ModuleAssetAttribute(("Areas\\HyTheme\\wwwroot\\leaflet\\images\\spritesheet.svg|C:\\ws\\github\\orgstrata\\HyThe" +
+    "me\\wwwroot\\leaflet\\images\\spritesheet.svg"))]
+[assembly: OrchardCore.Modules.Manifest.ModuleAssetAttribute(("Areas\\HyTheme\\wwwroot\\leaflet\\leaflet.css|C:\\ws\\github\\orgstrata\\HyTheme\\wwwroot\\" +
+    "leaflet\\leaflet.css"))]
+[assembly: OrchardCore.Modules.Manifest.ModuleAssetAttribute(("Areas\\HyTheme\\wwwroot\\leaflet\\leaflet.draw.css|C:\\ws\\github\\orgstrata\\HyTheme\\www" +
+    "root\\leaflet\\leaflet.draw.css"))]
+[assembly: OrchardCore.Modules.Manifest.ModuleAssetAttribute(("Areas\\HyTheme\\wwwroot\\leaflet\\leaflet.draw.js|C:\\ws\\github\\orgstrata\\HyTheme\\wwwr" +
+    "oot\\leaflet\\leaflet.draw.js"))]
+[assembly: OrchardCore.Modules.Manifest.ModuleAssetAttribute(("Areas\\HyTheme\\wwwroot\\leaflet\\leaflet.js|C:\\ws\\github\\orgstrata\\HyTheme\\wwwroot\\l" +
+    "eaflet\\leaflet.js"))]
 [assembly: OrchardCore.Modules.Manifest.ModuleAssetAttribute(("Areas\\HyTheme\\wwwroot\\mdi-icons\\css\\materialdesignicons.css|C:\\ws\\github\\orgstrat" +
     "a\\HyTheme\\wwwroot\\mdi-icons\\css\\materialdesignicons.css"))]
 [assembly: OrchardCore.Modules.Manifest.ModuleAssetAttribute(("Areas\\HyTheme\\wwwroot\\mdi-icons\\css\\materialdesignicons.css.map|C:\\ws\\github\\orgs" +
@@ -418,7 +444,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("HyTheme")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+24f1c9412874971ff5bad313e40609ea05c9ca49")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f8f9625036842ab9995871721c155e85b58bcf8f")]
 [assembly: System.Reflection.AssemblyProductAttribute("HyTheme")]
 [assembly: System.Reflection.AssemblyTitleAttribute("HyTheme")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

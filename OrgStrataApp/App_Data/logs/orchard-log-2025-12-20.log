@@ -1,0 +1,5 @@
+2025-12-20 13:43:25.7282|||14|Microsoft.Hosting.Lifetime|INFO|Now listening on: https://localhost:5001 
+2025-12-20 13:43:25.8446|||14|Microsoft.Hosting.Lifetime|INFO|Now listening on: http://localhost:5000 
+2025-12-20 13:43:25.8550||||Microsoft.Hosting.Lifetime|INFO|Application started. Press Ctrl+C to shut down. 
+2025-12-20 13:43:25.8550||||Microsoft.Hosting.Lifetime|INFO|Hosting environment: Development 
+2025-12-20 13:43:25.8730||||Microsoft.Hosting.Lifetime|INFO|Content root path: C:\ws\github\orgstrata\OrgStrataApp 

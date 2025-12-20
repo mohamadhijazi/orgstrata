@@ -112,3 +112,30 @@ span.inteam {
     content:"";
     display: block;
 }
+
+.task-card {
+    transition: transform 0.15s ease, opacity 0.15s ease;
+}
+
+.task-card.dragging {
+    opacity: 0.5;
+    transform: scale(0.95);
+}
+
+.drag-handle {
+    cursor: grab;
+}
+
+.drag-handle:active {
+    cursor: grabbing;
+}
+
+/* Highlight column when dragging over */
+.drop-zone {
+    border: 2px dashed #1976d2;
+    border-radius: 6px;
+    padding: 4px;
+}
+article.content-item.my-page {display: flex;
+    flex: 1 0 auto;
+    flex-direction: column;}

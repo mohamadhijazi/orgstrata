@@ -1,0 +1,246 @@
+<div id="kanban">
+    <kanban-component></kanban-component>
+
+    <script>
+    {% raw %}
+    vueapp.component("KanbanComponent", {
+        data: () => ({
+            dialog: false,
+            draggedTask: null,
+            dragOverColumn: null,
+            
+            snackbar: false,
+            snackbarColor: "success",
+            snackbarMessage: "",
+            isEdit: false,
+
+            // Sample projects
+            projects: [
+                { id: 1, name: "Project Alpha" },
+                { id: 2, name: "Project Beta" },
+                { id: 3, name: "Project Gamma" }
+            ],
+
+            // Kanban columns
+            columns: [
+                { name: "To Do", key: "todo" },
+                { name: "In Progress", key: "progress" },
+                { name: "Done", key: "done" }
+            ],
+
+            // Tasks stored in localStorage
+            tasks: JSON.parse(localStorage.getItem("tasks") || "[]"),
+
+            // Form model
+            form: {
+                id: null,
+                title: "",
+                projectId: null,
+                assignee: "",
+                start: "",
+                finish: "",
+                estStart: "",
+                estFinish: "",
+                status: "todo"
+            }
+        }),
+
+        methods: {
+            onDragStart(task, event) {
+                    this.draggedTask = task;
+
+                    // Add dragging class
+                    event.target.classList.add("dragging");
+                },
+
+                onDragEnd(event) {
+                    // Remove dragging class
+                    event.target.classList.remove("dragging");
+                    this.draggedTask = null;
+                    this.dragOverColumn = null;
+                },
+
+                onDragOver(columnKey) {
+                    this.dragOverColumn = columnKey;
+                },
+
+                onDragLeave(columnKey) {
+                    if (this.dragOverColumn === columnKey) {
+                        this.dragOverColumn = null;
+                    }
+                },
+
+                onDrop(columnKey) {
+                    if (!this.draggedTask) return;
+
+                    this.draggedTask.status = columnKey;
+                    this.persist();
+
+                    this.dragOverColumn = null;
+                    this.draggedTask = null;
+                },
+
+            openNew() {
+                this.isEdit = false;
+                this.resetForm();
+                this.dialog = true;
+            },
+
+            openEdit(task) {
+                this.isEdit = true;
+                this.form = { ...task };
+                this.dialog = true;
+            },
+
+            resetForm() {
+                this.form = {
+                    id: null,
+                    title: "",
+                    projectId: null,
+                    assignee: "",
+                    start: "",
+                    finish: "",
+                    estStart: "",
+                    estFinish: "",
+                    status: "todo"
+                };
+            },
+
+            saveTask() {
+                // Simulated permission check
+                const hasAccess = true; // change to false to test "access denied"
+
+                if (!hasAccess) {
+                    this.showToast("Access Denied", "error");
+                    return;
+                }
+
+                if (this.isEdit) {
+                    const index = this.tasks.findIndex(t => t.id === this.form.id);
+                    this.tasks[index] = { ...this.form };
+                } else {
+                    this.form.id = Date.now();
+                    this.tasks.push({ ...this.form });
+                }
+
+                this.persist();
+                this.dialog = false;
+                this.showToast("Task saved successfully", "success");
+            },
+
+            persist() {
+                localStorage.setItem("tasks", JSON.stringify(this.tasks));
+            },
+
+            showToast(msg, color) {
+                this.snackbarMessage = msg;
+                this.snackbarColor = color;
+                this.snackbar = true;
+            }
+        },
+
+        template: `
+        <div class="pa-4">
+
+            <v-btn color="primary" class="mb-4" @click="openNew">
+                New Task
+            </v-btn>
+
+            <v-row>
+               <v-col
+    v-for="col in columns"
+    :key="col.key"
+    @dragover.prevent="onDragOver(col.key)"
+    @dragleave="onDragLeave(col.key)"
+    @drop="onDrop(col.key)"
+>
+    <div :class="{'drop-zone': col.key === dragOverColumn}">
+        <h3>{{ col.name }}</h3>
+
+                    <v-card
+                        v-for="task in tasks.filter(t => t.status === col.key)"
+                        :key="task.id"
+                        class="mb-3 pa-3"
+                       draggable="true"
+                        @dragstart="onDragStart(task, $event)"
+                        @dragend="onDragEnd"
+                        @click="openEdit(task)"
+                    >
+                         <div class="d-flex align-center justify-space-between">
+                        <strong>{{ task.title }}</strong>
+
+                        <!-- Drag handle -->
+                        <v-icon class="drag-handle" size="20">mdi-drag</v-icon>
+                    </div>
+                        <small>Project: {{ projects.find(p => p.id === task.projectId)?.name }}</small><br>
+                        <small>Assignee: {{ task.assignee }}</small>
+                    </v-card>
+                    </div>
+                </v-col>
+            </v-row>
+
+            <!-- Task Modal -->
+            <v-dialog v-model="dialog" max-width="600px">
+                <v-card>
+                    <v-card-title>
+                        {{ isEdit ? "Edit Task" : "New Task" }}
+                    </v-card-title>
+
+                    <v-card-text>
+                        <v-text-field label="Title" v-model="form.title"></v-text-field>
+
+                        <v-select
+                            label="Related Project"
+                            :items="projects"
+                            item-title="name"
+                            item-value="id"
+                            v-model="form.projectId"
+                        ></v-select>
+
+                        <v-text-field label="Assignee" v-model="form.assignee"></v-text-field>
+
+                        <v-row>
+                            <v-col>
+                                <v-text-field type="date" label="Start" v-model="form.start"></v-text-field>
+                            </v-col>
+                            <v-col>
+                                <v-text-field type="date" label="Finish" v-model="form.finish"></v-text-field>
+                            </v-col>
+                        </v-row>
+
+                        <v-row>
+                            <v-col>
+                                <v-text-field type="date" label="Estimated Start" v-model="form.estStart"></v-text-field>
+                            </v-col>
+                            <v-col>
+                                <v-text-field type="date" label="Estimated Finish" v-model="form.estFinish"></v-text-field>
+                            </v-col>
+                        </v-row>
+
+                        <v-select
+                            label="Status"
+                            :items="columns"
+                            item-title="name"
+                            item-value="key"
+                            v-model="form.status"
+                        ></v-select>
+                    </v-card-text>
+
+                    <v-card-actions>
+                        <v-btn text @click="dialog = false">Cancel</v-btn>
+                        <v-btn color="primary" @click="saveTask">Save</v-btn>
+                    </v-card-actions>
+                </v-card>
+            </v-dialog>
+
+            <!-- Snackbar -->
+            <v-snackbar v-model="snackbar" :color="snackbarColor" timeout="2000">
+                {{ snackbarMessage }}
+            </v-snackbar>
+
+        </div>
+        `
+    });
+    {% endraw %}
+    </script>
+</div>
