@@ -229,3 +229,4 @@ The response mode cannot be null or empty.
 2025-12-19 06:35:55.4502|Default|00-fecf8ca859dd7931aeb694f077bc9f47-e562280a539c0591-00||OrchardCore.OpenId.Configuration.OpenIdClientConfiguration|WARN|The OpenID client settings are invalid: The authority cannot be null or empty.
 The response type cannot be null or empty.
 The response mode cannot be null or empty. 
+2025-12-19 06:44:32.5902||||Microsoft.Hosting.Lifetime|INFO|Application is shutting down... 

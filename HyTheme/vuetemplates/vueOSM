@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>Vue 3 + Leaflet Component</title>
+
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+
+  <style>
+    #app {
+      height: 100vh;
+      width: 100%;
+    }
+    .leaflet-container {
+      height: 100%;
+      width: 100%;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="app">
+    <leaflet-map
+      :zoom="13"
+      :center="[51.505, -0.09]"
+    ></leaflet-map>
+  </div>
+
+  <!-- Vue 3 -->
+  <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+
+  <!-- Leaflet -->
+  <!-- Leaflet CSS -->
+<link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+
+<!-- Leaflet JS -->
+<script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+
+<!-- Leaflet Draw CSS -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.draw/1.0.4/leaflet.draw.css" />
+
+<!-- Leaflet Draw JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.draw/1.0.4/leaflet.draw.js"></script>
+
+  <script>
+    const vueapp = Vue.createApp({})
+
+   vueapp.component('LeafletMap', {
+  props: {
+    zoom: { type: Number, default: 13 },
+    center: { type: Array, default: () => [51.505, -0.09] },
+    tileUrl: {
+      type: String,
+      default: "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+    },
+    markers: { type: Array, default: () => [] }
+  },
+
+  template: `
+    <div ref="mapContainer" style="height:100%; width:100%;"></div>
+  `,
+
+  mounted() {
+    // ✅ Load saved state
+    const saved = JSON.parse(localStorage.getItem("leaflet-state") || "{}")
+
+    const initialCenter = saved.center || this.center
+    const initialZoom = saved.zoom || this.zoom
+
+    // ✅ Create map
+    const map = L.map(this.$refs.mapContainer).setView(initialCenter, initialZoom)
+
+    // ✅ Multiple tile layers
+    const baseLayers = {
+      "OpenStreetMap": L.tileLayer(this.tileUrl, { maxZoom: 19 }).addTo(map),
+      "Satellite": L.tileLayer("https://{s}.tile.opentopomap.org/{z}/{x}/{y}.png")
+    }
+    L.control.layers(baseLayers).addTo(map)
+
+    // ✅ Custom icon
+    const customIcon = L.icon({
+      iconUrl: "https://unpkg.com/leaflet@1.9.4/dist/images/marker-icon.png",
+      iconSize: [25, 41],
+      iconAnchor: [12, 41]
+    })
+
+    // ✅ Add markers from props
+    this.markers.forEach(m => {
+      const marker = L.marker(m.position, { icon: customIcon }).addTo(map)
+      if (m.popup) marker.bindPopup(m.popup)
+    })
+
+    // ✅ Drawing tools
+    const drawnItems = new L.FeatureGroup()
+    map.addLayer(drawnItems)
+
+    const drawControl = new L.Control.Draw({
+      edit: { featureGroup: drawnItems }
+    })
+    map.addControl(drawControl)
+
+    // ✅ Restore drawn shapes
+    if (saved.drawn) {
+      L.geoJSON(saved.drawn).eachLayer(layer => drawnItems.addLayer(layer))
+    }
+
+    // ✅ Save drawn shapes
+    map.on(L.Draw.Event.CREATED, (e) => {
+      drawnItems.addLayer(e.layer)
+      this.saveState(map, drawnItems)
+    })
+
+    map.on(L.Draw.Event.EDITED, () => this.saveState(map, drawnItems))
+    map.on(L.Draw.Event.DELETED, () => this.saveState(map, drawnItems))
+
+    // ✅ Save map movement
+    map.on("moveend", () => this.saveState(map, drawnItems))
+    map.on("zoomend", () => this.saveState(map, drawnItems))
+
+    // ✅ Geolocation
+    map.locate({ setView: true, maxZoom: 16 })
+
+    map.on("locationfound", (e) => {
+      L.marker(e.latlng, { icon: customIcon })
+        .addTo(map)
+        .bindPopup("You are here")
+        .openPopup()
+
+      this.saveState(map, drawnItems)
+    })
+
+    this.map = map
+    this.drawnItems = drawnItems
+  },
+
+  methods: {
+    saveState(map, drawnItems) {
+      const state = {
+        center: map.getCenter(),
+        zoom: map.getZoom(),
+        drawn: drawnItems.toGeoJSON()
+      }
+      localStorage.setItem("leaflet-state", JSON.stringify(state))
+    }
+  }
+})
+
+    vueapp.mount('#app')
+  </script>
+</body>
+</html>
