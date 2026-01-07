@@ -1,10 +1,32 @@
 async function runGraphQL2() {
   const query = `
     {
-      contentItem( contentItemId: "4wnf1x0484m2bx4vsz14q1wcws") {
-        contentItemId
-        displayText
+      task(first: 10, skip: 0) {
+    contentItemVersionId
+    displayText
+    modifiedUtc
+    publishedUtc
+    createdUtc
+    owner
+    render
+    baselineStartDate
+    baselineFinishDate
+    finishDate
+    startDate
+    taskStatus
+    assignee {
+      userIds
+      users {
+        userName
+        email
+        userId
       }
+    }
+    author
+    relatedProject {
+      contentItemIds
+    }
+  }
     }
   `;
 

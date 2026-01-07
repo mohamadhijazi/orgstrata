@@ -1,0 +1,44 @@
+using GraphQL.Types;
+
+namespace OrchardCore.Apis.GraphQL.Services;
+
+public class MyDateTimeGraphType : DateTimeGraphType
+{
+    public MyDateTimeGraphType() : base()
+    {
+        Name = "DateTime";
+    }
+
+#pragma warning disable CS8632 // The annotation for nullable reference types should only be used in code within a '#nullable' annotations context.
+    public override object? Serialize(object? value)
+#pragma warning restore CS8632 // The annotation for nullable reference types should only be used in code within a '#nullable' annotations context.
+    {
+        if (value is string)
+        {
+            return value;
+        }
+
+        return base.Serialize(value);
+    }
+}
+
+public class MyDateGraphType : DateGraphType
+{
+    public MyDateGraphType() : base()
+    {
+        Name = "Date";
+    }
+
+#pragma warning disable CS8632 // The annotation for nullable reference types should only be used in code within a '#nullable' annotations context.
+    public override object? Serialize(object? value)
+#pragma warning restore CS8632 // The annotation for nullable reference types should only be used in code within a '#nullable' annotations context.
+    {
+        if (value is string)
+        {
+            return value;
+        }
+
+        return base.Serialize(value);
+    }
+}
+

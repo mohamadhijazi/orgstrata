@@ -8,44 +8,169 @@
             dialog: false,
             draggedTask: null,
             dragOverColumn: null,
-            
             snackbar: false,
             snackbarColor: "success",
             snackbarMessage: "",
             isEdit: false,
-
-            // Sample projects
-            projects: [
-                { id: 1, name: "Project Alpha" },
-                { id: 2, name: "Project Beta" },
-                { id: 3, name: "Project Gamma" }
-            ],
-
-            // Kanban columns
+            projects: [], // Will be loaded from GraphQL
+            users: [], // Will be loaded from GraphQL
             columns: [
                 { name: "To Do", key: "todo" },
                 { name: "In Progress", key: "progress" },
                 { name: "Done", key: "done" }
             ],
-
-            // Tasks stored in localStorage
-            tasks: JSON.parse(localStorage.getItem("tasks") || "[]"),
-
-            // Form model
+            tasks: [], // Will be loaded from GraphQL
             form: {
                 id: null,
+                contentItemId: null,
                 title: "",
                 projectId: null,
-                assignee: "",
+                assignee: null, // userId
                 start: "",
                 finish: "",
                 estStart: "",
                 estFinish: "",
-                status: "todo"
+                status: "todo",
+                modifiedUtc: '',
+                publishedUtc: '',
+                createdUtc: '',
+                owner: '',
+                render: '',
+                author: ''
             }
         }),
 
         methods: {
+                                                            async fetchUsers() {
+                                                                const query = `{
+                                                                  users {
+                                                                    userId
+                                                                    normalizedUserName
+                                                                    normalizedEmail
+                                                                  }
+                                                                }`;
+                                                                try {
+                                                                    const response = await fetch('/api/graphql', {
+                                                                        method: 'POST',
+                                                                        headers: {
+                                                                            'Content-Type': 'application/json'
+                                                                        },
+                                                                        body: JSON.stringify({ query })
+                                                                    });
+                                                                    const result = await response.json();
+                                                                    if (result.data && result.data.users) {
+                                                                        this.users = result.data.users.map(u => ({
+                                                                            id: u.userId,
+                                                                            name: u.normalizedUserName,
+                                                                            email: u.normalizedEmail
+                                                                        }));
+                                                                    } else {
+                                                                        this.users = [];
+                                                                    }
+                                                                } catch (e) {
+                                                                    this.showToast('Failed to load users: ' + e.message, 'error');
+                                                                }
+                                                            },
+                                                async fetchProjects() {
+                                                    const query = `{
+                                                      project(first: 50, skip: 0) {
+                                                        contentItemId
+                                                        projectTitle
+                                                        projectStartDate
+                                                        projectFinishDate
+                                                      }
+                                                    }`;
+                                                    try {
+                                                        const response = await fetch('/api/graphql', {
+                                                            method: 'POST',
+                                                            headers: {
+                                                                'Content-Type': 'application/json'
+                                                            },
+                                                            body: JSON.stringify({ query })
+                                                        });
+                                                        const result = await response.json();
+                                                        if (result.data && result.data.project) {
+                                                            this.projects = result.data.project.map(p => ({
+                                                                id: p.contentItemId,
+                                                                name: p.projectTitle,
+                                                                start: p.projectStartDate,
+                                                                finish: p.projectFinishDate
+                                                            }));
+                                                        } else {
+                                                            this.projects = [];
+                                                        }
+                                                    } catch (e) {
+                                                        this.showToast('Failed to load projects: ' + e.message, 'error');
+                                                    }
+                                                },
+            async fetchTasks() {
+                const query = `
+                {
+                  task(first: 50, skip: 0) {
+                    contentItemVersionId
+                    contentItemId
+                    displayText
+                    modifiedUtc
+                    publishedUtc
+                    createdUtc
+                    owner
+                    render
+                    baselineStartDate
+                    baselineFinishDate
+                    finishDate
+                    startDate
+                    taskStatus
+                    assignee {
+                      userIds
+                      users {
+                        userName
+                        email
+                        userId
+                      }
+                    }
+                    author
+                    relatedProject {
+                      contentItemIds
+                    }
+                  }
+                }
+                `;
+                try {
+                    const response = await fetch('/api/graphql', {
+                        method: 'POST',
+                        headers: {
+                            'Content-Type': 'application/json'
+                        },
+                        body: JSON.stringify({ query })
+                    });
+                    const result = await response.json();
+                    if (result.data && result.data.task) {
+                        // Map GraphQL data to Kanban task model
+                        this.tasks = result.data.task.map(t => ({
+                            id: t.contentItemVersionId,
+                            contentItemId: t.contentItemId,
+                            title: t.displayText,
+                            projectId: t.relatedProject?.contentItemIds?.[0] || null,
+                            assignee: t.assignee?.users?.[0]?.userId || t.author || null,
+                            start: t.startDate || '',
+                            finish: t.finishDate || '',
+                            estStart: t.baselineStartDate || '',
+                            estFinish: t.baselineFinishDate || '',
+                            status: t.taskStatus ? t.taskStatus.toLowerCase() : 'todo',
+                            modifiedUtc: t.modifiedUtc || '',
+                            publishedUtc: t.publishedUtc || '',
+                            createdUtc: t.createdUtc || '',
+                            owner: t.owner || '',
+                            render: t.render || '',
+                            author: t.author || ''
+                        }));
+                    } else {
+                        this.tasks = [];
+                    }
+                } catch (e) {
+                    this.showToast('Failed to load tasks: ' + e.message, 'error');
+                }
+            },
             onDragStart(task, event) {
                     this.draggedTask = task;
 
@@ -74,7 +199,7 @@
                     if (!this.draggedTask) return;
 
                     this.draggedTask.status = columnKey;
-                    this.persist();
+                    this.saveDragTask(this.draggedTask);
 
                     this.dragOverColumn = null;
                     this.draggedTask = null;
@@ -88,13 +213,32 @@
 
             openEdit(task) {
                 this.isEdit = true;
-                this.form = { ...task };
+                // Map all task properties to form
+                this.form = {
+                    id: task.id,
+                    contentItemId: task.contentItemId,
+                    title: task.title,
+                    projectId:task.projectId,// this.projects.find(p => p.id === task.projectId),
+                    assignee: this.users.find(u => u.id === task.assignee),
+                    start: task.start,
+                    finish: task.finish,
+                    estStart: task.estStart,
+                    estFinish: task.estFinish,
+                    status: task.status,
+                    modifiedUtc: task.modifiedUtc,
+                    publishedUtc: task.publishedUtc,
+                    createdUtc: task.createdUtc,
+                    owner: task.owner,
+                    render: task.render,
+                    author: task.author
+                };
                 this.dialog = true;
             },
 
             resetForm() {
                 this.form = {
                     id: null,
+                    contentItemId: null,
                     title: "",
                     projectId: null,
                     assignee: "",
@@ -105,31 +249,145 @@
                     status: "todo"
                 };
             },
-
-            saveTask() {
+            saveDragTask(task) {
                 // Simulated permission check
                 const hasAccess = true; // change to false to test "access denied"
-
                 if (!hasAccess) {
                     this.showToast("Access Denied", "error");
                     return;
                 }
 
-                if (this.isEdit) {
-                    const index = this.tasks.findIndex(t => t.id === this.form.id);
-                    this.tasks[index] = { ...this.form };
-                } else {
-                    this.form.id = Date.now();
-                    this.tasks.push({ ...this.form });
+                // Prepare payload based on form
+                const payload = {
+                    ContentType: "Task",
+                    ContentItemId: task.contentItemId || undefined,
+                    Latest: true,
+                    Published: true,
+                    Task: {
+                        TaskStatus: {
+                            Text: task.status
+                        }
+                    }
+                };
+
+                // Determine method and URL
+                let method = "POST";
+                let url = "/api/Hycontent/";
+                // For update, you may need to use PUT and pass the id/contentItemId
+
+                // Fetch API call
+                fetch(url, {
+                    method: method,
+                    headers: {
+                        'Content-Type': 'application/json',
+                        'RequestVerificationToken': document.querySelector("input[name='__RequestVerificationToken']")?.value || ""
+                    },
+                    body: JSON.stringify(payload)
+                })
+                .then(async response => {
+                    if (!response.ok) {
+                        const errorText = await response.text();
+                        throw new Error(errorText);
+                    }
+                    return response.json();
+                })
+                .catch(error => {
+                    this.showToast("Error updating content: " + error.message, "error");
+                });
+
+                this.showToast("Task updated successfully", "success");
+            },
+
+            saveTask() {
+                // Simulated permission check
+                const hasAccess = true; // change to false to test "access denied"
+                if (!hasAccess) {
+                    this.showToast("Access Denied", "error");
+                    return;
                 }
 
-                this.persist();
-                this.dialog = false;
-                this.showToast("Task saved successfully", "success");
+                // Prepare payload based on form
+                const payload = {
+                    ContentType: "Task",
+                    ContentItemId: this.form.contentItemId || undefined,
+                    DisplayText: this.form.title,
+                    Latest: true,
+                    Published: true,
+                    Owner: this.form.owner || "4mcsr8e425d90v7zqgvz0ps6nd", // Example owner
+                    Author: this.form.author || "admin",
+                    Task: {
+                        text: {
+                            Text: this.form.title + " text"
+                        },
+                        RelatedProject: {
+                            ContentItemIds: this.form.projectId ? [this.form.projectId] : []
+                        },
+                        Assignee: {
+                            UserIds: this.form.assignee ? [this.form.assignee.id] : []
+                        },
+                        TaskStatus: {
+                            Text: this.form.status
+                        },
+                        BaselineFinishDate: {
+                            Value: this.form.estFinish
+                        },
+                        BaselineStartDate: {
+                            Value: this.form.estStart
+                        },
+                        StartDate: {
+                            Value: this.form.start
+                        },
+                        FinishDate: {
+                            Value: this.form.finish
+                        }
+                    },
+                    TitlePart: {
+                        Title: this.form.title
+                    }
+                };
+
+                // Determine method and URL
+                let method = this.isEdit ? "POST" : "POST";
+                let url = "/api/Hycontent/";
+                // For update, you may need to use PUT and pass the id/contentItemId
+
+                // Fetch API call
+                fetch(url, {
+                    method: method,
+                    headers: {
+                        'Content-Type': 'application/json',
+                        'RequestVerificationToken': document.querySelector("input[name='__RequestVerificationToken']")?.value || ""
+                    },
+                    body: JSON.stringify(payload)
+                })
+                .then(async response => {
+                    if (!response.ok) {
+                        const errorText = await response.text();
+                        throw new Error(errorText);
+                    }
+                    return response.json();
+                })
+                .then(data => {
+                    if (this.isEdit) {
+                        const index = this.tasks.findIndex(t => t.id === this.form.id);
+                        if (index !== -1) {
+                            this.tasks[index] = { ...this.form };
+                        }
+                    } else {
+                        this.form.id = data.id || Date.now();
+                        this.tasks.push({ ...this.form });
+                    }
+                    this.persist();
+                    this.dialog = false;
+                    this.showToast("Task saved successfully", "success");
+                })
+                .catch(error => {
+                    this.showToast("Error updating content: " + error.message, "error");
+                });
             },
 
             persist() {
-                localStorage.setItem("tasks", JSON.stringify(this.tasks));
+                // No-op or optionally update localStorage if you want offline support
             },
 
             showToast(msg, color) {
@@ -137,6 +395,12 @@
                 this.snackbarColor = color;
                 this.snackbar = true;
             }
+        },
+
+        async mounted() {
+            await this.fetchProjects();
+            await this.fetchUsers();
+            await this.fetchTasks();
         },
 
         template: `
@@ -173,7 +437,7 @@
                         <v-icon class="drag-handle" size="20">mdi-drag</v-icon>
                     </div>
                         <small>Project: {{ projects.find(p => p.id === task.projectId)?.name }}</small><br>
-                        <small>Assignee: {{ task.assignee }}</small>
+                        <small>StartDate: {{ task.start}}</small>
                     </v-card>
                     </div>
                 </v-col>
@@ -197,7 +461,14 @@
                             v-model="form.projectId"
                         ></v-select>
 
-                        <v-text-field label="Assignee" v-model="form.assignee"></v-text-field>
+                        <v-select
+                            label="Assignee"
+                            :items="users"
+                            item-title="name"
+                            item-value="id"
+                            v-model="form.assignee"
+                            return-object="false"
+                        ></v-select>
 
                         <v-row>
                             <v-col>
