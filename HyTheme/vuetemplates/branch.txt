@@ -1,0 +1,145 @@
+<branch-details-page></branch-details-page>
+
+{% raw %}
+ <script>
+vueapp.component('BranchDetailsPage', {
+  data: () => ({
+    // Sample Data Structure
+    branch: {
+      name: "North Star Regional",
+      isHQ: true,
+      city: "Riyadh",
+      kpis: {
+        employees: 145,
+        pendingTasks: 24,
+        delayedProjects: 3
+      }
+    },
+    floors: [
+      { 
+        name: "Floor 01 - Administration", 
+        url: "/Contents/ContentItems/4wnf1x0484m2bx4vsz14q1wcws",
+        kpis: { employees: 20, tasks: 5, projects: 0 } 
+      },
+      { 
+        name: "Floor 02 - Engineering", 
+        url: "/Contents/ContentItems/4wnf1x0484m2bx4vsz14q1wcws",
+        kpis: { employees: 85, tasks: 12, projects: 2 } 
+      },
+      { 
+        name: "Floor 03 - Support & Operations", 
+        url: "/Contents/ContentItems/4wnf1x0484m2bx4vsz14q1wcws",
+        kpis: { employees: 40, tasks: 7, projects: 1 } 
+      }
+    ]
+  }),
+  template: `
+    <article class="content-item my-page">
+      <v-container fluid>
+        
+        <v-row align="center" class="mb-6">
+          <v-col cols="12">
+            <div class="d-flex align-center flex-wrap gap-4">
+              <h1 class="text-h4 font-weight-bold">{{ branch.name }}</h1>
+              <v-chip 
+                :color="branch.isHQ ? 'deep-purple' : 'blue-grey'" 
+                class="ml-3" 
+                size="small" 
+                variant="elevated"
+              >
+                {{ branch.isHQ ? 'HQ' : 'Standard Branch' }}
+              </v-chip>
+              <v-chip variant="outlined" size="small" class="ml-2">
+                <v-icon start icon="mdi-map-marker"></v-icon>
+                {{ branch.city }}
+              </v-chip>
+            </div>
+          </v-col>
+        </v-row>
+
+        <v-row class="mb-8">
+          <v-col cols="12" sm="4">
+            <v-card color="primary" theme="dark">
+              <v-card-item title="Total Employees">
+                <template v-slot:append><v-icon icon="mdi-account-group" size="large"></v-icon></template>
+                <div class="text-h3">{{ branch.kpis.employees }}</div>
+              </v-card-item>
+            </v-card>
+          </v-col>
+          <v-col cols="12" sm="4">
+            <v-card color="warning" theme="dark">
+              <v-card-item title="Pending Tasks">
+                <template v-slot:append><v-icon icon="mdi-clipboard-alert" size="large"></v-icon></template>
+                <div class="text-h3">{{ branch.kpis.pendingTasks }}</div>
+              </v-card-item>
+            </v-card>
+          </v-col>
+          <v-col cols="12" sm="4">
+            <v-card color="error" theme="dark">
+              <v-card-item title="Delayed Projects">
+                <template v-slot:append><v-icon icon="mdi-alert-octagon" size="large"></v-icon></template>
+                <div class="text-h3">{{ branch.kpis.delayedProjects }}</div>
+              </v-card-item>
+            </v-card>
+          </v-col>
+        </v-row>
+
+        <h2 class="text-h5 mb-4 border-bottom pb-2">Floor-Level Distribution</h2>
+        
+        <v-expansion-panels variant="accordion">
+          <v-expansion-panel v-for="(floor, index) in floors" :key="index">
+            <v-expansion-panel-title>
+              <v-row no-gutters align="center">
+                <v-col cols="6"><strong>{{ floor.name }}</strong></v-col>
+                <v-col cols="7" class="d-flex align-center justify-end">
+                  <v-btn
+                    icon="mdi-open-in-new"
+                    variant="text"
+                    size="small"
+                    color="primary"
+                    class="mr-4"
+                    :href="floor.url"
+                    target="_blank"
+                    @click.stop
+                    title="Open Floor Details"
+                  ></v-btn>
+                <v-col cols="6" class="text-right text-caption text-grey">
+                   {{ floor.kpis.tasks }} Pending / {{ floor.kpis.projects }} Delayed
+                </v-col>
+              </v-row>
+            </v-expansion-panel-title>
+            
+            <v-expansion-panel-text>
+              <v-row class="pa-2">
+                <v-col cols="12" md="4">
+                  <v-list-item border rounded class="mb-2">
+                    <template v-slot:prepend><v-icon color="primary">mdi-account</v-icon></template>
+                    <v-list-item-title>Employees</v-list-item-title>
+                    <template v-slot:append><span class="font-weight-bold">{{ floor.kpis.employees }}</span></template>
+                  </v-list-item>
+                </v-col>
+                <v-col cols="12" md="4">
+                  <v-list-item border rounded class="mb-2">
+                    <template v-slot:prepend><v-icon color="warning">mdi-clock-outline</v-icon></template>
+                    <v-list-item-title>Tasks</v-list-item-title>
+                    <template v-slot:append><span class="font-weight-bold">{{ floor.kpis.tasks }}</span></template>
+                  </v-list-item>
+                </v-col>
+                <v-col cols="12" md="4">
+                  <v-list-item border rounded class="mb-2">
+                    <template v-slot:prepend><v-icon color="error">mdi-trending-down</v-icon></template>
+                    <v-list-item-title>Delayed</v-list-item-title>
+                    <template v-slot:append><span class="font-weight-bold">{{ floor.kpis.projects }}</span></template>
+                  </v-list-item>
+                </v-col>
+              </v-row>
+            </v-expansion-panel-text>
+          </v-expansion-panel>
+        </v-expansion-panels>
+
+      </v-container>
+    </article>
+  `
+});
+ </script>
+{% endraw %}

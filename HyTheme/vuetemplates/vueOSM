@@ -37,7 +37,40 @@
 
   mounted() {
     // ✅ Load saved state
-    this.markers.push({ position: [24.688688,46.708528], popup: '<p><a href=\'/Contents/ContentItems/4wnf1x0484m2bx4vsz14q1wcws\' target=\'_blank\'>link</a></p>' });
+    this.markers.push({ position: [24.688688,46.708528], popup: 
+                      `
+    <div style="font-family: 'Roboto', sans-serif; min-width: 220px; padding: 5px;">
+      <div style="display: flex; align-items: center; margin-bottom: 10px;">
+        <h3 style="margin: 0; font-size: 16px; color: #1976D2;">North Star HQ</h3>
+        <span style="background: #673AB7; color: white; font-size: 10px; padding: 2px 6px; border-radius: 10px; margin-left: 8px;">HQ</span>
+      </div>
+
+      <div style="display: flex; justify-content: space-between; background: #F5F5F5; padding: 10px; border-radius: 8px; margin-bottom: 15px;">
+        <div style="text-align: center;">
+          <div style="font-size: 10px; color: #757575; text-uppercase">Staff</div>
+          <div style="font-weight: bold; font-size: 14px;">145</div>
+        </div>
+        <div style="text-align: center;">
+          <div style="font-size: 10px; color: #757575; text-uppercase">Tasks</div>
+          <div style="font-weight: bold; font-size: 14px; color: #FB8C00;">24</div>
+        </div>
+        <div style="text-align: center;">
+          <div style="font-size: 10px; color: #757575; text-uppercase">Delay</div>
+          <div style="font-weight: bold; font-size: 14px; color: #FF5252;">3</div>
+        </div>
+      </div>
+
+      <div style="display: flex; flex-direction: column; gap: 8px;">
+        <a href="/branch1" 
+           style="display: block; text-align: center; background: #1976D2; color: white; padding: 8px; border-radius: 4px; text-decoration: none; font-size: 12px; font-weight: 500;">
+           OPEN BRANCH PAGE
+        </a>
+        
+      </div>
+    </div>
+  `
+                       
+                      });
     const saved = JSON.parse(localStorage.getItem("leaflet-state") || "{}")
 
     const initialCenter = saved.center || this.center
