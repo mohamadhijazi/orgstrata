@@ -28,6 +28,8 @@ public sealed class Startup : StartupBase
         );
 
         routes.AddCreateContentEndpoint();
+        routes.MapChatStreaming();
+
        // routes.AddGetContentEndpoint();
     }
 }

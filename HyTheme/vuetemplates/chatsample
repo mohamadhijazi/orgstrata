@@ -1,0 +1,84 @@
+const res = await fetch('/api/chat/stream', {
+
+                    method: 'POST',
+
+                    headers: {
+
+                        'Content-Type': 'application/json',
+
+                        'Authorization': `Bearer sk-96f268d1b15a439eb5793e1daabf6277`
+
+                    },
+
+                    body: JSON.stringify({
+
+                        model: 'orgstrata', // Replace with your model name
+
+                        messages: [
+
+                            { role: 'system', content: 'You are a professional Project Director in EPMO. Return the answer as text without HTML' },
+
+                            { role: 'user', content: 'hi start' }
+
+                        ],
+
+                        temperature: 0.7,
+
+                        stream: false // ✅ Enable streaming
+
+                    })
+
+                });
+
+                const reader = res.body.getReader();
+
+                const decoder = new TextDecoder('utf-8');
+
+                let fullResponse = '';
+
+
+
+                while (true) {
+
+                    const { done, value } = await reader.read();
+
+                    if (done) break;
+
+
+
+                    const chunk = decoder.decode(value, { stream: true });
+
+                       
+
+                    const lines = chunk.split('\n').filter(line => line.trim().startsWith('data:'));
+
+                    for (const line of lines) {
+
+                        const jsonStr = line.replace(/^data:\s*/, '');
+
+                        if (jsonStr === '[DONE]') continue;
+
+
+
+                        try {
+
+                            const parsed = JSON.parse(jsonStr);
+
+                            const content = parsed.choices?.[0]?.delta?.content || '';
+
+                            fullResponse += content;    
+console.log(content);  
+
+                           // input.value = fullResponse;
+
+                            //responseDiv.innerHTML = `<strong>Response:</strong><br>${fullResponse}`;
+
+                        } catch (err) {
+
+                            console.error('Error parsing chunk:', err);
+
+                        }
+
+                    }
+
+                }

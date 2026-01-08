@@ -21,6 +21,8 @@ using System.Reflection;
     "HyTheme\\vuetemplates\\blueprint_vue_converted.liquid"))]
 [assembly: OrchardCore.Modules.Manifest.ModuleAssetAttribute(("Areas\\HyTheme\\vuetemplates\\branch.txt|C:\\ws\\github\\orgstrata\\HyTheme\\vuetemplates" +
     "\\branch.txt"))]
+[assembly: OrchardCore.Modules.Manifest.ModuleAssetAttribute(("Areas\\HyTheme\\vuetemplates\\chatsample|C:\\ws\\github\\orgstrata\\HyTheme\\vuetemplates" +
+    "\\chatsample"))]
 [assembly: OrchardCore.Modules.Manifest.ModuleAssetAttribute(("Areas\\HyTheme\\vuetemplates\\footer|C:\\ws\\github\\orgstrata\\HyTheme\\vuetemplates\\foo" +
     "ter"))]
 [assembly: OrchardCore.Modules.Manifest.ModuleAssetAttribute(("Areas\\HyTheme\\vuetemplates\\kanban|C:\\ws\\github\\orgstrata\\HyTheme\\vuetemplates\\kan" +
@@ -452,7 +454,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("HyTheme")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+abca46d3765a3199e60efe2f5fbc63200184f36e")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e0994e669b27fec5cb5a40e33c6dcaa383669b8a")]
 [assembly: System.Reflection.AssemblyProductAttribute("HyTheme")]
 [assembly: System.Reflection.AssemblyTitleAttribute("HyTheme")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

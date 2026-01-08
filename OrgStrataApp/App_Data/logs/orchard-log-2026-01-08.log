@@ -12212,3 +12212,38 @@ The response mode cannot be null or empty.
    at System.Text.Json.JsonSerializer.ReadFromNodeAsObject(JsonNode node, JsonTypeInfo jsonTypeInfo)
    at OrchardCore.ContentManagement.ContentExtensions.Get(ContentElement contentElement, Type contentElementType, String name)
    at OrchardCore.ContentManagement.Display.ContentItemDisplayCoordinator.BuildDisplayAsync(ContentItem contentItem, BuildDisplayContext context)
+2026-01-08 15:00:12.0947||||Microsoft.Hosting.Lifetime|INFO|Application is shutting down... 
+2026-01-08 15:01:03.3843|||14|Microsoft.Hosting.Lifetime|INFO|Now listening on: https://localhost:5001 
+2026-01-08 15:01:03.4773|||14|Microsoft.Hosting.Lifetime|INFO|Now listening on: http://localhost:5000 
+2026-01-08 15:01:03.4923||||Microsoft.Hosting.Lifetime|INFO|Application started. Press Ctrl+C to shut down. 
+2026-01-08 15:01:03.4923||||Microsoft.Hosting.Lifetime|INFO|Hosting environment: Development 
+2026-01-08 15:01:03.4923||||Microsoft.Hosting.Lifetime|INFO|Content root path: C:\ws\github\orgstrata\OrgStrataApp 
+2026-01-08 15:05:49.6008|Default|00-ed21ef4b60e7baec1a71c79958e252e7-7c7405483a7f4d42-00||OrchardCore.OpenId.Configuration.OpenIdClientConfiguration|WARN|The OpenID client settings are invalid: The authority cannot be null or empty.
+The response type cannot be null or empty.
+The response mode cannot be null or empty. 
+2026-01-08 15:12:59.2139||||Microsoft.Hosting.Lifetime|INFO|Application is shutting down... 
+2026-01-08 15:13:22.6816|||14|Microsoft.Hosting.Lifetime|INFO|Now listening on: https://localhost:5001 
+2026-01-08 15:13:22.7463|||14|Microsoft.Hosting.Lifetime|INFO|Now listening on: http://localhost:5000 
+2026-01-08 15:13:22.7463||||Microsoft.Hosting.Lifetime|INFO|Application started. Press Ctrl+C to shut down. 
+2026-01-08 15:13:22.7463||||Microsoft.Hosting.Lifetime|INFO|Hosting environment: Development 
+2026-01-08 15:13:22.7575||||Microsoft.Hosting.Lifetime|INFO|Content root path: C:\ws\github\orgstrata\OrgStrataApp 
+2026-01-08 15:13:36.4586|Default|00-6b94c5ccf77e6e681faffd07dc4258f1-deb6628933bd4334-00||OrchardCore.OpenId.Configuration.OpenIdClientConfiguration|WARN|The OpenID client settings are invalid: The authority cannot be null or empty.
+The response type cannot be null or empty.
+The response mode cannot be null or empty. 
+2026-01-08 15:13:56.3171||||Microsoft.Hosting.Lifetime|INFO|Application is shutting down... 
+2026-01-08 15:14:19.0255|||14|Microsoft.Hosting.Lifetime|INFO|Now listening on: https://localhost:5001 
+2026-01-08 15:14:19.0961|||14|Microsoft.Hosting.Lifetime|INFO|Now listening on: http://localhost:5000 
+2026-01-08 15:14:19.1076||||Microsoft.Hosting.Lifetime|INFO|Application started. Press Ctrl+C to shut down. 
+2026-01-08 15:14:19.1076||||Microsoft.Hosting.Lifetime|INFO|Hosting environment: Development 
+2026-01-08 15:14:19.1225||||Microsoft.Hosting.Lifetime|INFO|Content root path: C:\ws\github\orgstrata\OrgStrataApp 
+2026-01-08 15:14:31.3193|Default|00-9daa88b23a6f00db73bfaad040bb21e1-3c454e1f12ec413c-00||OrchardCore.OpenId.Configuration.OpenIdClientConfiguration|WARN|The OpenID client settings are invalid: The authority cannot be null or empty.
+The response type cannot be null or empty.
+The response mode cannot be null or empty. 
+2026-01-08 15:16:55.4721|||14|Microsoft.Hosting.Lifetime|INFO|Now listening on: https://localhost:5001 
+2026-01-08 15:16:55.5897|||14|Microsoft.Hosting.Lifetime|INFO|Now listening on: http://localhost:5000 
+2026-01-08 15:16:55.6081||||Microsoft.Hosting.Lifetime|INFO|Application started. Press Ctrl+C to shut down. 
+2026-01-08 15:16:55.6081||||Microsoft.Hosting.Lifetime|INFO|Hosting environment: Development 
+2026-01-08 15:16:55.6081||||Microsoft.Hosting.Lifetime|INFO|Content root path: C:\ws\github\orgstrata\OrgStrataApp 
+2026-01-08 15:17:03.8799|Default|00-86bd1ed96e9e87fa43482e23a451a99a-540b6d0fa5e9048e-00||OrchardCore.OpenId.Configuration.OpenIdClientConfiguration|WARN|The OpenID client settings are invalid: The authority cannot be null or empty.
+The response type cannot be null or empty.
+The response mode cannot be null or empty. 
