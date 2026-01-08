@@ -3,14 +3,21 @@
 {% style src: "~/HyTheme/blueprint3d/css/example.css" ,  at:"Head"  %}
 
 {% script src: "~/HyTheme/blueprint3d/js/three.min.js",  at:"Foot"  %}
-{% script src: "~/HyTheme/blueprint3d/js/blueprint3d.js" , at:"Foot"  %}
+
     
     {% script src: "~/HyTheme/blueprint3d/js/jquery.js" , at:"Foot"  %}
     {% script src: "~/HyTheme/blueprint3d/js/bootstrap.js",  at:"Foot"  %}
     
     
     {% script src: "~/HyTheme/blueprint3d/js/items.js", at:"Foot"  %}
+    <script>
+  data='{{Model.ContentItem.Content.LiquidPart.Liquid | raw}}';
+  </script>
+
     {% script src: "~/HyTheme/blueprint3d/js/example.js",  at:"Foot"  %}
+    
+ 
+    {% script src: "~/HyTheme/blueprint3d/js/blueprint3d.js" , at:"Foot"  %}
     
  
 
@@ -51,6 +58,14 @@
               <div class="panel-body" style="color: #333333">
 
                 <div class="form form-horizontal" class="lead">
+                  <div class="form-group">
+                    <label class="col-sm-5 control-label">
+                       Assignee
+                    </label>
+                    <div class="col-sm-6">
+                      <div id="user-dropdown"></div>
+                    </div>
+                  </div>
                   <div class="form-group">
                     <label class="col-sm-5 control-label">
                        Width
@@ -217,4 +232,4 @@
         <!-- End Right Column -->
       </div>
     </div>
- 
+        <floor-component></floor-component>

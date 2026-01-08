@@ -46117,6 +46117,7 @@ var Model = function(textureDir) {
       var object = objects[i];
       items_arr[i] = {
         item_name: object.metadata.itemName,
+		item_bag: object.metadata.bag,
         item_type: object.metadata.itemType,
         model_url: object.metadata.modelUrl,
         xpos: object.position.x,
@@ -46146,6 +46147,7 @@ var Model = function(textureDir) {
         item.xpos, item.ypos, item.zpos)    
       var metadata = {
         itemName: item.item_name,
+		bag: item.item_bag,
         resizable: item.resizable,
         itemType: item.item_type,
         modelUrl: item.model_url
@@ -46661,7 +46663,33 @@ var ThreeController = function(three, model, camera, element, controls, hud) {
         var vec = three.projectVector(pos); 
         clickPressed(vec); 
     }
+
     item.position_set = true;
+
+if(item.metadata.bag){
+	var coneGeo = new THREE.CylinderGeometry(15, 0, 40);
+    var coneMat = new THREE.MeshBasicMaterial({
+      color:0x00ff00
+    });
+    var cone = new THREE.Mesh(coneGeo, coneMat);
+    cone.position.copy(item.position.clone());
+
+	cone.position.set(item.position.x, item.position.y+75, item.position.z); 
+
+   // cone.rotation.x = -Math.PI / 2.0;
+	item.children.push(cone);
+	scene.add(cone);
+
+	setInterval(() => {
+		//cone.rotation.x += 0.01;
+    cone.rotation.y += 0.01;
+	}, 20);
+ 
+ 
+}
+
+
+
   }
 
   function clickPressed(vec2) {
@@ -48068,6 +48096,8 @@ var ThreeHUD = function(three) {
 
   var activeObject = null;
 
+  var headercone=null;
+
   this.getScene = function() {
     return scene;
   }
@@ -48133,6 +48163,13 @@ var ThreeHUD = function(three) {
       activeObject.position.x = selectedItem.position.x;
       activeObject.position.z = selectedItem.position.z;
     }
+	headercone=selectedItem.children[0];
+if (headercone) {
+      headercone.rotation.y = selectedItem.rotation.y;
+      headercone.position.x = selectedItem.position.x;
+      headercone.position.z = selectedItem.position.z;
+    }
+	
   }
 
   function makeLineGeometry(item) {
