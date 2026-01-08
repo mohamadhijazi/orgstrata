@@ -37,7 +37,10 @@
                 owner: '',
                 render: '',
                 author: ''
-            }
+            },
+            aiDialog: false,
+            aiResponse: "",
+            aiLoading: false
         }),
 
         methods: {
@@ -394,6 +397,85 @@
                 this.snackbarMessage = msg;
                 this.snackbarColor = color;
                 this.snackbar = true;
+            },
+
+            async openAIAssistant(task) {
+                this.aiLoading = true;
+                this.aiDialog = true;
+                this.aiResponse = "";
+
+                const projectName = this.projects.find(p => p.id === task.projectId)?.name || 'N/A';
+                const assigneeName = this.users.find(u => u.id === task.assignee)?.name || 'N/A';
+
+                const prompt = `Task Title: ${task.title}\nProject: ${projectName}\nAssignee: ${assigneeName}\nStart Date: ${task.start}\nFinish Date: ${task.finish}\nEstimated Start: ${task.estStart}\nEstimated Finish: ${task.estFinish}\nStatus: ${task.status}\n\nPlease provide a summary of this task and an analysis of its status.`;
+
+                try {
+                    const res = await fetch('/api/chat/stream', {
+                        method: 'POST',
+                        headers: {
+                            'Content-Type': 'application/json',
+                            'Authorization': `Bearer sk-96f268d1b15a439eb5793e1daabf6277`
+                        },
+                        body: JSON.stringify({
+                            model: 'orgstrata',
+                            messages: [
+                                { role: 'system', content: 'You are a professional Project Director in EPMO. Return the answer as text without HTML' },
+                                { role: 'user', content: prompt }
+                            ],
+                            temperature: 0.7,
+                            stream: false
+                        })
+                    });
+
+                    if (!res.ok) {
+                        throw new Error('Failed to fetch AI response');
+                    }
+const reader = res.body.getReader();
+                const decoder = new TextDecoder('utf-8');
+                let fullResponse = '';
+ while (true) {
+
+                    const { done, value } = await reader.read();
+                    if (done) break;
+                    const chunk = decoder.decode(value, { stream: true });                      
+
+                    const lines = chunk.split('\n').filter(line => line.trim().startsWith('data:'));
+
+                    for (const line of lines) {
+                        const jsonStr = line.replace(/^data:\s*/, '');
+
+                        if (jsonStr === '[DONE]') continue;
+                        try {
+
+                            const parsed = JSON.parse(jsonStr);
+
+                            const content = parsed.choices?.[0]?.delta?.content || '';
+
+                            fullResponse += content;    
+                           // console.log(content);  
+			this.aiResponse =fullResponse;
+                           // input.value = fullResponse;
+                            //responseDiv.innerHTML = `<strong>Response:</strong><br>${fullResponse}`;
+
+                        } catch (err) {
+
+                            console.error('Error parsing chunk:', err);
+
+                        }
+
+                    }
+
+                }
+
+
+
+                  //  const result = await res.json();
+                   // this.aiResponse = result.choices?.[0]?.message?.content || 'No response received';
+                } catch (e) {
+                    this.aiResponse = 'Error: ' + e.message;
+                } finally {
+                    this.aiLoading = false;
+                }
             }
         },
 
@@ -433,8 +515,12 @@
                          <div class="d-flex align-center justify-space-between">
                         <strong>{{ task.title }}</strong>
 
-                        <!-- Drag handle -->
-                        <v-icon class="drag-handle" size="20">mdi-drag</v-icon>
+                        <div class="d-flex align-center">
+                            <!-- AI Assistant Icon -->
+                            <v-icon class="mr-2" size="20" @click.stop="openAIAssistant(task)">mdi-robot</v-icon>
+                            <!-- Drag handle -->
+                            <v-icon class="drag-handle" size="20">mdi-drag</v-icon>
+                        </div>
                     </div>
                         <small>Project: {{ projects.find(p => p.id === task.projectId)?.name }}</small><br>
                         <small>StartDate: {{ task.start}}</small>
@@ -500,6 +586,20 @@
                     <v-card-actions>
                         <v-btn text @click="dialog = false">Cancel</v-btn>
                         <v-btn color="primary" @click="saveTask">Save</v-btn>
+                    </v-card-actions>
+                </v-card>
+            </v-dialog>
+
+            <!-- AI Assistant Dialog -->
+            <v-dialog v-model="aiDialog" max-width="800px">
+                <v-card>
+                    <v-card-title>AI Assistant</v-card-title>
+                    <v-card-text>
+                        <v-progress-circular v-if="aiLoading" indeterminate></v-progress-circular>
+                        <div >{{ aiResponse }}</div>
+                    </v-card-text>
+                    <v-card-actions>
+                        <v-btn text @click="aiDialog = false">Close</v-btn>
                     </v-card-actions>
                 </v-card>
             </v-dialog>
