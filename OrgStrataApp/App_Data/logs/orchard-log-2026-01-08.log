@@ -13483,3 +13483,112 @@ The response mode cannot be null or empty.
    at System.Text.Json.Serialization.JsonConverter`1.ReadCore(Utf8JsonReader& reader, JsonSerializerOptions options, ReadStack& state)
    at System.Text.Json.JsonSerializer.ReadFromNodeAsObject(JsonNode node, JsonTypeInfo jsonTypeInfo)
    at OrchardCore.ContentManagement.Display.ContentItemDisplayCoordinator.BuildDisplayAsync(ContentItem contentItem, BuildDisplayContext context)
+2026-01-08 15:54:42.0738|Default|00-17ddb31c6666c78440227a4badc95ab3-146042246b16b30d-00||OrchardCore.ContentManagement.Display.ContentItemDisplayCoordinator|ERROR|DateFieldDisplayDriver thrown from BuildDisplayAsync by JsonException System.Text.Json.JsonException: Unable to convert "" to DateTime.
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.ReadJsonAndSetMember(Object obj, ReadStack& state, Utf8JsonReader& reader)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value)
+   at System.Text.Json.Serialization.JsonConverter`1.TryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value, Boolean& isPopulatedValue)
+   at System.Text.Json.Serialization.JsonConverter`1.ReadCore(Utf8JsonReader& reader, JsonSerializerOptions options, ReadStack& state)
+   at System.Text.Json.JsonSerializer.ReadFromNodeAsObject(JsonNode node, JsonTypeInfo jsonTypeInfo)
+   at OrchardCore.ContentManagement.Display.ContentItemDisplayCoordinator.BuildDisplayAsync(ContentItem contentItem, BuildDisplayContext context)    at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.ReadJsonAndSetMember(Object obj, ReadStack& state, Utf8JsonReader& reader)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value)
+   at System.Text.Json.Serialization.JsonConverter`1.TryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value, Boolean& isPopulatedValue)
+   at System.Text.Json.Serialization.JsonConverter`1.ReadCore(Utf8JsonReader& reader, JsonSerializerOptions options, ReadStack& state)
+   at System.Text.Json.JsonSerializer.ReadFromNodeAsObject(JsonNode node, JsonTypeInfo jsonTypeInfo)
+   at OrchardCore.ContentManagement.Display.ContentItemDisplayCoordinator.BuildDisplayAsync(ContentItem contentItem, BuildDisplayContext context)
+2026-01-08 15:54:42.0738|Default|00-17ddb31c6666c78440227a4badc95ab3-146042246b16b30d-00||OrchardCore.ContentManagement.Display.ContentItemDisplayCoordinator|ERROR|DateFieldDisplayDriver thrown from BuildDisplayAsync by JsonException System.Text.Json.JsonException: Unable to convert "" to DateTime.
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.ReadJsonAndSetMember(Object obj, ReadStack& state, Utf8JsonReader& reader)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value)
+   at System.Text.Json.Serialization.JsonConverter`1.TryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value, Boolean& isPopulatedValue)
+   at System.Text.Json.Serialization.JsonConverter`1.ReadCore(Utf8JsonReader& reader, JsonSerializerOptions options, ReadStack& state)
+   at System.Text.Json.JsonSerializer.ReadFromNodeAsObject(JsonNode node, JsonTypeInfo jsonTypeInfo)
+   at OrchardCore.ContentManagement.Display.ContentItemDisplayCoordinator.BuildDisplayAsync(ContentItem contentItem, BuildDisplayContext context)    at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.ReadJsonAndSetMember(Object obj, ReadStack& state, Utf8JsonReader& reader)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value)
+   at System.Text.Json.Serialization.JsonConverter`1.TryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value, Boolean& isPopulatedValue)
+   at System.Text.Json.Serialization.JsonConverter`1.ReadCore(Utf8JsonReader& reader, JsonSerializerOptions options, ReadStack& state)
+   at System.Text.Json.JsonSerializer.ReadFromNodeAsObject(JsonNode node, JsonTypeInfo jsonTypeInfo)
+   at OrchardCore.ContentManagement.Display.ContentItemDisplayCoordinator.BuildDisplayAsync(ContentItem contentItem, BuildDisplayContext context)
+2026-01-08 15:54:42.0738|Default|00-17ddb31c6666c78440227a4badc95ab3-146042246b16b30d-00||OrchardCore.ContentManagement.Display.ContentItemDisplayCoordinator|ERROR|DateFieldDisplayDriver thrown from BuildDisplayAsync by JsonException System.Text.Json.JsonException: Unable to convert "" to DateTime.
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.ReadJsonAndSetMember(Object obj, ReadStack& state, Utf8JsonReader& reader)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value)
+   at System.Text.Json.Serialization.JsonConverter`1.TryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value, Boolean& isPopulatedValue)
+   at System.Text.Json.Serialization.JsonConverter`1.ReadCore(Utf8JsonReader& reader, JsonSerializerOptions options, ReadStack& state)
+   at System.Text.Json.JsonSerializer.ReadFromNodeAsObject(JsonNode node, JsonTypeInfo jsonTypeInfo)
+   at OrchardCore.ContentManagement.Display.ContentItemDisplayCoordinator.BuildDisplayAsync(ContentItem contentItem, BuildDisplayContext context)    at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.ReadJsonAndSetMember(Object obj, ReadStack& state, Utf8JsonReader& reader)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value)
+   at System.Text.Json.Serialization.JsonConverter`1.TryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value, Boolean& isPopulatedValue)
+   at System.Text.Json.Serialization.JsonConverter`1.ReadCore(Utf8JsonReader& reader, JsonSerializerOptions options, ReadStack& state)
+   at System.Text.Json.JsonSerializer.ReadFromNodeAsObject(JsonNode node, JsonTypeInfo jsonTypeInfo)
+   at OrchardCore.ContentManagement.Display.ContentItemDisplayCoordinator.BuildDisplayAsync(ContentItem contentItem, BuildDisplayContext context)
+2026-01-08 15:54:42.0738|Default|00-17ddb31c6666c78440227a4badc95ab3-146042246b16b30d-00||OrchardCore.ContentManagement.Display.ContentItemDisplayCoordinator|ERROR|DateFieldDisplayDriver thrown from BuildDisplayAsync by JsonException System.Text.Json.JsonException: Unable to convert "" to DateTime.
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.ReadJsonAndSetMember(Object obj, ReadStack& state, Utf8JsonReader& reader)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value)
+   at System.Text.Json.Serialization.JsonConverter`1.TryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value, Boolean& isPopulatedValue)
+   at System.Text.Json.Serialization.JsonConverter`1.ReadCore(Utf8JsonReader& reader, JsonSerializerOptions options, ReadStack& state)
+   at System.Text.Json.JsonSerializer.ReadFromNodeAsObject(JsonNode node, JsonTypeInfo jsonTypeInfo)
+   at OrchardCore.ContentManagement.Display.ContentItemDisplayCoordinator.BuildDisplayAsync(ContentItem contentItem, BuildDisplayContext context)    at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.ReadJsonAndSetMember(Object obj, ReadStack& state, Utf8JsonReader& reader)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value)
+   at System.Text.Json.Serialization.JsonConverter`1.TryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value, Boolean& isPopulatedValue)
+   at System.Text.Json.Serialization.JsonConverter`1.ReadCore(Utf8JsonReader& reader, JsonSerializerOptions options, ReadStack& state)
+   at System.Text.Json.JsonSerializer.ReadFromNodeAsObject(JsonNode node, JsonTypeInfo jsonTypeInfo)
+   at OrchardCore.ContentManagement.Display.ContentItemDisplayCoordinator.BuildDisplayAsync(ContentItem contentItem, BuildDisplayContext context)
+2026-01-08 15:54:42.0991|Default|00-17ddb31c6666c78440227a4badc95ab3-146042246b16b30d-00||OrchardCore.ContentManagement.Display.ContentItemDisplayCoordinator|ERROR|DateFieldDisplayDriver thrown from BuildDisplayAsync by JsonException System.Text.Json.JsonException: Unable to convert "" to DateTime.
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.ReadJsonAndSetMember(Object obj, ReadStack& state, Utf8JsonReader& reader)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value)
+   at System.Text.Json.Serialization.JsonConverter`1.TryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value, Boolean& isPopulatedValue)
+   at System.Text.Json.Serialization.JsonConverter`1.ReadCore(Utf8JsonReader& reader, JsonSerializerOptions options, ReadStack& state)
+   at System.Text.Json.JsonSerializer.ReadFromNodeAsObject(JsonNode node, JsonTypeInfo jsonTypeInfo)
+   at OrchardCore.ContentManagement.Display.ContentItemDisplayCoordinator.BuildDisplayAsync(ContentItem contentItem, BuildDisplayContext context)    at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.ReadJsonAndSetMember(Object obj, ReadStack& state, Utf8JsonReader& reader)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value)
+   at System.Text.Json.Serialization.JsonConverter`1.TryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value, Boolean& isPopulatedValue)
+   at System.Text.Json.Serialization.JsonConverter`1.ReadCore(Utf8JsonReader& reader, JsonSerializerOptions options, ReadStack& state)
+   at System.Text.Json.JsonSerializer.ReadFromNodeAsObject(JsonNode node, JsonTypeInfo jsonTypeInfo)
+   at OrchardCore.ContentManagement.Display.ContentItemDisplayCoordinator.BuildDisplayAsync(ContentItem contentItem, BuildDisplayContext context)
+2026-01-08 15:54:42.0991|Default|00-17ddb31c6666c78440227a4badc95ab3-146042246b16b30d-00||OrchardCore.ContentManagement.Display.ContentItemDisplayCoordinator|ERROR|DateFieldDisplayDriver thrown from BuildDisplayAsync by JsonException System.Text.Json.JsonException: Unable to convert "" to DateTime.
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.ReadJsonAndSetMember(Object obj, ReadStack& state, Utf8JsonReader& reader)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value)
+   at System.Text.Json.Serialization.JsonConverter`1.TryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value, Boolean& isPopulatedValue)
+   at System.Text.Json.Serialization.JsonConverter`1.ReadCore(Utf8JsonReader& reader, JsonSerializerOptions options, ReadStack& state)
+   at System.Text.Json.JsonSerializer.ReadFromNodeAsObject(JsonNode node, JsonTypeInfo jsonTypeInfo)
+   at OrchardCore.ContentManagement.Display.ContentItemDisplayCoordinator.BuildDisplayAsync(ContentItem contentItem, BuildDisplayContext context)    at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.ReadJsonAndSetMember(Object obj, ReadStack& state, Utf8JsonReader& reader)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value)
+   at System.Text.Json.Serialization.JsonConverter`1.TryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value, Boolean& isPopulatedValue)
+   at System.Text.Json.Serialization.JsonConverter`1.ReadCore(Utf8JsonReader& reader, JsonSerializerOptions options, ReadStack& state)
+   at System.Text.Json.JsonSerializer.ReadFromNodeAsObject(JsonNode node, JsonTypeInfo jsonTypeInfo)
+   at OrchardCore.ContentManagement.Display.ContentItemDisplayCoordinator.BuildDisplayAsync(ContentItem contentItem, BuildDisplayContext context)
+2026-01-08 15:54:42.0991|Default|00-17ddb31c6666c78440227a4badc95ab3-146042246b16b30d-00||OrchardCore.ContentManagement.Display.ContentItemDisplayCoordinator|ERROR|DateFieldDisplayDriver thrown from BuildDisplayAsync by JsonException System.Text.Json.JsonException: Unable to convert "" to DateTime.
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.ReadJsonAndSetMember(Object obj, ReadStack& state, Utf8JsonReader& reader)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value)
+   at System.Text.Json.Serialization.JsonConverter`1.TryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value, Boolean& isPopulatedValue)
+   at System.Text.Json.Serialization.JsonConverter`1.ReadCore(Utf8JsonReader& reader, JsonSerializerOptions options, ReadStack& state)
+   at System.Text.Json.JsonSerializer.ReadFromNodeAsObject(JsonNode node, JsonTypeInfo jsonTypeInfo)
+   at OrchardCore.ContentManagement.Display.ContentItemDisplayCoordinator.BuildDisplayAsync(ContentItem contentItem, BuildDisplayContext context)    at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.ReadJsonAndSetMember(Object obj, ReadStack& state, Utf8JsonReader& reader)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value)
+   at System.Text.Json.Serialization.JsonConverter`1.TryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value, Boolean& isPopulatedValue)
+   at System.Text.Json.Serialization.JsonConverter`1.ReadCore(Utf8JsonReader& reader, JsonSerializerOptions options, ReadStack& state)
+   at System.Text.Json.JsonSerializer.ReadFromNodeAsObject(JsonNode node, JsonTypeInfo jsonTypeInfo)
+   at OrchardCore.ContentManagement.Display.ContentItemDisplayCoordinator.BuildDisplayAsync(ContentItem contentItem, BuildDisplayContext context)
+2026-01-08 15:54:42.0991|Default|00-17ddb31c6666c78440227a4badc95ab3-146042246b16b30d-00||OrchardCore.ContentManagement.Display.ContentItemDisplayCoordinator|ERROR|DateFieldDisplayDriver thrown from BuildDisplayAsync by JsonException System.Text.Json.JsonException: Unable to convert "" to DateTime.
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.ReadJsonAndSetMember(Object obj, ReadStack& state, Utf8JsonReader& reader)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value)
+   at System.Text.Json.Serialization.JsonConverter`1.TryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value, Boolean& isPopulatedValue)
+   at System.Text.Json.Serialization.JsonConverter`1.ReadCore(Utf8JsonReader& reader, JsonSerializerOptions options, ReadStack& state)
+   at System.Text.Json.JsonSerializer.ReadFromNodeAsObject(JsonNode node, JsonTypeInfo jsonTypeInfo)
+   at OrchardCore.ContentManagement.Display.ContentItemDisplayCoordinator.BuildDisplayAsync(ContentItem contentItem, BuildDisplayContext context)    at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.ReadJsonAndSetMember(Object obj, ReadStack& state, Utf8JsonReader& reader)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value)
+   at System.Text.Json.Serialization.JsonConverter`1.TryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value, Boolean& isPopulatedValue)
+   at System.Text.Json.Serialization.JsonConverter`1.ReadCore(Utf8JsonReader& reader, JsonSerializerOptions options, ReadStack& state)
+   at System.Text.Json.JsonSerializer.ReadFromNodeAsObject(JsonNode node, JsonTypeInfo jsonTypeInfo)
+   at OrchardCore.ContentManagement.Display.ContentItemDisplayCoordinator.BuildDisplayAsync(ContentItem contentItem, BuildDisplayContext context)
+2026-01-08 15:56:16.1665||||Microsoft.Hosting.Lifetime|INFO|Application is shutting down... 
+2026-01-08 20:16:28.1655|||14|Microsoft.Hosting.Lifetime|INFO|Now listening on: https://localhost:5001 
+2026-01-08 20:16:28.2590|||14|Microsoft.Hosting.Lifetime|INFO|Now listening on: http://localhost:5000 
+2026-01-08 20:16:28.2590||||Microsoft.Hosting.Lifetime|INFO|Application started. Press Ctrl+C to shut down. 
+2026-01-08 20:16:28.2739||||Microsoft.Hosting.Lifetime|INFO|Hosting environment: Development 
+2026-01-08 20:16:28.2739||||Microsoft.Hosting.Lifetime|INFO|Content root path: C:\ws\github\orgstrata\OrgStrataApp 
+2026-01-08 20:18:58.6699|Default|00-6beb294212cae0e1544f1af60619e1ef-e5eee4a15994cccd-00||OrchardCore.OpenId.Configuration.OpenIdClientConfiguration|WARN|The OpenID client settings are invalid: The authority cannot be null or empty.
+The response type cannot be null or empty.
+The response mode cannot be null or empty. 
+2026-01-08 20:20:18.2610|Default|00-232c31bd57b3bfdbe875dc526ee991ea-3903829bce02b070-00||OrchardCore.Workflows.Http.Controllers.HttpWorkflowController|WARN|No workflow found that is blocked on activity '4tsfhjwrjpgk8twqec1hwehrxj' 
+2026-01-08 20:21:16.5360|Default|00-82bc5d3a82edb53cff43683702a7c402-88a7087ad1a7cfb0-00||OrchardCore.Workflows.Http.Controllers.HttpWorkflowController|WARN|No workflow found that is blocked on activity '4tsfhjwrjpgk8twqec1hwehrxj' 
+2026-01-08 20:22:29.4621|Default|00-1538e6bd3260ddaa2457526ba50331e1-c25f44b59916c54b-00||OrchardCore.Workflows.Http.Controllers.HttpWorkflowController|WARN|No workflow found that is blocked on activity '4tsfhjwrjpgk8twqec1hwehrxj' 
+2026-01-08 20:23:10.8530|Default|00-b5f4dc9a6a715917b3cb7e647b8393e1-3e4e4cbe82034bbd-00||OrchardCore.Workflows.Http.Controllers.HttpWorkflowController|WARN|No workflow found that is blocked on activity '4tsfhjwrjpgk8twqec1hwehrxj' 

@@ -11,450 +11,450 @@ using System;
 using System.Reflection;
 
 [assembly: OrchardCore.Modules.Manifest.ModuleMarkerAttribute("HyTheme", "Theme")]
-[assembly: OrchardCore.Modules.Manifest.ModuleAssetAttribute(("Areas\\HyTheme\\Views\\Layout.liquid|C:\\ws\\github\\orgstrata\\HyTheme\\Views\\Layout.liq" +
+[assembly: OrchardCore.Modules.Manifest.ModuleAssetAttribute(("Areas\\HyTheme\\Views\\Layout.liquid|c:\\ws\\github\\orgstrata\\HyTheme\\Views\\Layout.liq" +
     "uid"))]
-[assembly: OrchardCore.Modules.Manifest.ModuleAssetAttribute(("Areas\\HyTheme\\vuetemplates\\blueprint|C:\\ws\\github\\orgstrata\\HyTheme\\vuetemplates\\" +
+[assembly: OrchardCore.Modules.Manifest.ModuleAssetAttribute(("Areas\\HyTheme\\vuetemplates\\blueprint|c:\\ws\\github\\orgstrata\\HyTheme\\vuetemplates\\" +
     "blueprint"))]
-[assembly: OrchardCore.Modules.Manifest.ModuleAssetAttribute(("Areas\\HyTheme\\vuetemplates\\BlueprintComponent.vue|C:\\ws\\github\\orgstrata\\HyTheme\\" +
+[assembly: OrchardCore.Modules.Manifest.ModuleAssetAttribute(("Areas\\HyTheme\\vuetemplates\\BlueprintComponent.vue|c:\\ws\\github\\orgstrata\\HyTheme\\" +
     "vuetemplates\\BlueprintComponent.vue"))]
-[assembly: OrchardCore.Modules.Manifest.ModuleAssetAttribute(("Areas\\HyTheme\\vuetemplates\\blueprint_vue_converted.liquid|C:\\ws\\github\\orgstrata\\" +
+[assembly: OrchardCore.Modules.Manifest.ModuleAssetAttribute(("Areas\\HyTheme\\vuetemplates\\blueprint_vue_converted.liquid|c:\\ws\\github\\orgstrata\\" +
     "HyTheme\\vuetemplates\\blueprint_vue_converted.liquid"))]
-[assembly: OrchardCore.Modules.Manifest.ModuleAssetAttribute(("Areas\\HyTheme\\vuetemplates\\branch.txt|C:\\ws\\github\\orgstrata\\HyTheme\\vuetemplates" +
+[assembly: OrchardCore.Modules.Manifest.ModuleAssetAttribute(("Areas\\HyTheme\\vuetemplates\\branch.txt|c:\\ws\\github\\orgstrata\\HyTheme\\vuetemplates" +
     "\\branch.txt"))]
-[assembly: OrchardCore.Modules.Manifest.ModuleAssetAttribute(("Areas\\HyTheme\\vuetemplates\\chatsample|C:\\ws\\github\\orgstrata\\HyTheme\\vuetemplates" +
+[assembly: OrchardCore.Modules.Manifest.ModuleAssetAttribute(("Areas\\HyTheme\\vuetemplates\\chatsample|c:\\ws\\github\\orgstrata\\HyTheme\\vuetemplates" +
     "\\chatsample"))]
-[assembly: OrchardCore.Modules.Manifest.ModuleAssetAttribute(("Areas\\HyTheme\\vuetemplates\\footer|C:\\ws\\github\\orgstrata\\HyTheme\\vuetemplates\\foo" +
+[assembly: OrchardCore.Modules.Manifest.ModuleAssetAttribute(("Areas\\HyTheme\\vuetemplates\\footer|c:\\ws\\github\\orgstrata\\HyTheme\\vuetemplates\\foo" +
     "ter"))]
-[assembly: OrchardCore.Modules.Manifest.ModuleAssetAttribute(("Areas\\HyTheme\\vuetemplates\\kanban|C:\\ws\\github\\orgstrata\\HyTheme\\vuetemplates\\kan" +
+[assembly: OrchardCore.Modules.Manifest.ModuleAssetAttribute(("Areas\\HyTheme\\vuetemplates\\kanban|c:\\ws\\github\\orgstrata\\HyTheme\\vuetemplates\\kan" +
     "ban"))]
-[assembly: OrchardCore.Modules.Manifest.ModuleAssetAttribute(("Areas\\HyTheme\\vuetemplates\\ntwevent|C:\\ws\\github\\orgstrata\\HyTheme\\vuetemplates\\n" +
+[assembly: OrchardCore.Modules.Manifest.ModuleAssetAttribute(("Areas\\HyTheme\\vuetemplates\\ntwevent|c:\\ws\\github\\orgstrata\\HyTheme\\vuetemplates\\n" +
     "twevent"))]
-[assembly: OrchardCore.Modules.Manifest.ModuleAssetAttribute(("Areas\\HyTheme\\vuetemplates\\readsample|C:\\ws\\github\\orgstrata\\HyTheme\\vuetemplates" +
+[assembly: OrchardCore.Modules.Manifest.ModuleAssetAttribute(("Areas\\HyTheme\\vuetemplates\\readsample|c:\\ws\\github\\orgstrata\\HyTheme\\vuetemplates" +
     "\\readsample"))]
-[assembly: OrchardCore.Modules.Manifest.ModuleAssetAttribute(("Areas\\HyTheme\\vuetemplates\\v-navigationdrawer|C:\\ws\\github\\orgstrata\\HyTheme\\vuet" +
+[assembly: OrchardCore.Modules.Manifest.ModuleAssetAttribute(("Areas\\HyTheme\\vuetemplates\\v-navigationdrawer|c:\\ws\\github\\orgstrata\\HyTheme\\vuet" +
     "emplates\\v-navigationdrawer"))]
-[assembly: OrchardCore.Modules.Manifest.ModuleAssetAttribute(("Areas\\HyTheme\\vuetemplates\\vueOSM|C:\\ws\\github\\orgstrata\\HyTheme\\vuetemplates\\vue" +
+[assembly: OrchardCore.Modules.Manifest.ModuleAssetAttribute(("Areas\\HyTheme\\vuetemplates\\vueOSM|c:\\ws\\github\\orgstrata\\HyTheme\\vuetemplates\\vue" +
     "OSM"))]
-[assembly: OrchardCore.Modules.Manifest.ModuleAssetAttribute(("Areas\\HyTheme\\wwwroot\\blueprint3d\\css\\bootstrap.css|C:\\ws\\github\\orgstrata\\HyThem" +
+[assembly: OrchardCore.Modules.Manifest.ModuleAssetAttribute(("Areas\\HyTheme\\wwwroot\\blueprint3d\\css\\bootstrap.css|c:\\ws\\github\\orgstrata\\HyThem" +
     "e\\wwwroot\\blueprint3d\\css\\bootstrap.css"))]
-[assembly: OrchardCore.Modules.Manifest.ModuleAssetAttribute(("Areas\\HyTheme\\wwwroot\\blueprint3d\\css\\example.css|C:\\ws\\github\\orgstrata\\HyTheme\\" +
+[assembly: OrchardCore.Modules.Manifest.ModuleAssetAttribute(("Areas\\HyTheme\\wwwroot\\blueprint3d\\css\\example.css|c:\\ws\\github\\orgstrata\\HyTheme\\" +
     "wwwroot\\blueprint3d\\css\\example.css"))]
-[assembly: OrchardCore.Modules.Manifest.ModuleAssetAttribute(("Areas\\HyTheme\\wwwroot\\blueprint3d\\fonts\\glyphicons-halflings-regular.eot|C:\\ws\\gi" +
+[assembly: OrchardCore.Modules.Manifest.ModuleAssetAttribute(("Areas\\HyTheme\\wwwroot\\blueprint3d\\fonts\\glyphicons-halflings-regular.eot|c:\\ws\\gi" +
     "thub\\orgstrata\\HyTheme\\wwwroot\\blueprint3d\\fonts\\glyphicons-halflings-regular.eo" +
     "t"))]
-[assembly: OrchardCore.Modules.Manifest.ModuleAssetAttribute(("Areas\\HyTheme\\wwwroot\\blueprint3d\\fonts\\glyphicons-halflings-regular.svg|C:\\ws\\gi" +
+[assembly: OrchardCore.Modules.Manifest.ModuleAssetAttribute(("Areas\\HyTheme\\wwwroot\\blueprint3d\\fonts\\glyphicons-halflings-regular.svg|c:\\ws\\gi" +
     "thub\\orgstrata\\HyTheme\\wwwroot\\blueprint3d\\fonts\\glyphicons-halflings-regular.sv" +
     "g"))]
-[assembly: OrchardCore.Modules.Manifest.ModuleAssetAttribute(("Areas\\HyTheme\\wwwroot\\blueprint3d\\fonts\\glyphicons-halflings-regular.ttf|C:\\ws\\gi" +
+[assembly: OrchardCore.Modules.Manifest.ModuleAssetAttribute(("Areas\\HyTheme\\wwwroot\\blueprint3d\\fonts\\glyphicons-halflings-regular.ttf|c:\\ws\\gi" +
     "thub\\orgstrata\\HyTheme\\wwwroot\\blueprint3d\\fonts\\glyphicons-halflings-regular.tt" +
     "f"))]
-[assembly: OrchardCore.Modules.Manifest.ModuleAssetAttribute(("Areas\\HyTheme\\wwwroot\\blueprint3d\\fonts\\glyphicons-halflings-regular.woff|C:\\ws\\g" +
+[assembly: OrchardCore.Modules.Manifest.ModuleAssetAttribute(("Areas\\HyTheme\\wwwroot\\blueprint3d\\fonts\\glyphicons-halflings-regular.woff|c:\\ws\\g" +
     "ithub\\orgstrata\\HyTheme\\wwwroot\\blueprint3d\\fonts\\glyphicons-halflings-regular.w" +
     "off"))]
-[assembly: OrchardCore.Modules.Manifest.ModuleAssetAttribute(("Areas\\HyTheme\\wwwroot\\blueprint3d\\fonts\\glyphicons-halflings-regular.woff2|C:\\ws\\" +
+[assembly: OrchardCore.Modules.Manifest.ModuleAssetAttribute(("Areas\\HyTheme\\wwwroot\\blueprint3d\\fonts\\glyphicons-halflings-regular.woff2|c:\\ws\\" +
     "github\\orgstrata\\HyTheme\\wwwroot\\blueprint3d\\fonts\\glyphicons-halflings-regular." +
     "woff2"))]
-[assembly: OrchardCore.Modules.Manifest.ModuleAssetAttribute(("Areas\\HyTheme\\wwwroot\\blueprint3d\\index.html|C:\\ws\\github\\orgstrata\\HyTheme\\wwwro" +
+[assembly: OrchardCore.Modules.Manifest.ModuleAssetAttribute(("Areas\\HyTheme\\wwwroot\\blueprint3d\\index.html|c:\\ws\\github\\orgstrata\\HyTheme\\wwwro" +
     "ot\\blueprint3d\\index.html"))]
-[assembly: OrchardCore.Modules.Manifest.ModuleAssetAttribute(("Areas\\HyTheme\\wwwroot\\blueprint3d\\js\\blueprint3d.js|C:\\ws\\github\\orgstrata\\HyThem" +
+[assembly: OrchardCore.Modules.Manifest.ModuleAssetAttribute(("Areas\\HyTheme\\wwwroot\\blueprint3d\\js\\blueprint3d.js|c:\\ws\\github\\orgstrata\\HyThem" +
     "e\\wwwroot\\blueprint3d\\js\\blueprint3d.js"))]
-[assembly: OrchardCore.Modules.Manifest.ModuleAssetAttribute(("Areas\\HyTheme\\wwwroot\\blueprint3d\\js\\bootstrap.js|C:\\ws\\github\\orgstrata\\HyTheme\\" +
+[assembly: OrchardCore.Modules.Manifest.ModuleAssetAttribute(("Areas\\HyTheme\\wwwroot\\blueprint3d\\js\\bootstrap.js|c:\\ws\\github\\orgstrata\\HyTheme\\" +
     "wwwroot\\blueprint3d\\js\\bootstrap.js"))]
-[assembly: OrchardCore.Modules.Manifest.ModuleAssetAttribute(("Areas\\HyTheme\\wwwroot\\blueprint3d\\js\\example.js|C:\\ws\\github\\orgstrata\\HyTheme\\ww" +
+[assembly: OrchardCore.Modules.Manifest.ModuleAssetAttribute(("Areas\\HyTheme\\wwwroot\\blueprint3d\\js\\example.js|c:\\ws\\github\\orgstrata\\HyTheme\\ww" +
     "wroot\\blueprint3d\\js\\example.js"))]
-[assembly: OrchardCore.Modules.Manifest.ModuleAssetAttribute(("Areas\\HyTheme\\wwwroot\\blueprint3d\\js\\items.js|C:\\ws\\github\\orgstrata\\HyTheme\\wwwr" +
+[assembly: OrchardCore.Modules.Manifest.ModuleAssetAttribute(("Areas\\HyTheme\\wwwroot\\blueprint3d\\js\\items.js|c:\\ws\\github\\orgstrata\\HyTheme\\wwwr" +
     "oot\\blueprint3d\\js\\items.js"))]
-[assembly: OrchardCore.Modules.Manifest.ModuleAssetAttribute(("Areas\\HyTheme\\wwwroot\\blueprint3d\\js\\jquery.js|C:\\ws\\github\\orgstrata\\HyTheme\\www" +
+[assembly: OrchardCore.Modules.Manifest.ModuleAssetAttribute(("Areas\\HyTheme\\wwwroot\\blueprint3d\\js\\jquery.js|c:\\ws\\github\\orgstrata\\HyTheme\\www" +
     "root\\blueprint3d\\js\\jquery.js"))]
-[assembly: OrchardCore.Modules.Manifest.ModuleAssetAttribute(("Areas\\HyTheme\\wwwroot\\blueprint3d\\js\\three.min.js|C:\\ws\\github\\orgstrata\\HyTheme\\" +
+[assembly: OrchardCore.Modules.Manifest.ModuleAssetAttribute(("Areas\\HyTheme\\wwwroot\\blueprint3d\\js\\three.min.js|c:\\ws\\github\\orgstrata\\HyTheme\\" +
     "wwwroot\\blueprint3d\\js\\three.min.js"))]
-[assembly: OrchardCore.Modules.Manifest.ModuleAssetAttribute(("Areas\\HyTheme\\wwwroot\\blueprint3d\\models\\js\\bd-shalebedside-smoke_baked.js|C:\\ws\\" +
+[assembly: OrchardCore.Modules.Manifest.ModuleAssetAttribute(("Areas\\HyTheme\\wwwroot\\blueprint3d\\models\\js\\bd-shalebedside-smoke_baked.js|c:\\ws\\" +
     "github\\orgstrata\\HyTheme\\wwwroot\\blueprint3d\\models\\js\\bd-shalebedside-smoke_bak" +
     "ed.js"))]
-[assembly: OrchardCore.Modules.Manifest.ModuleAssetAttribute(("Areas\\HyTheme\\wwwroot\\blueprint3d\\models\\js\\bd-shalebedside-smoke_baked.png|C:\\ws" +
+[assembly: OrchardCore.Modules.Manifest.ModuleAssetAttribute(("Areas\\HyTheme\\wwwroot\\blueprint3d\\models\\js\\bd-shalebedside-smoke_baked.png|c:\\ws" +
     "\\github\\orgstrata\\HyTheme\\wwwroot\\blueprint3d\\models\\js\\bd-shalebedside-smoke_ba" +
     "ked.png"))]
-[assembly: OrchardCore.Modules.Manifest.ModuleAssetAttribute(("Areas\\HyTheme\\wwwroot\\blueprint3d\\models\\js\\BlakeAvenuejoshuatreecheftable.js|C:\\" +
+[assembly: OrchardCore.Modules.Manifest.ModuleAssetAttribute(("Areas\\HyTheme\\wwwroot\\blueprint3d\\models\\js\\BlakeAvenuejoshuatreecheftable.js|c:\\" +
     "ws\\github\\orgstrata\\HyTheme\\wwwroot\\blueprint3d\\models\\js\\BlakeAvenuejoshuatreec" +
     "heftable.js"))]
-[assembly: OrchardCore.Modules.Manifest.ModuleAssetAttribute(("Areas\\HyTheme\\wwwroot\\blueprint3d\\models\\js\\b_cb-blue-block60x96.png|C:\\ws\\github" +
+[assembly: OrchardCore.Modules.Manifest.ModuleAssetAttribute(("Areas\\HyTheme\\wwwroot\\blueprint3d\\models\\js\\b_cb-blue-block60x96.png|c:\\ws\\github" +
     "\\orgstrata\\HyTheme\\wwwroot\\blueprint3d\\models\\js\\b_cb-blue-block60x96.png"))]
-[assembly: OrchardCore.Modules.Manifest.ModuleAssetAttribute(("Areas\\HyTheme\\wwwroot\\blueprint3d\\models\\js\\cb-archnight-white_baked.js|C:\\ws\\git" +
+[assembly: OrchardCore.Modules.Manifest.ModuleAssetAttribute(("Areas\\HyTheme\\wwwroot\\blueprint3d\\models\\js\\cb-archnight-white_baked.js|c:\\ws\\git" +
     "hub\\orgstrata\\HyTheme\\wwwroot\\blueprint3d\\models\\js\\cb-archnight-white_baked.js"))]
-[assembly: OrchardCore.Modules.Manifest.ModuleAssetAttribute(("Areas\\HyTheme\\wwwroot\\blueprint3d\\models\\js\\cb-archnight-white_baked.png|C:\\ws\\gi" +
+[assembly: OrchardCore.Modules.Manifest.ModuleAssetAttribute(("Areas\\HyTheme\\wwwroot\\blueprint3d\\models\\js\\cb-archnight-white_baked.png|c:\\ws\\gi" +
     "thub\\orgstrata\\HyTheme\\wwwroot\\blueprint3d\\models\\js\\cb-archnight-white_baked.pn" +
     "g"))]
-[assembly: OrchardCore.Modules.Manifest.ModuleAssetAttribute(("Areas\\HyTheme\\wwwroot\\blueprint3d\\models\\js\\cb-blue-block-60x96.js|C:\\ws\\github\\o" +
+[assembly: OrchardCore.Modules.Manifest.ModuleAssetAttribute(("Areas\\HyTheme\\wwwroot\\blueprint3d\\models\\js\\cb-blue-block-60x96.js|c:\\ws\\github\\o" +
     "rgstrata\\HyTheme\\wwwroot\\blueprint3d\\models\\js\\cb-blue-block-60x96.js"))]
-[assembly: OrchardCore.Modules.Manifest.ModuleAssetAttribute(("Areas\\HyTheme\\wwwroot\\blueprint3d\\models\\js\\cb-clapboard_baked.js|C:\\ws\\github\\or" +
+[assembly: OrchardCore.Modules.Manifest.ModuleAssetAttribute(("Areas\\HyTheme\\wwwroot\\blueprint3d\\models\\js\\cb-clapboard_baked.js|c:\\ws\\github\\or" +
     "gstrata\\HyTheme\\wwwroot\\blueprint3d\\models\\js\\cb-clapboard_baked.js"))]
-[assembly: OrchardCore.Modules.Manifest.ModuleAssetAttribute(("Areas\\HyTheme\\wwwroot\\blueprint3d\\models\\js\\cb-clapboard_baked.png|C:\\ws\\github\\o" +
+[assembly: OrchardCore.Modules.Manifest.ModuleAssetAttribute(("Areas\\HyTheme\\wwwroot\\blueprint3d\\models\\js\\cb-clapboard_baked.png|c:\\ws\\github\\o" +
     "rgstrata\\HyTheme\\wwwroot\\blueprint3d\\models\\js\\cb-clapboard_baked.png"))]
-[assembly: OrchardCore.Modules.Manifest.ModuleAssetAttribute(("Areas\\HyTheme\\wwwroot\\blueprint3d\\models\\js\\cb-kendallbookcasewalnut_baked.js|C:\\" +
+[assembly: OrchardCore.Modules.Manifest.ModuleAssetAttribute(("Areas\\HyTheme\\wwwroot\\blueprint3d\\models\\js\\cb-kendallbookcasewalnut_baked.js|c:\\" +
     "ws\\github\\orgstrata\\HyTheme\\wwwroot\\blueprint3d\\models\\js\\cb-kendallbookcasewaln" +
     "ut_baked.js"))]
-[assembly: OrchardCore.Modules.Manifest.ModuleAssetAttribute(("Areas\\HyTheme\\wwwroot\\blueprint3d\\models\\js\\cb-kendallbookcasewalnut_baked.png|C:" +
+[assembly: OrchardCore.Modules.Manifest.ModuleAssetAttribute(("Areas\\HyTheme\\wwwroot\\blueprint3d\\models\\js\\cb-kendallbookcasewalnut_baked.png|c:" +
     "\\ws\\github\\orgstrata\\HyTheme\\wwwroot\\blueprint3d\\models\\js\\cb-kendallbookcasewal" +
     "nut_baked.png"))]
-[assembly: OrchardCore.Modules.Manifest.ModuleAssetAttribute(("Areas\\HyTheme\\wwwroot\\blueprint3d\\models\\js\\cb-moore_baked.js|C:\\ws\\github\\orgstr" +
+[assembly: OrchardCore.Modules.Manifest.ModuleAssetAttribute(("Areas\\HyTheme\\wwwroot\\blueprint3d\\models\\js\\cb-moore_baked.js|c:\\ws\\github\\orgstr" +
     "ata\\HyTheme\\wwwroot\\blueprint3d\\models\\js\\cb-moore_baked.js"))]
-[assembly: OrchardCore.Modules.Manifest.ModuleAssetAttribute(("Areas\\HyTheme\\wwwroot\\blueprint3d\\models\\js\\cb-rochelle-gray_baked.js|C:\\ws\\githu" +
+[assembly: OrchardCore.Modules.Manifest.ModuleAssetAttribute(("Areas\\HyTheme\\wwwroot\\blueprint3d\\models\\js\\cb-rochelle-gray_baked.js|c:\\ws\\githu" +
     "b\\orgstrata\\HyTheme\\wwwroot\\blueprint3d\\models\\js\\cb-rochelle-gray_baked.js"))]
-[assembly: OrchardCore.Modules.Manifest.ModuleAssetAttribute(("Areas\\HyTheme\\wwwroot\\blueprint3d\\models\\js\\cb-rochelle-gray_baked.png|C:\\ws\\gith" +
+[assembly: OrchardCore.Modules.Manifest.ModuleAssetAttribute(("Areas\\HyTheme\\wwwroot\\blueprint3d\\models\\js\\cb-rochelle-gray_baked.png|c:\\ws\\gith" +
     "ub\\orgstrata\\HyTheme\\wwwroot\\blueprint3d\\models\\js\\cb-rochelle-gray_baked.png"))]
-[assembly: OrchardCore.Modules.Manifest.ModuleAssetAttribute(("Areas\\HyTheme\\wwwroot\\blueprint3d\\models\\js\\cb-scholartable_baked.js|C:\\ws\\github" +
+[assembly: OrchardCore.Modules.Manifest.ModuleAssetAttribute(("Areas\\HyTheme\\wwwroot\\blueprint3d\\models\\js\\cb-scholartable_baked.js|c:\\ws\\github" +
     "\\orgstrata\\HyTheme\\wwwroot\\blueprint3d\\models\\js\\cb-scholartable_baked.js"))]
-[assembly: OrchardCore.Modules.Manifest.ModuleAssetAttribute(("Areas\\HyTheme\\wwwroot\\blueprint3d\\models\\js\\cb-scholartable_baked.png|C:\\ws\\githu" +
+[assembly: OrchardCore.Modules.Manifest.ModuleAssetAttribute(("Areas\\HyTheme\\wwwroot\\blueprint3d\\models\\js\\cb-scholartable_baked.png|c:\\ws\\githu" +
     "b\\orgstrata\\HyTheme\\wwwroot\\blueprint3d\\models\\js\\cb-scholartable_baked.png"))]
-[assembly: OrchardCore.Modules.Manifest.ModuleAssetAttribute(("Areas\\HyTheme\\wwwroot\\blueprint3d\\models\\js\\cb-tecs_baked.js|C:\\ws\\github\\orgstra" +
+[assembly: OrchardCore.Modules.Manifest.ModuleAssetAttribute(("Areas\\HyTheme\\wwwroot\\blueprint3d\\models\\js\\cb-tecs_baked.js|c:\\ws\\github\\orgstra" +
     "ta\\HyTheme\\wwwroot\\blueprint3d\\models\\js\\cb-tecs_baked.js"))]
-[assembly: OrchardCore.Modules.Manifest.ModuleAssetAttribute(("Areas\\HyTheme\\wwwroot\\blueprint3d\\models\\js\\cb-tecs_baked.png|C:\\ws\\github\\orgstr" +
+[assembly: OrchardCore.Modules.Manifest.ModuleAssetAttribute(("Areas\\HyTheme\\wwwroot\\blueprint3d\\models\\js\\cb-tecs_baked.png|c:\\ws\\github\\orgstr" +
     "ata\\HyTheme\\wwwroot\\blueprint3d\\models\\js\\cb-tecs_baked.png"))]
-[assembly: OrchardCore.Modules.Manifest.ModuleAssetAttribute(("Areas\\HyTheme\\wwwroot\\blueprint3d\\models\\js\\closed-door28x80_baked.js|C:\\ws\\githu" +
+[assembly: OrchardCore.Modules.Manifest.ModuleAssetAttribute(("Areas\\HyTheme\\wwwroot\\blueprint3d\\models\\js\\closed-door28x80_baked.js|c:\\ws\\githu" +
     "b\\orgstrata\\HyTheme\\wwwroot\\blueprint3d\\models\\js\\closed-door28x80_baked.js"))]
-[assembly: OrchardCore.Modules.Manifest.ModuleAssetAttribute(("Areas\\HyTheme\\wwwroot\\blueprint3d\\models\\js\\closed-door28x80_baked.png|C:\\ws\\gith" +
+[assembly: OrchardCore.Modules.Manifest.ModuleAssetAttribute(("Areas\\HyTheme\\wwwroot\\blueprint3d\\models\\js\\closed-door28x80_baked.png|c:\\ws\\gith" +
     "ub\\orgstrata\\HyTheme\\wwwroot\\blueprint3d\\models\\js\\closed-door28x80_baked.png"))]
-[assembly: OrchardCore.Modules.Manifest.ModuleAssetAttribute(("Areas\\HyTheme\\wwwroot\\blueprint3d\\models\\js\\DWR_MATERA_DRESSER2.js|C:\\ws\\github\\o" +
+[assembly: OrchardCore.Modules.Manifest.ModuleAssetAttribute(("Areas\\HyTheme\\wwwroot\\blueprint3d\\models\\js\\DWR_MATERA_DRESSER2.js|c:\\ws\\github\\o" +
     "rgstrata\\HyTheme\\wwwroot\\blueprint3d\\models\\js\\DWR_MATERA_DRESSER2.js"))]
-[assembly: OrchardCore.Modules.Manifest.ModuleAssetAttribute(("Areas\\HyTheme\\wwwroot\\blueprint3d\\models\\js\\grey-brown_wood.jpg|C:\\ws\\github\\orgs" +
+[assembly: OrchardCore.Modules.Manifest.ModuleAssetAttribute(("Areas\\HyTheme\\wwwroot\\blueprint3d\\models\\js\\grey-brown_wood.jpg|c:\\ws\\github\\orgs" +
     "trata\\HyTheme\\wwwroot\\blueprint3d\\models\\js\\grey-brown_wood.jpg"))]
-[assembly: OrchardCore.Modules.Manifest.ModuleAssetAttribute(("Areas\\HyTheme\\wwwroot\\blueprint3d\\models\\js\\gus-churchchair-whiteoak.js|C:\\ws\\git" +
+[assembly: OrchardCore.Modules.Manifest.ModuleAssetAttribute(("Areas\\HyTheme\\wwwroot\\blueprint3d\\models\\js\\gus-churchchair-whiteoak.js|c:\\ws\\git" +
     "hub\\orgstrata\\HyTheme\\wwwroot\\blueprint3d\\models\\js\\gus-churchchair-whiteoak.js"))]
-[assembly: OrchardCore.Modules.Manifest.ModuleAssetAttribute(("Areas\\HyTheme\\wwwroot\\blueprint3d\\models\\js\\GUSossingtonendtable.js|C:\\ws\\github\\" +
+[assembly: OrchardCore.Modules.Manifest.ModuleAssetAttribute(("Areas\\HyTheme\\wwwroot\\blueprint3d\\models\\js\\GUSossingtonendtable.js|c:\\ws\\github\\" +
     "orgstrata\\HyTheme\\wwwroot\\blueprint3d\\models\\js\\GUSossingtonendtable.js"))]
-[assembly: OrchardCore.Modules.Manifest.ModuleAssetAttribute(("Areas\\HyTheme\\wwwroot\\blueprint3d\\models\\js\\ik-ekero-blue_baked.js|C:\\ws\\github\\o" +
+[assembly: OrchardCore.Modules.Manifest.ModuleAssetAttribute(("Areas\\HyTheme\\wwwroot\\blueprint3d\\models\\js\\ik-ekero-blue_baked.js|c:\\ws\\github\\o" +
     "rgstrata\\HyTheme\\wwwroot\\blueprint3d\\models\\js\\ik-ekero-blue_baked.js"))]
-[assembly: OrchardCore.Modules.Manifest.ModuleAssetAttribute(("Areas\\HyTheme\\wwwroot\\blueprint3d\\models\\js\\ik-ekero-blue_baked.png|C:\\ws\\github\\" +
+[assembly: OrchardCore.Modules.Manifest.ModuleAssetAttribute(("Areas\\HyTheme\\wwwroot\\blueprint3d\\models\\js\\ik-ekero-blue_baked.png|c:\\ws\\github\\" +
     "orgstrata\\HyTheme\\wwwroot\\blueprint3d\\models\\js\\ik-ekero-blue_baked.png"))]
-[assembly: OrchardCore.Modules.Manifest.ModuleAssetAttribute(("Areas\\HyTheme\\wwwroot\\blueprint3d\\models\\js\\ik-ekero-orange_baked.js|C:\\ws\\github" +
+[assembly: OrchardCore.Modules.Manifest.ModuleAssetAttribute(("Areas\\HyTheme\\wwwroot\\blueprint3d\\models\\js\\ik-ekero-orange_baked.js|c:\\ws\\github" +
     "\\orgstrata\\HyTheme\\wwwroot\\blueprint3d\\models\\js\\ik-ekero-orange_baked.js"))]
-[assembly: OrchardCore.Modules.Manifest.ModuleAssetAttribute(("Areas\\HyTheme\\wwwroot\\blueprint3d\\models\\js\\ik-ekero-orange_baked.png|C:\\ws\\githu" +
+[assembly: OrchardCore.Modules.Manifest.ModuleAssetAttribute(("Areas\\HyTheme\\wwwroot\\blueprint3d\\models\\js\\ik-ekero-orange_baked.png|c:\\ws\\githu" +
     "b\\orgstrata\\HyTheme\\wwwroot\\blueprint3d\\models\\js\\ik-ekero-orange_baked.png"))]
-[assembly: OrchardCore.Modules.Manifest.ModuleAssetAttribute(("Areas\\HyTheme\\wwwroot\\blueprint3d\\models\\js\\ik-kivine_baked.js|C:\\ws\\github\\orgst" +
+[assembly: OrchardCore.Modules.Manifest.ModuleAssetAttribute(("Areas\\HyTheme\\wwwroot\\blueprint3d\\models\\js\\ik-kivine_baked.js|c:\\ws\\github\\orgst" +
     "rata\\HyTheme\\wwwroot\\blueprint3d\\models\\js\\ik-kivine_baked.js"))]
-[assembly: OrchardCore.Modules.Manifest.ModuleAssetAttribute(("Areas\\HyTheme\\wwwroot\\blueprint3d\\models\\js\\ik-stockholmcoffee-brown.js|C:\\ws\\git" +
+[assembly: OrchardCore.Modules.Manifest.ModuleAssetAttribute(("Areas\\HyTheme\\wwwroot\\blueprint3d\\models\\js\\ik-stockholmcoffee-brown.js|c:\\ws\\git" +
     "hub\\orgstrata\\HyTheme\\wwwroot\\blueprint3d\\models\\js\\ik-stockholmcoffee-brown.js"))]
-[assembly: OrchardCore.Modules.Manifest.ModuleAssetAttribute(("Areas\\HyTheme\\wwwroot\\blueprint3d\\models\\js\\ik_nordli_full.js|C:\\ws\\github\\orgstr" +
+[assembly: OrchardCore.Modules.Manifest.ModuleAssetAttribute(("Areas\\HyTheme\\wwwroot\\blueprint3d\\models\\js\\ik_nordli_full.js|c:\\ws\\github\\orgstr" +
     "ata\\HyTheme\\wwwroot\\blueprint3d\\models\\js\\ik_nordli_full.js"))]
-[assembly: OrchardCore.Modules.Manifest.ModuleAssetAttribute(("Areas\\HyTheme\\wwwroot\\blueprint3d\\models\\js\\nyc-poster2.js|C:\\ws\\github\\orgstrata" +
+[assembly: OrchardCore.Modules.Manifest.ModuleAssetAttribute(("Areas\\HyTheme\\wwwroot\\blueprint3d\\models\\js\\nyc-poster2.js|c:\\ws\\github\\orgstrata" +
     "\\HyTheme\\wwwroot\\blueprint3d\\models\\js\\nyc-poster2.js"))]
-[assembly: OrchardCore.Modules.Manifest.ModuleAssetAttribute(("Areas\\HyTheme\\wwwroot\\blueprint3d\\models\\js\\nyc2.jpg|C:\\ws\\github\\orgstrata\\HyThe" +
+[assembly: OrchardCore.Modules.Manifest.ModuleAssetAttribute(("Areas\\HyTheme\\wwwroot\\blueprint3d\\models\\js\\nyc2.jpg|c:\\ws\\github\\orgstrata\\HyThe" +
     "me\\wwwroot\\blueprint3d\\models\\js\\nyc2.jpg"))]
-[assembly: OrchardCore.Modules.Manifest.ModuleAssetAttribute(("Areas\\HyTheme\\wwwroot\\blueprint3d\\models\\js\\oak_wood.jpg|C:\\ws\\github\\orgstrata\\H" +
+[assembly: OrchardCore.Modules.Manifest.ModuleAssetAttribute(("Areas\\HyTheme\\wwwroot\\blueprint3d\\models\\js\\oak_wood.jpg|c:\\ws\\github\\orgstrata\\H" +
     "yTheme\\wwwroot\\blueprint3d\\models\\js\\oak_wood.jpg"))]
-[assembly: OrchardCore.Modules.Manifest.ModuleAssetAttribute(("Areas\\HyTheme\\wwwroot\\blueprint3d\\models\\js\\open_door.js|C:\\ws\\github\\orgstrata\\H" +
+[assembly: OrchardCore.Modules.Manifest.ModuleAssetAttribute(("Areas\\HyTheme\\wwwroot\\blueprint3d\\models\\js\\open_door.js|c:\\ws\\github\\orgstrata\\H" +
     "yTheme\\wwwroot\\blueprint3d\\models\\js\\open_door.js"))]
-[assembly: OrchardCore.Modules.Manifest.ModuleAssetAttribute(("Areas\\HyTheme\\wwwroot\\blueprint3d\\models\\js\\ore-3legged-white_baked.js|C:\\ws\\gith" +
+[assembly: OrchardCore.Modules.Manifest.ModuleAssetAttribute(("Areas\\HyTheme\\wwwroot\\blueprint3d\\models\\js\\ore-3legged-white_baked.js|c:\\ws\\gith" +
     "ub\\orgstrata\\HyTheme\\wwwroot\\blueprint3d\\models\\js\\ore-3legged-white_baked.js"))]
-[assembly: OrchardCore.Modules.Manifest.ModuleAssetAttribute(("Areas\\HyTheme\\wwwroot\\blueprint3d\\models\\js\\ore-3legged-white_baked.png|C:\\ws\\git" +
+[assembly: OrchardCore.Modules.Manifest.ModuleAssetAttribute(("Areas\\HyTheme\\wwwroot\\blueprint3d\\models\\js\\ore-3legged-white_baked.png|c:\\ws\\git" +
     "hub\\orgstrata\\HyTheme\\wwwroot\\blueprint3d\\models\\js\\ore-3legged-white_baked.png"))]
-[assembly: OrchardCore.Modules.Manifest.ModuleAssetAttribute(("Areas\\HyTheme\\wwwroot\\blueprint3d\\models\\js\\ps_7.jpg|C:\\ws\\github\\orgstrata\\HyThe" +
+[assembly: OrchardCore.Modules.Manifest.ModuleAssetAttribute(("Areas\\HyTheme\\wwwroot\\blueprint3d\\models\\js\\ps_7.jpg|c:\\ws\\github\\orgstrata\\HyThe" +
     "me\\wwwroot\\blueprint3d\\models\\js\\ps_7.jpg"))]
-[assembly: OrchardCore.Modules.Manifest.ModuleAssetAttribute(("Areas\\HyTheme\\wwwroot\\blueprint3d\\models\\js\\walnut-marin.jpg|C:\\ws\\github\\orgstra" +
+[assembly: OrchardCore.Modules.Manifest.ModuleAssetAttribute(("Areas\\HyTheme\\wwwroot\\blueprint3d\\models\\js\\walnut-marin.jpg|c:\\ws\\github\\orgstra" +
     "ta\\HyTheme\\wwwroot\\blueprint3d\\models\\js\\walnut-marin.jpg"))]
-[assembly: OrchardCore.Modules.Manifest.ModuleAssetAttribute(("Areas\\HyTheme\\wwwroot\\blueprint3d\\models\\js\\we-crosby2piece-greenbaked.js|C:\\ws\\g" +
+[assembly: OrchardCore.Modules.Manifest.ModuleAssetAttribute(("Areas\\HyTheme\\wwwroot\\blueprint3d\\models\\js\\we-crosby2piece-greenbaked.js|c:\\ws\\g" +
     "ithub\\orgstrata\\HyTheme\\wwwroot\\blueprint3d\\models\\js\\we-crosby2piece-greenbaked" +
     ".js"))]
-[assembly: OrchardCore.Modules.Manifest.ModuleAssetAttribute(("Areas\\HyTheme\\wwwroot\\blueprint3d\\models\\js\\we-narrow6white_baked.js|C:\\ws\\github" +
+[assembly: OrchardCore.Modules.Manifest.ModuleAssetAttribute(("Areas\\HyTheme\\wwwroot\\blueprint3d\\models\\js\\we-narrow6white_baked.js|c:\\ws\\github" +
     "\\orgstrata\\HyTheme\\wwwroot\\blueprint3d\\models\\js\\we-narrow6white_baked.js"))]
-[assembly: OrchardCore.Modules.Manifest.ModuleAssetAttribute(("Areas\\HyTheme\\wwwroot\\blueprint3d\\models\\js\\we-narrow6white_baked.png|C:\\ws\\githu" +
+[assembly: OrchardCore.Modules.Manifest.ModuleAssetAttribute(("Areas\\HyTheme\\wwwroot\\blueprint3d\\models\\js\\we-narrow6white_baked.png|c:\\ws\\githu" +
     "b\\orgstrata\\HyTheme\\wwwroot\\blueprint3d\\models\\js\\we-narrow6white_baked.png"))]
-[assembly: OrchardCore.Modules.Manifest.ModuleAssetAttribute(("Areas\\HyTheme\\wwwroot\\blueprint3d\\models\\js\\whitewindow.js|C:\\ws\\github\\orgstrata" +
+[assembly: OrchardCore.Modules.Manifest.ModuleAssetAttribute(("Areas\\HyTheme\\wwwroot\\blueprint3d\\models\\js\\whitewindow.js|c:\\ws\\github\\orgstrata" +
     "\\HyTheme\\wwwroot\\blueprint3d\\models\\js\\whitewindow.js"))]
-[assembly: OrchardCore.Modules.Manifest.ModuleAssetAttribute(("Areas\\HyTheme\\wwwroot\\blueprint3d\\models\\js\\white_wood.jpg|C:\\ws\\github\\orgstrata" +
+[assembly: OrchardCore.Modules.Manifest.ModuleAssetAttribute(("Areas\\HyTheme\\wwwroot\\blueprint3d\\models\\js\\white_wood.jpg|c:\\ws\\github\\orgstrata" +
     "\\HyTheme\\wwwroot\\blueprint3d\\models\\js\\white_wood.jpg"))]
 [assembly: OrchardCore.Modules.Manifest.ModuleAssetAttribute(("Areas\\HyTheme\\wwwroot\\blueprint3d\\models\\textures\\bd-shalebedside-smoke_baked.js|" +
-    "C:\\ws\\github\\orgstrata\\HyTheme\\wwwroot\\blueprint3d\\models\\textures\\bd-shalebedsi" +
+    "c:\\ws\\github\\orgstrata\\HyTheme\\wwwroot\\blueprint3d\\models\\textures\\bd-shalebedsi" +
     "de-smoke_baked.js"))]
 [assembly: OrchardCore.Modules.Manifest.ModuleAssetAttribute(("Areas\\HyTheme\\wwwroot\\blueprint3d\\models\\textures\\bd-shalebedside-smoke_baked.png" +
-    "|C:\\ws\\github\\orgstrata\\HyTheme\\wwwroot\\blueprint3d\\models\\textures\\bd-shalebeds" +
+    "|c:\\ws\\github\\orgstrata\\HyTheme\\wwwroot\\blueprint3d\\models\\textures\\bd-shalebeds" +
     "ide-smoke_baked.png"))]
 [assembly: OrchardCore.Modules.Manifest.ModuleAssetAttribute(("Areas\\HyTheme\\wwwroot\\blueprint3d\\models\\textures\\BlakeAvenuejoshuatreecheftable." +
-    "js|C:\\ws\\github\\orgstrata\\HyTheme\\wwwroot\\blueprint3d\\models\\textures\\BlakeAvenu" +
+    "js|c:\\ws\\github\\orgstrata\\HyTheme\\wwwroot\\blueprint3d\\models\\textures\\BlakeAvenu" +
     "ejoshuatreecheftable.js"))]
-[assembly: OrchardCore.Modules.Manifest.ModuleAssetAttribute(("Areas\\HyTheme\\wwwroot\\blueprint3d\\models\\textures\\b_cb-blue-block60x96.png|C:\\ws\\" +
+[assembly: OrchardCore.Modules.Manifest.ModuleAssetAttribute(("Areas\\HyTheme\\wwwroot\\blueprint3d\\models\\textures\\b_cb-blue-block60x96.png|c:\\ws\\" +
     "github\\orgstrata\\HyTheme\\wwwroot\\blueprint3d\\models\\textures\\b_cb-blue-block60x9" +
     "6.png"))]
-[assembly: OrchardCore.Modules.Manifest.ModuleAssetAttribute(("Areas\\HyTheme\\wwwroot\\blueprint3d\\models\\textures\\cb-archnight-white_baked.js|C:\\" +
+[assembly: OrchardCore.Modules.Manifest.ModuleAssetAttribute(("Areas\\HyTheme\\wwwroot\\blueprint3d\\models\\textures\\cb-archnight-white_baked.js|c:\\" +
     "ws\\github\\orgstrata\\HyTheme\\wwwroot\\blueprint3d\\models\\textures\\cb-archnight-whi" +
     "te_baked.js"))]
-[assembly: OrchardCore.Modules.Manifest.ModuleAssetAttribute(("Areas\\HyTheme\\wwwroot\\blueprint3d\\models\\textures\\cb-archnight-white_baked.png|C:" +
+[assembly: OrchardCore.Modules.Manifest.ModuleAssetAttribute(("Areas\\HyTheme\\wwwroot\\blueprint3d\\models\\textures\\cb-archnight-white_baked.png|c:" +
     "\\ws\\github\\orgstrata\\HyTheme\\wwwroot\\blueprint3d\\models\\textures\\cb-archnight-wh" +
     "ite_baked.png"))]
-[assembly: OrchardCore.Modules.Manifest.ModuleAssetAttribute(("Areas\\HyTheme\\wwwroot\\blueprint3d\\models\\textures\\cb-blue-block-60x96.js|C:\\ws\\gi" +
+[assembly: OrchardCore.Modules.Manifest.ModuleAssetAttribute(("Areas\\HyTheme\\wwwroot\\blueprint3d\\models\\textures\\cb-blue-block-60x96.js|c:\\ws\\gi" +
     "thub\\orgstrata\\HyTheme\\wwwroot\\blueprint3d\\models\\textures\\cb-blue-block-60x96.j" +
     "s"))]
-[assembly: OrchardCore.Modules.Manifest.ModuleAssetAttribute(("Areas\\HyTheme\\wwwroot\\blueprint3d\\models\\textures\\cb-clapboard_baked.js|C:\\ws\\git" +
+[assembly: OrchardCore.Modules.Manifest.ModuleAssetAttribute(("Areas\\HyTheme\\wwwroot\\blueprint3d\\models\\textures\\cb-clapboard_baked.js|c:\\ws\\git" +
     "hub\\orgstrata\\HyTheme\\wwwroot\\blueprint3d\\models\\textures\\cb-clapboard_baked.js"))]
-[assembly: OrchardCore.Modules.Manifest.ModuleAssetAttribute(("Areas\\HyTheme\\wwwroot\\blueprint3d\\models\\textures\\cb-clapboard_baked.png|C:\\ws\\gi" +
+[assembly: OrchardCore.Modules.Manifest.ModuleAssetAttribute(("Areas\\HyTheme\\wwwroot\\blueprint3d\\models\\textures\\cb-clapboard_baked.png|c:\\ws\\gi" +
     "thub\\orgstrata\\HyTheme\\wwwroot\\blueprint3d\\models\\textures\\cb-clapboard_baked.pn" +
     "g"))]
 [assembly: OrchardCore.Modules.Manifest.ModuleAssetAttribute(("Areas\\HyTheme\\wwwroot\\blueprint3d\\models\\textures\\cb-kendallbookcasewalnut_baked." +
-    "js|C:\\ws\\github\\orgstrata\\HyTheme\\wwwroot\\blueprint3d\\models\\textures\\cb-kendall" +
+    "js|c:\\ws\\github\\orgstrata\\HyTheme\\wwwroot\\blueprint3d\\models\\textures\\cb-kendall" +
     "bookcasewalnut_baked.js"))]
 [assembly: OrchardCore.Modules.Manifest.ModuleAssetAttribute(("Areas\\HyTheme\\wwwroot\\blueprint3d\\models\\textures\\cb-kendallbookcasewalnut_baked." +
-    "png|C:\\ws\\github\\orgstrata\\HyTheme\\wwwroot\\blueprint3d\\models\\textures\\cb-kendal" +
+    "png|c:\\ws\\github\\orgstrata\\HyTheme\\wwwroot\\blueprint3d\\models\\textures\\cb-kendal" +
     "lbookcasewalnut_baked.png"))]
-[assembly: OrchardCore.Modules.Manifest.ModuleAssetAttribute(("Areas\\HyTheme\\wwwroot\\blueprint3d\\models\\textures\\cb-moore_baked.js|C:\\ws\\github\\" +
+[assembly: OrchardCore.Modules.Manifest.ModuleAssetAttribute(("Areas\\HyTheme\\wwwroot\\blueprint3d\\models\\textures\\cb-moore_baked.js|c:\\ws\\github\\" +
     "orgstrata\\HyTheme\\wwwroot\\blueprint3d\\models\\textures\\cb-moore_baked.js"))]
-[assembly: OrchardCore.Modules.Manifest.ModuleAssetAttribute(("Areas\\HyTheme\\wwwroot\\blueprint3d\\models\\textures\\cb-rochelle-gray_baked.js|C:\\ws" +
+[assembly: OrchardCore.Modules.Manifest.ModuleAssetAttribute(("Areas\\HyTheme\\wwwroot\\blueprint3d\\models\\textures\\cb-rochelle-gray_baked.js|c:\\ws" +
     "\\github\\orgstrata\\HyTheme\\wwwroot\\blueprint3d\\models\\textures\\cb-rochelle-gray_b" +
     "aked.js"))]
-[assembly: OrchardCore.Modules.Manifest.ModuleAssetAttribute(("Areas\\HyTheme\\wwwroot\\blueprint3d\\models\\textures\\cb-rochelle-gray_baked.png|C:\\w" +
+[assembly: OrchardCore.Modules.Manifest.ModuleAssetAttribute(("Areas\\HyTheme\\wwwroot\\blueprint3d\\models\\textures\\cb-rochelle-gray_baked.png|c:\\w" +
     "s\\github\\orgstrata\\HyTheme\\wwwroot\\blueprint3d\\models\\textures\\cb-rochelle-gray_" +
     "baked.png"))]
-[assembly: OrchardCore.Modules.Manifest.ModuleAssetAttribute(("Areas\\HyTheme\\wwwroot\\blueprint3d\\models\\textures\\cb-scholartable_baked.js|C:\\ws\\" +
+[assembly: OrchardCore.Modules.Manifest.ModuleAssetAttribute(("Areas\\HyTheme\\wwwroot\\blueprint3d\\models\\textures\\cb-scholartable_baked.js|c:\\ws\\" +
     "github\\orgstrata\\HyTheme\\wwwroot\\blueprint3d\\models\\textures\\cb-scholartable_bak" +
     "ed.js"))]
-[assembly: OrchardCore.Modules.Manifest.ModuleAssetAttribute(("Areas\\HyTheme\\wwwroot\\blueprint3d\\models\\textures\\cb-scholartable_baked.png|C:\\ws" +
+[assembly: OrchardCore.Modules.Manifest.ModuleAssetAttribute(("Areas\\HyTheme\\wwwroot\\blueprint3d\\models\\textures\\cb-scholartable_baked.png|c:\\ws" +
     "\\github\\orgstrata\\HyTheme\\wwwroot\\blueprint3d\\models\\textures\\cb-scholartable_ba" +
     "ked.png"))]
-[assembly: OrchardCore.Modules.Manifest.ModuleAssetAttribute(("Areas\\HyTheme\\wwwroot\\blueprint3d\\models\\textures\\cb-tecs_baked.js|C:\\ws\\github\\o" +
+[assembly: OrchardCore.Modules.Manifest.ModuleAssetAttribute(("Areas\\HyTheme\\wwwroot\\blueprint3d\\models\\textures\\cb-tecs_baked.js|c:\\ws\\github\\o" +
     "rgstrata\\HyTheme\\wwwroot\\blueprint3d\\models\\textures\\cb-tecs_baked.js"))]
-[assembly: OrchardCore.Modules.Manifest.ModuleAssetAttribute(("Areas\\HyTheme\\wwwroot\\blueprint3d\\models\\textures\\cb-tecs_baked.png|C:\\ws\\github\\" +
+[assembly: OrchardCore.Modules.Manifest.ModuleAssetAttribute(("Areas\\HyTheme\\wwwroot\\blueprint3d\\models\\textures\\cb-tecs_baked.png|c:\\ws\\github\\" +
     "orgstrata\\HyTheme\\wwwroot\\blueprint3d\\models\\textures\\cb-tecs_baked.png"))]
-[assembly: OrchardCore.Modules.Manifest.ModuleAssetAttribute(("Areas\\HyTheme\\wwwroot\\blueprint3d\\models\\textures\\closed-door28x80_baked.js|C:\\ws" +
+[assembly: OrchardCore.Modules.Manifest.ModuleAssetAttribute(("Areas\\HyTheme\\wwwroot\\blueprint3d\\models\\textures\\closed-door28x80_baked.js|c:\\ws" +
     "\\github\\orgstrata\\HyTheme\\wwwroot\\blueprint3d\\models\\textures\\closed-door28x80_b" +
     "aked.js"))]
-[assembly: OrchardCore.Modules.Manifest.ModuleAssetAttribute(("Areas\\HyTheme\\wwwroot\\blueprint3d\\models\\textures\\closed-door28x80_baked.png|C:\\w" +
+[assembly: OrchardCore.Modules.Manifest.ModuleAssetAttribute(("Areas\\HyTheme\\wwwroot\\blueprint3d\\models\\textures\\closed-door28x80_baked.png|c:\\w" +
     "s\\github\\orgstrata\\HyTheme\\wwwroot\\blueprint3d\\models\\textures\\closed-door28x80_" +
     "baked.png"))]
-[assembly: OrchardCore.Modules.Manifest.ModuleAssetAttribute(("Areas\\HyTheme\\wwwroot\\blueprint3d\\models\\textures\\DWR_MATERA_DRESSER2.js|C:\\ws\\gi" +
+[assembly: OrchardCore.Modules.Manifest.ModuleAssetAttribute(("Areas\\HyTheme\\wwwroot\\blueprint3d\\models\\textures\\DWR_MATERA_DRESSER2.js|c:\\ws\\gi" +
     "thub\\orgstrata\\HyTheme\\wwwroot\\blueprint3d\\models\\textures\\DWR_MATERA_DRESSER2.j" +
     "s"))]
-[assembly: OrchardCore.Modules.Manifest.ModuleAssetAttribute(("Areas\\HyTheme\\wwwroot\\blueprint3d\\models\\textures\\grey-brown_wood.jpg|C:\\ws\\githu" +
+[assembly: OrchardCore.Modules.Manifest.ModuleAssetAttribute(("Areas\\HyTheme\\wwwroot\\blueprint3d\\models\\textures\\grey-brown_wood.jpg|c:\\ws\\githu" +
     "b\\orgstrata\\HyTheme\\wwwroot\\blueprint3d\\models\\textures\\grey-brown_wood.jpg"))]
-[assembly: OrchardCore.Modules.Manifest.ModuleAssetAttribute(("Areas\\HyTheme\\wwwroot\\blueprint3d\\models\\textures\\gus-churchchair-whiteoak.js|C:\\" +
+[assembly: OrchardCore.Modules.Manifest.ModuleAssetAttribute(("Areas\\HyTheme\\wwwroot\\blueprint3d\\models\\textures\\gus-churchchair-whiteoak.js|c:\\" +
     "ws\\github\\orgstrata\\HyTheme\\wwwroot\\blueprint3d\\models\\textures\\gus-churchchair-" +
     "whiteoak.js"))]
-[assembly: OrchardCore.Modules.Manifest.ModuleAssetAttribute(("Areas\\HyTheme\\wwwroot\\blueprint3d\\models\\textures\\GUSossingtonendtable.js|C:\\ws\\g" +
+[assembly: OrchardCore.Modules.Manifest.ModuleAssetAttribute(("Areas\\HyTheme\\wwwroot\\blueprint3d\\models\\textures\\GUSossingtonendtable.js|c:\\ws\\g" +
     "ithub\\orgstrata\\HyTheme\\wwwroot\\blueprint3d\\models\\textures\\GUSossingtonendtable" +
     ".js"))]
-[assembly: OrchardCore.Modules.Manifest.ModuleAssetAttribute(("Areas\\HyTheme\\wwwroot\\blueprint3d\\models\\textures\\ik-ekero-blue_baked.js|C:\\ws\\gi" +
+[assembly: OrchardCore.Modules.Manifest.ModuleAssetAttribute(("Areas\\HyTheme\\wwwroot\\blueprint3d\\models\\textures\\ik-ekero-blue_baked.js|c:\\ws\\gi" +
     "thub\\orgstrata\\HyTheme\\wwwroot\\blueprint3d\\models\\textures\\ik-ekero-blue_baked.j" +
     "s"))]
-[assembly: OrchardCore.Modules.Manifest.ModuleAssetAttribute(("Areas\\HyTheme\\wwwroot\\blueprint3d\\models\\textures\\ik-ekero-blue_baked.png|C:\\ws\\g" +
+[assembly: OrchardCore.Modules.Manifest.ModuleAssetAttribute(("Areas\\HyTheme\\wwwroot\\blueprint3d\\models\\textures\\ik-ekero-blue_baked.png|c:\\ws\\g" +
     "ithub\\orgstrata\\HyTheme\\wwwroot\\blueprint3d\\models\\textures\\ik-ekero-blue_baked." +
     "png"))]
-[assembly: OrchardCore.Modules.Manifest.ModuleAssetAttribute(("Areas\\HyTheme\\wwwroot\\blueprint3d\\models\\textures\\ik-ekero-orange_baked.js|C:\\ws\\" +
+[assembly: OrchardCore.Modules.Manifest.ModuleAssetAttribute(("Areas\\HyTheme\\wwwroot\\blueprint3d\\models\\textures\\ik-ekero-orange_baked.js|c:\\ws\\" +
     "github\\orgstrata\\HyTheme\\wwwroot\\blueprint3d\\models\\textures\\ik-ekero-orange_bak" +
     "ed.js"))]
-[assembly: OrchardCore.Modules.Manifest.ModuleAssetAttribute(("Areas\\HyTheme\\wwwroot\\blueprint3d\\models\\textures\\ik-ekero-orange_baked.png|C:\\ws" +
+[assembly: OrchardCore.Modules.Manifest.ModuleAssetAttribute(("Areas\\HyTheme\\wwwroot\\blueprint3d\\models\\textures\\ik-ekero-orange_baked.png|c:\\ws" +
     "\\github\\orgstrata\\HyTheme\\wwwroot\\blueprint3d\\models\\textures\\ik-ekero-orange_ba" +
     "ked.png"))]
-[assembly: OrchardCore.Modules.Manifest.ModuleAssetAttribute(("Areas\\HyTheme\\wwwroot\\blueprint3d\\models\\textures\\ik-kivine_baked.js|C:\\ws\\github" +
+[assembly: OrchardCore.Modules.Manifest.ModuleAssetAttribute(("Areas\\HyTheme\\wwwroot\\blueprint3d\\models\\textures\\ik-kivine_baked.js|c:\\ws\\github" +
     "\\orgstrata\\HyTheme\\wwwroot\\blueprint3d\\models\\textures\\ik-kivine_baked.js"))]
-[assembly: OrchardCore.Modules.Manifest.ModuleAssetAttribute(("Areas\\HyTheme\\wwwroot\\blueprint3d\\models\\textures\\ik-stockholmcoffee-brown.js|C:\\" +
+[assembly: OrchardCore.Modules.Manifest.ModuleAssetAttribute(("Areas\\HyTheme\\wwwroot\\blueprint3d\\models\\textures\\ik-stockholmcoffee-brown.js|c:\\" +
     "ws\\github\\orgstrata\\HyTheme\\wwwroot\\blueprint3d\\models\\textures\\ik-stockholmcoff" +
     "ee-brown.js"))]
-[assembly: OrchardCore.Modules.Manifest.ModuleAssetAttribute(("Areas\\HyTheme\\wwwroot\\blueprint3d\\models\\textures\\ik_nordli_full.js|C:\\ws\\github\\" +
+[assembly: OrchardCore.Modules.Manifest.ModuleAssetAttribute(("Areas\\HyTheme\\wwwroot\\blueprint3d\\models\\textures\\ik_nordli_full.js|c:\\ws\\github\\" +
     "orgstrata\\HyTheme\\wwwroot\\blueprint3d\\models\\textures\\ik_nordli_full.js"))]
-[assembly: OrchardCore.Modules.Manifest.ModuleAssetAttribute(("Areas\\HyTheme\\wwwroot\\blueprint3d\\models\\textures\\nyc-poster2.js|C:\\ws\\github\\org" +
+[assembly: OrchardCore.Modules.Manifest.ModuleAssetAttribute(("Areas\\HyTheme\\wwwroot\\blueprint3d\\models\\textures\\nyc-poster2.js|c:\\ws\\github\\org" +
     "strata\\HyTheme\\wwwroot\\blueprint3d\\models\\textures\\nyc-poster2.js"))]
-[assembly: OrchardCore.Modules.Manifest.ModuleAssetAttribute(("Areas\\HyTheme\\wwwroot\\blueprint3d\\models\\textures\\nyc2.jpg|C:\\ws\\github\\orgstrata" +
+[assembly: OrchardCore.Modules.Manifest.ModuleAssetAttribute(("Areas\\HyTheme\\wwwroot\\blueprint3d\\models\\textures\\nyc2.jpg|c:\\ws\\github\\orgstrata" +
     "\\HyTheme\\wwwroot\\blueprint3d\\models\\textures\\nyc2.jpg"))]
-[assembly: OrchardCore.Modules.Manifest.ModuleAssetAttribute(("Areas\\HyTheme\\wwwroot\\blueprint3d\\models\\textures\\oak_wood.jpg|C:\\ws\\github\\orgst" +
+[assembly: OrchardCore.Modules.Manifest.ModuleAssetAttribute(("Areas\\HyTheme\\wwwroot\\blueprint3d\\models\\textures\\oak_wood.jpg|c:\\ws\\github\\orgst" +
     "rata\\HyTheme\\wwwroot\\blueprint3d\\models\\textures\\oak_wood.jpg"))]
-[assembly: OrchardCore.Modules.Manifest.ModuleAssetAttribute(("Areas\\HyTheme\\wwwroot\\blueprint3d\\models\\textures\\open_door.js|C:\\ws\\github\\orgst" +
+[assembly: OrchardCore.Modules.Manifest.ModuleAssetAttribute(("Areas\\HyTheme\\wwwroot\\blueprint3d\\models\\textures\\open_door.js|c:\\ws\\github\\orgst" +
     "rata\\HyTheme\\wwwroot\\blueprint3d\\models\\textures\\open_door.js"))]
-[assembly: OrchardCore.Modules.Manifest.ModuleAssetAttribute(("Areas\\HyTheme\\wwwroot\\blueprint3d\\models\\textures\\ore-3legged-white_baked.js|C:\\w" +
+[assembly: OrchardCore.Modules.Manifest.ModuleAssetAttribute(("Areas\\HyTheme\\wwwroot\\blueprint3d\\models\\textures\\ore-3legged-white_baked.js|c:\\w" +
     "s\\github\\orgstrata\\HyTheme\\wwwroot\\blueprint3d\\models\\textures\\ore-3legged-white" +
     "_baked.js"))]
-[assembly: OrchardCore.Modules.Manifest.ModuleAssetAttribute(("Areas\\HyTheme\\wwwroot\\blueprint3d\\models\\textures\\ore-3legged-white_baked.png|C:\\" +
+[assembly: OrchardCore.Modules.Manifest.ModuleAssetAttribute(("Areas\\HyTheme\\wwwroot\\blueprint3d\\models\\textures\\ore-3legged-white_baked.png|c:\\" +
     "ws\\github\\orgstrata\\HyTheme\\wwwroot\\blueprint3d\\models\\textures\\ore-3legged-whit" +
     "e_baked.png"))]
-[assembly: OrchardCore.Modules.Manifest.ModuleAssetAttribute(("Areas\\HyTheme\\wwwroot\\blueprint3d\\models\\textures\\ps_7.jpg|C:\\ws\\github\\orgstrata" +
+[assembly: OrchardCore.Modules.Manifest.ModuleAssetAttribute(("Areas\\HyTheme\\wwwroot\\blueprint3d\\models\\textures\\ps_7.jpg|c:\\ws\\github\\orgstrata" +
     "\\HyTheme\\wwwroot\\blueprint3d\\models\\textures\\ps_7.jpg"))]
-[assembly: OrchardCore.Modules.Manifest.ModuleAssetAttribute(("Areas\\HyTheme\\wwwroot\\blueprint3d\\models\\textures\\walnut-marin.jpg|C:\\ws\\github\\o" +
+[assembly: OrchardCore.Modules.Manifest.ModuleAssetAttribute(("Areas\\HyTheme\\wwwroot\\blueprint3d\\models\\textures\\walnut-marin.jpg|c:\\ws\\github\\o" +
     "rgstrata\\HyTheme\\wwwroot\\blueprint3d\\models\\textures\\walnut-marin.jpg"))]
-[assembly: OrchardCore.Modules.Manifest.ModuleAssetAttribute(("Areas\\HyTheme\\wwwroot\\blueprint3d\\models\\textures\\we-crosby2piece-greenbaked.js|C" +
+[assembly: OrchardCore.Modules.Manifest.ModuleAssetAttribute(("Areas\\HyTheme\\wwwroot\\blueprint3d\\models\\textures\\we-crosby2piece-greenbaked.js|c" +
     ":\\ws\\github\\orgstrata\\HyTheme\\wwwroot\\blueprint3d\\models\\textures\\we-crosby2piec" +
     "e-greenbaked.js"))]
-[assembly: OrchardCore.Modules.Manifest.ModuleAssetAttribute(("Areas\\HyTheme\\wwwroot\\blueprint3d\\models\\textures\\we-narrow6white_baked.js|C:\\ws\\" +
+[assembly: OrchardCore.Modules.Manifest.ModuleAssetAttribute(("Areas\\HyTheme\\wwwroot\\blueprint3d\\models\\textures\\we-narrow6white_baked.js|c:\\ws\\" +
     "github\\orgstrata\\HyTheme\\wwwroot\\blueprint3d\\models\\textures\\we-narrow6white_bak" +
     "ed.js"))]
-[assembly: OrchardCore.Modules.Manifest.ModuleAssetAttribute(("Areas\\HyTheme\\wwwroot\\blueprint3d\\models\\textures\\we-narrow6white_baked.png|C:\\ws" +
+[assembly: OrchardCore.Modules.Manifest.ModuleAssetAttribute(("Areas\\HyTheme\\wwwroot\\blueprint3d\\models\\textures\\we-narrow6white_baked.png|c:\\ws" +
     "\\github\\orgstrata\\HyTheme\\wwwroot\\blueprint3d\\models\\textures\\we-narrow6white_ba" +
     "ked.png"))]
-[assembly: OrchardCore.Modules.Manifest.ModuleAssetAttribute(("Areas\\HyTheme\\wwwroot\\blueprint3d\\models\\textures\\whitewindow.js|C:\\ws\\github\\org" +
+[assembly: OrchardCore.Modules.Manifest.ModuleAssetAttribute(("Areas\\HyTheme\\wwwroot\\blueprint3d\\models\\textures\\whitewindow.js|c:\\ws\\github\\org" +
     "strata\\HyTheme\\wwwroot\\blueprint3d\\models\\textures\\whitewindow.js"))]
-[assembly: OrchardCore.Modules.Manifest.ModuleAssetAttribute(("Areas\\HyTheme\\wwwroot\\blueprint3d\\models\\textures\\white_wood.jpg|C:\\ws\\github\\org" +
+[assembly: OrchardCore.Modules.Manifest.ModuleAssetAttribute(("Areas\\HyTheme\\wwwroot\\blueprint3d\\models\\textures\\white_wood.jpg|c:\\ws\\github\\org" +
     "strata\\HyTheme\\wwwroot\\blueprint3d\\models\\textures\\white_wood.jpg"))]
 [assembly: OrchardCore.Modules.Manifest.ModuleAssetAttribute(("Areas\\HyTheme\\wwwroot\\blueprint3d\\models\\thumbnails\\thumbnail_arch-white-oval-nig" +
-    "htstand.jpg|C:\\ws\\github\\orgstrata\\HyTheme\\wwwroot\\blueprint3d\\models\\thumbnails" +
+    "htstand.jpg|c:\\ws\\github\\orgstrata\\HyTheme\\wwwroot\\blueprint3d\\models\\thumbnails" +
     "\\thumbnail_arch-white-oval-nightstand.jpg"))]
 [assembly: OrchardCore.Modules.Manifest.ModuleAssetAttribute(("Areas\\HyTheme\\wwwroot\\blueprint3d\\models\\thumbnails\\thumbnail_Blu-Dot-Shale-Bedsi" +
-    "de-Table.jpg|C:\\ws\\github\\orgstrata\\HyTheme\\wwwroot\\blueprint3d\\models\\thumbnail" +
+    "de-Table.jpg|c:\\ws\\github\\orgstrata\\HyTheme\\wwwroot\\blueprint3d\\models\\thumbnail" +
     "s\\thumbnail_Blu-Dot-Shale-Bedside-Table.jpg"))]
 [assembly: OrchardCore.Modules.Manifest.ModuleAssetAttribute(("Areas\\HyTheme\\wwwroot\\blueprint3d\\models\\thumbnails\\thumbnail_cb-blue-block60x96." +
-    "png|C:\\ws\\github\\orgstrata\\HyTheme\\wwwroot\\blueprint3d\\models\\thumbnails\\thumbna" +
+    "png|c:\\ws\\github\\orgstrata\\HyTheme\\wwwroot\\blueprint3d\\models\\thumbnails\\thumbna" +
     "il_cb-blue-block60x96.png"))]
 [assembly: OrchardCore.Modules.Manifest.ModuleAssetAttribute(("Areas\\HyTheme\\wwwroot\\blueprint3d\\models\\thumbnails\\thumbnail_Church-Chair-oak-wh" +
-    "ite_1024x1024.jpg|C:\\ws\\github\\orgstrata\\HyTheme\\wwwroot\\blueprint3d\\models\\thum" +
+    "ite_1024x1024.jpg|c:\\ws\\github\\orgstrata\\HyTheme\\wwwroot\\blueprint3d\\models\\thum" +
     "bnails\\thumbnail_Church-Chair-oak-white_1024x1024.jpg"))]
 [assembly: OrchardCore.Modules.Manifest.ModuleAssetAttribute(("Areas\\HyTheme\\wwwroot\\blueprint3d\\models\\thumbnails\\thumbnail_clapboard-white-60-" +
-    "media-console-1.jpg|C:\\ws\\github\\orgstrata\\HyTheme\\wwwroot\\blueprint3d\\models\\th" +
+    "media-console-1.jpg|c:\\ws\\github\\orgstrata\\HyTheme\\wwwroot\\blueprint3d\\models\\th" +
     "umbnails\\thumbnail_clapboard-white-60-media-console-1.jpg"))]
-[assembly: OrchardCore.Modules.Manifest.ModuleAssetAttribute(("Areas\\HyTheme\\wwwroot\\blueprint3d\\models\\thumbnails\\thumbnail_ekero-blue3.png|C:\\" +
+[assembly: OrchardCore.Modules.Manifest.ModuleAssetAttribute(("Areas\\HyTheme\\wwwroot\\blueprint3d\\models\\thumbnails\\thumbnail_ekero-blue3.png|c:\\" +
     "ws\\github\\orgstrata\\HyTheme\\wwwroot\\blueprint3d\\models\\thumbnails\\thumbnail_eker" +
     "o-blue3.png"))]
-[assembly: OrchardCore.Modules.Manifest.ModuleAssetAttribute(("Areas\\HyTheme\\wwwroot\\blueprint3d\\models\\thumbnails\\thumbnail_img21o.jpg|C:\\ws\\gi" +
+[assembly: OrchardCore.Modules.Manifest.ModuleAssetAttribute(("Areas\\HyTheme\\wwwroot\\blueprint3d\\models\\thumbnails\\thumbnail_img21o.jpg|c:\\ws\\gi" +
     "thub\\orgstrata\\HyTheme\\wwwroot\\blueprint3d\\models\\thumbnails\\thumbnail_img21o.jp" +
     "g"))]
-[assembly: OrchardCore.Modules.Manifest.ModuleAssetAttribute(("Areas\\HyTheme\\wwwroot\\blueprint3d\\models\\thumbnails\\thumbnail_img25o.jpg|C:\\ws\\gi" +
+[assembly: OrchardCore.Modules.Manifest.ModuleAssetAttribute(("Areas\\HyTheme\\wwwroot\\blueprint3d\\models\\thumbnails\\thumbnail_img25o.jpg|c:\\ws\\gi" +
     "thub\\orgstrata\\HyTheme\\wwwroot\\blueprint3d\\models\\thumbnails\\thumbnail_img25o.jp" +
     "g"))]
 [assembly: OrchardCore.Modules.Manifest.ModuleAssetAttribute(("Areas\\HyTheme\\wwwroot\\blueprint3d\\models\\thumbnails\\thumbnail_kendall-walnut-book" +
-    "case.jpg|C:\\ws\\github\\orgstrata\\HyTheme\\wwwroot\\blueprint3d\\models\\thumbnails\\th" +
+    "case.jpg|c:\\ws\\github\\orgstrata\\HyTheme\\wwwroot\\blueprint3d\\models\\thumbnails\\th" +
     "umbnail_kendall-walnut-bookcase.jpg"))]
 [assembly: OrchardCore.Modules.Manifest.ModuleAssetAttribute(("Areas\\HyTheme\\wwwroot\\blueprint3d\\models\\thumbnails\\thumbnail_matera_dresser_5.pn" +
-    "g|C:\\ws\\github\\orgstrata\\HyTheme\\wwwroot\\blueprint3d\\models\\thumbnails\\thumbnail" +
+    "g|c:\\ws\\github\\orgstrata\\HyTheme\\wwwroot\\blueprint3d\\models\\thumbnails\\thumbnail" +
     "_matera_dresser_5.png"))]
 [assembly: OrchardCore.Modules.Manifest.ModuleAssetAttribute(("Areas\\HyTheme\\wwwroot\\blueprint3d\\models\\thumbnails\\thumbnail_moore-60-media-cons" +
-    "ole-1.jpg|C:\\ws\\github\\orgstrata\\HyTheme\\wwwroot\\blueprint3d\\models\\thumbnails\\t" +
+    "ole-1.jpg|c:\\ws\\github\\orgstrata\\HyTheme\\wwwroot\\blueprint3d\\models\\thumbnails\\t" +
     "humbnail_moore-60-media-console-1.jpg"))]
 [assembly: OrchardCore.Modules.Manifest.ModuleAssetAttribute(("Areas\\HyTheme\\wwwroot\\blueprint3d\\models\\thumbnails\\thumbnail_nordli-bed-frame__0" +
-    "159270_PE315708_S4.JPG|C:\\ws\\github\\orgstrata\\HyTheme\\wwwroot\\blueprint3d\\models" +
+    "159270_PE315708_S4.JPG|c:\\ws\\github\\orgstrata\\HyTheme\\wwwroot\\blueprint3d\\models" +
     "\\thumbnails\\thumbnail_nordli-bed-frame__0159270_PE315708_S4.JPG"))]
-[assembly: OrchardCore.Modules.Manifest.ModuleAssetAttribute(("Areas\\HyTheme\\wwwroot\\blueprint3d\\models\\thumbnails\\thumbnail_nyc2.jpg|C:\\ws\\gith" +
+[assembly: OrchardCore.Modules.Manifest.ModuleAssetAttribute(("Areas\\HyTheme\\wwwroot\\blueprint3d\\models\\thumbnails\\thumbnail_nyc2.jpg|c:\\ws\\gith" +
     "ub\\orgstrata\\HyTheme\\wwwroot\\blueprint3d\\models\\thumbnails\\thumbnail_nyc2.jpg"))]
-[assembly: OrchardCore.Modules.Manifest.ModuleAssetAttribute(("Areas\\HyTheme\\wwwroot\\blueprint3d\\models\\thumbnails\\thumbnail_ore-white.png|C:\\ws" +
+[assembly: OrchardCore.Modules.Manifest.ModuleAssetAttribute(("Areas\\HyTheme\\wwwroot\\blueprint3d\\models\\thumbnails\\thumbnail_ore-white.png|c:\\ws" +
     "\\github\\orgstrata\\HyTheme\\wwwroot\\blueprint3d\\models\\thumbnails\\thumbnail_ore-wh" +
     "ite.png"))]
 [assembly: OrchardCore.Modules.Manifest.ModuleAssetAttribute(("Areas\\HyTheme\\wwwroot\\blueprint3d\\models\\thumbnails\\thumbnail_rochelle-sofa-3.jpg" +
-    "|C:\\ws\\github\\orgstrata\\HyTheme\\wwwroot\\blueprint3d\\models\\thumbnails\\thumbnail_" +
+    "|c:\\ws\\github\\orgstrata\\HyTheme\\wwwroot\\blueprint3d\\models\\thumbnails\\thumbnail_" +
     "rochelle-sofa-3.jpg"))]
 [assembly: OrchardCore.Modules.Manifest.ModuleAssetAttribute(("Areas\\HyTheme\\wwwroot\\blueprint3d\\models\\thumbnails\\thumbnail_scholar-dining-tabl" +
-    "e.jpg|C:\\ws\\github\\orgstrata\\HyTheme\\wwwroot\\blueprint3d\\models\\thumbnails\\thumb" +
+    "e.jpg|c:\\ws\\github\\orgstrata\\HyTheme\\wwwroot\\blueprint3d\\models\\thumbnails\\thumb" +
     "nail_scholar-dining-table.jpg"))]
 [assembly: OrchardCore.Modules.Manifest.ModuleAssetAttribute(("Areas\\HyTheme\\wwwroot\\blueprint3d\\models\\thumbnails\\thumbnail_Screen_Shot_2014-01" +
-    "-28_at_6.49.33_PM.png|C:\\ws\\github\\orgstrata\\HyTheme\\wwwroot\\blueprint3d\\models\\" +
+    "-28_at_6.49.33_PM.png|c:\\ws\\github\\orgstrata\\HyTheme\\wwwroot\\blueprint3d\\models\\" +
     "thumbnails\\thumbnail_Screen_Shot_2014-01-28_at_6.49.33_PM.png"))]
 [assembly: OrchardCore.Modules.Manifest.ModuleAssetAttribute(("Areas\\HyTheme\\wwwroot\\blueprint3d\\models\\thumbnails\\thumbnail_Screen_Shot_2014-02" +
-    "-21_at_1.24.58_PM.png|C:\\ws\\github\\orgstrata\\HyTheme\\wwwroot\\blueprint3d\\models\\" +
+    "-21_at_1.24.58_PM.png|c:\\ws\\github\\orgstrata\\HyTheme\\wwwroot\\blueprint3d\\models\\" +
     "thumbnails\\thumbnail_Screen_Shot_2014-02-21_at_1.24.58_PM.png"))]
 [assembly: OrchardCore.Modules.Manifest.ModuleAssetAttribute(("Areas\\HyTheme\\wwwroot\\blueprint3d\\models\\thumbnails\\thumbnail_Screen_Shot_2014-10" +
-    "-27_at_8.04.12_PM (1).png|C:\\ws\\github\\orgstrata\\HyTheme\\wwwroot\\blueprint3d\\mod" +
+    "-27_at_8.04.12_PM (1).png|c:\\ws\\github\\orgstrata\\HyTheme\\wwwroot\\blueprint3d\\mod" +
     "els\\thumbnails\\thumbnail_Screen_Shot_2014-10-27_at_8.04.12_PM (1).png"))]
 [assembly: OrchardCore.Modules.Manifest.ModuleAssetAttribute(("Areas\\HyTheme\\wwwroot\\blueprint3d\\models\\thumbnails\\thumbnail_Screen_Shot_2014-10" +
-    "-27_at_8.04.12_PM.png|C:\\ws\\github\\orgstrata\\HyTheme\\wwwroot\\blueprint3d\\models\\" +
+    "-27_at_8.04.12_PM.png|c:\\ws\\github\\orgstrata\\HyTheme\\wwwroot\\blueprint3d\\models\\" +
     "thumbnails\\thumbnail_Screen_Shot_2014-10-27_at_8.04.12_PM.png"))]
 [assembly: OrchardCore.Modules.Manifest.ModuleAssetAttribute(("Areas\\HyTheme\\wwwroot\\blueprint3d\\models\\thumbnails\\thumbnail_Screen_Shot_2014-10" +
-    "-27_at_8.22.46_PM.png|C:\\ws\\github\\orgstrata\\HyTheme\\wwwroot\\blueprint3d\\models\\" +
+    "-27_at_8.22.46_PM.png|c:\\ws\\github\\orgstrata\\HyTheme\\wwwroot\\blueprint3d\\models\\" +
     "thumbnails\\thumbnail_Screen_Shot_2014-10-27_at_8.22.46_PM.png"))]
 [assembly: OrchardCore.Modules.Manifest.ModuleAssetAttribute(("Areas\\HyTheme\\wwwroot\\blueprint3d\\models\\thumbnails\\thumbnail_stockholm-coffee-ta" +
-    "ble__0181245_PE332924_S4.JPG|C:\\ws\\github\\orgstrata\\HyTheme\\wwwroot\\blueprint3d\\" +
+    "ble__0181245_PE332924_S4.JPG|c:\\ws\\github\\orgstrata\\HyTheme\\wwwroot\\blueprint3d\\" +
     "models\\thumbnails\\thumbnail_stockholm-coffee-table__0181245_PE332924_S4.JPG"))]
 [assembly: OrchardCore.Modules.Manifest.ModuleAssetAttribute(("Areas\\HyTheme\\wwwroot\\blueprint3d\\models\\thumbnails\\thumbnail_teca-storage-trunk." +
-    "jpg|C:\\ws\\github\\orgstrata\\HyTheme\\wwwroot\\blueprint3d\\models\\thumbnails\\thumbna" +
+    "jpg|c:\\ws\\github\\orgstrata\\HyTheme\\wwwroot\\blueprint3d\\models\\thumbnails\\thumbna" +
     "il_teca-storage-trunk.jpg"))]
 [assembly: OrchardCore.Modules.Manifest.ModuleAssetAttribute(("Areas\\HyTheme\\wwwroot\\blueprint3d\\models\\thumbnails\\thumbnail_TN-ikea-kvikine.png" +
-    "|C:\\ws\\github\\orgstrata\\HyTheme\\wwwroot\\blueprint3d\\models\\thumbnails\\thumbnail_" +
+    "|c:\\ws\\github\\orgstrata\\HyTheme\\wwwroot\\blueprint3d\\models\\thumbnails\\thumbnail_" +
     "TN-ikea-kvikine.png"))]
-[assembly: OrchardCore.Modules.Manifest.ModuleAssetAttribute(("Areas\\HyTheme\\wwwroot\\blueprint3d\\models\\thumbnails\\thumbnail_tn-orange.png|C:\\ws" +
+[assembly: OrchardCore.Modules.Manifest.ModuleAssetAttribute(("Areas\\HyTheme\\wwwroot\\blueprint3d\\models\\thumbnails\\thumbnail_tn-orange.png|c:\\ws" +
     "\\github\\orgstrata\\HyTheme\\wwwroot\\blueprint3d\\models\\thumbnails\\thumbnail_tn-ora" +
     "nge.png"))]
-[assembly: OrchardCore.Modules.Manifest.ModuleAssetAttribute(("Areas\\HyTheme\\wwwroot\\blueprint3d\\models\\thumbnails\\thumbnail_window.png|C:\\ws\\gi" +
+[assembly: OrchardCore.Modules.Manifest.ModuleAssetAttribute(("Areas\\HyTheme\\wwwroot\\blueprint3d\\models\\thumbnails\\thumbnail_window.png|c:\\ws\\gi" +
     "thub\\orgstrata\\HyTheme\\wwwroot\\blueprint3d\\models\\thumbnails\\thumbnail_window.pn" +
     "g"))]
-[assembly: OrchardCore.Modules.Manifest.ModuleAssetAttribute(("Areas\\HyTheme\\wwwroot\\blueprint3d\\rooms\\textures\\hardwood.png|C:\\ws\\github\\orgstr" +
+[assembly: OrchardCore.Modules.Manifest.ModuleAssetAttribute(("Areas\\HyTheme\\wwwroot\\blueprint3d\\rooms\\textures\\hardwood.png|c:\\ws\\github\\orgstr" +
     "ata\\HyTheme\\wwwroot\\blueprint3d\\rooms\\textures\\hardwood.png"))]
-[assembly: OrchardCore.Modules.Manifest.ModuleAssetAttribute(("Areas\\HyTheme\\wwwroot\\blueprint3d\\rooms\\textures\\light_brick.jpg|C:\\ws\\github\\org" +
+[assembly: OrchardCore.Modules.Manifest.ModuleAssetAttribute(("Areas\\HyTheme\\wwwroot\\blueprint3d\\rooms\\textures\\light_brick.jpg|c:\\ws\\github\\org" +
     "strata\\HyTheme\\wwwroot\\blueprint3d\\rooms\\textures\\light_brick.jpg"))]
-[assembly: OrchardCore.Modules.Manifest.ModuleAssetAttribute(("Areas\\HyTheme\\wwwroot\\blueprint3d\\rooms\\textures\\light_fine_wood.jpg|C:\\ws\\github" +
+[assembly: OrchardCore.Modules.Manifest.ModuleAssetAttribute(("Areas\\HyTheme\\wwwroot\\blueprint3d\\rooms\\textures\\light_fine_wood.jpg|c:\\ws\\github" +
     "\\orgstrata\\HyTheme\\wwwroot\\blueprint3d\\rooms\\textures\\light_fine_wood.jpg"))]
-[assembly: OrchardCore.Modules.Manifest.ModuleAssetAttribute(("Areas\\HyTheme\\wwwroot\\blueprint3d\\rooms\\textures\\marbletiles.jpg|C:\\ws\\github\\org" +
+[assembly: OrchardCore.Modules.Manifest.ModuleAssetAttribute(("Areas\\HyTheme\\wwwroot\\blueprint3d\\rooms\\textures\\marbletiles.jpg|c:\\ws\\github\\org" +
     "strata\\HyTheme\\wwwroot\\blueprint3d\\rooms\\textures\\marbletiles.jpg"))]
-[assembly: OrchardCore.Modules.Manifest.ModuleAssetAttribute(("Areas\\HyTheme\\wwwroot\\blueprint3d\\rooms\\textures\\walllightmap.png|C:\\ws\\github\\or" +
+[assembly: OrchardCore.Modules.Manifest.ModuleAssetAttribute(("Areas\\HyTheme\\wwwroot\\blueprint3d\\rooms\\textures\\walllightmap.png|c:\\ws\\github\\or" +
     "gstrata\\HyTheme\\wwwroot\\blueprint3d\\rooms\\textures\\walllightmap.png"))]
-[assembly: OrchardCore.Modules.Manifest.ModuleAssetAttribute(("Areas\\HyTheme\\wwwroot\\blueprint3d\\rooms\\textures\\wallmap.png|C:\\ws\\github\\orgstra" +
+[assembly: OrchardCore.Modules.Manifest.ModuleAssetAttribute(("Areas\\HyTheme\\wwwroot\\blueprint3d\\rooms\\textures\\wallmap.png|c:\\ws\\github\\orgstra" +
     "ta\\HyTheme\\wwwroot\\blueprint3d\\rooms\\textures\\wallmap.png"))]
-[assembly: OrchardCore.Modules.Manifest.ModuleAssetAttribute(("Areas\\HyTheme\\wwwroot\\blueprint3d\\rooms\\textures\\wallmap_yellow.png|C:\\ws\\github\\" +
+[assembly: OrchardCore.Modules.Manifest.ModuleAssetAttribute(("Areas\\HyTheme\\wwwroot\\blueprint3d\\rooms\\textures\\wallmap_yellow.png|c:\\ws\\github\\" +
     "orgstrata\\HyTheme\\wwwroot\\blueprint3d\\rooms\\textures\\wallmap_yellow.png"))]
-[assembly: OrchardCore.Modules.Manifest.ModuleAssetAttribute(("Areas\\HyTheme\\wwwroot\\blueprint3d\\rooms\\thumbnails\\thumbnail_light_brick.jpg|C:\\w" +
+[assembly: OrchardCore.Modules.Manifest.ModuleAssetAttribute(("Areas\\HyTheme\\wwwroot\\blueprint3d\\rooms\\thumbnails\\thumbnail_light_brick.jpg|c:\\w" +
     "s\\github\\orgstrata\\HyTheme\\wwwroot\\blueprint3d\\rooms\\thumbnails\\thumbnail_light_" +
     "brick.jpg"))]
 [assembly: OrchardCore.Modules.Manifest.ModuleAssetAttribute(("Areas\\HyTheme\\wwwroot\\blueprint3d\\rooms\\thumbnails\\thumbnail_light_fine_wood.jpg|" +
-    "C:\\ws\\github\\orgstrata\\HyTheme\\wwwroot\\blueprint3d\\rooms\\thumbnails\\thumbnail_li" +
+    "c:\\ws\\github\\orgstrata\\HyTheme\\wwwroot\\blueprint3d\\rooms\\thumbnails\\thumbnail_li" +
     "ght_fine_wood.jpg"))]
-[assembly: OrchardCore.Modules.Manifest.ModuleAssetAttribute(("Areas\\HyTheme\\wwwroot\\blueprint3d\\rooms\\thumbnails\\thumbnail_marbletiles.jpg|C:\\w" +
+[assembly: OrchardCore.Modules.Manifest.ModuleAssetAttribute(("Areas\\HyTheme\\wwwroot\\blueprint3d\\rooms\\thumbnails\\thumbnail_marbletiles.jpg|c:\\w" +
     "s\\github\\orgstrata\\HyTheme\\wwwroot\\blueprint3d\\rooms\\thumbnails\\thumbnail_marble" +
     "tiles.jpg"))]
-[assembly: OrchardCore.Modules.Manifest.ModuleAssetAttribute(("Areas\\HyTheme\\wwwroot\\blueprint3d\\rooms\\thumbnails\\thumbnail_wallmap_yellow.png|C" +
+[assembly: OrchardCore.Modules.Manifest.ModuleAssetAttribute(("Areas\\HyTheme\\wwwroot\\blueprint3d\\rooms\\thumbnails\\thumbnail_wallmap_yellow.png|c" +
     ":\\ws\\github\\orgstrata\\HyTheme\\wwwroot\\blueprint3d\\rooms\\thumbnails\\thumbnail_wal" +
     "lmap_yellow.png"))]
-[assembly: OrchardCore.Modules.Manifest.ModuleAssetAttribute(("Areas\\HyTheme\\wwwroot\\leaflet\\images\\layers-2x.png|C:\\ws\\github\\orgstrata\\HyTheme" +
+[assembly: OrchardCore.Modules.Manifest.ModuleAssetAttribute(("Areas\\HyTheme\\wwwroot\\leaflet\\images\\layers-2x.png|c:\\ws\\github\\orgstrata\\HyTheme" +
     "\\wwwroot\\leaflet\\images\\layers-2x.png"))]
-[assembly: OrchardCore.Modules.Manifest.ModuleAssetAttribute(("Areas\\HyTheme\\wwwroot\\leaflet\\images\\layers.png|C:\\ws\\github\\orgstrata\\HyTheme\\ww" +
+[assembly: OrchardCore.Modules.Manifest.ModuleAssetAttribute(("Areas\\HyTheme\\wwwroot\\leaflet\\images\\layers.png|c:\\ws\\github\\orgstrata\\HyTheme\\ww" +
     "wroot\\leaflet\\images\\layers.png"))]
-[assembly: OrchardCore.Modules.Manifest.ModuleAssetAttribute(("Areas\\HyTheme\\wwwroot\\leaflet\\images\\marker-icon-2x.png|C:\\ws\\github\\orgstrata\\Hy" +
+[assembly: OrchardCore.Modules.Manifest.ModuleAssetAttribute(("Areas\\HyTheme\\wwwroot\\leaflet\\images\\marker-icon-2x.png|c:\\ws\\github\\orgstrata\\Hy" +
     "Theme\\wwwroot\\leaflet\\images\\marker-icon-2x.png"))]
-[assembly: OrchardCore.Modules.Manifest.ModuleAssetAttribute(("Areas\\HyTheme\\wwwroot\\leaflet\\images\\marker-icon.png|C:\\ws\\github\\orgstrata\\HyThe" +
+[assembly: OrchardCore.Modules.Manifest.ModuleAssetAttribute(("Areas\\HyTheme\\wwwroot\\leaflet\\images\\marker-icon.png|c:\\ws\\github\\orgstrata\\HyThe" +
     "me\\wwwroot\\leaflet\\images\\marker-icon.png"))]
-[assembly: OrchardCore.Modules.Manifest.ModuleAssetAttribute(("Areas\\HyTheme\\wwwroot\\leaflet\\images\\marker-shadow.png|C:\\ws\\github\\orgstrata\\HyT" +
+[assembly: OrchardCore.Modules.Manifest.ModuleAssetAttribute(("Areas\\HyTheme\\wwwroot\\leaflet\\images\\marker-shadow.png|c:\\ws\\github\\orgstrata\\HyT" +
     "heme\\wwwroot\\leaflet\\images\\marker-shadow.png"))]
-[assembly: OrchardCore.Modules.Manifest.ModuleAssetAttribute(("Areas\\HyTheme\\wwwroot\\leaflet\\images\\spritesheet-2x.png|C:\\ws\\github\\orgstrata\\Hy" +
+[assembly: OrchardCore.Modules.Manifest.ModuleAssetAttribute(("Areas\\HyTheme\\wwwroot\\leaflet\\images\\spritesheet-2x.png|c:\\ws\\github\\orgstrata\\Hy" +
     "Theme\\wwwroot\\leaflet\\images\\spritesheet-2x.png"))]
-[assembly: OrchardCore.Modules.Manifest.ModuleAssetAttribute(("Areas\\HyTheme\\wwwroot\\leaflet\\images\\spritesheet.png|C:\\ws\\github\\orgstrata\\HyThe" +
+[assembly: OrchardCore.Modules.Manifest.ModuleAssetAttribute(("Areas\\HyTheme\\wwwroot\\leaflet\\images\\spritesheet.png|c:\\ws\\github\\orgstrata\\HyThe" +
     "me\\wwwroot\\leaflet\\images\\spritesheet.png"))]
-[assembly: OrchardCore.Modules.Manifest.ModuleAssetAttribute(("Areas\\HyTheme\\wwwroot\\leaflet\\images\\spritesheet.svg|C:\\ws\\github\\orgstrata\\HyThe" +
+[assembly: OrchardCore.Modules.Manifest.ModuleAssetAttribute(("Areas\\HyTheme\\wwwroot\\leaflet\\images\\spritesheet.svg|c:\\ws\\github\\orgstrata\\HyThe" +
     "me\\wwwroot\\leaflet\\images\\spritesheet.svg"))]
-[assembly: OrchardCore.Modules.Manifest.ModuleAssetAttribute(("Areas\\HyTheme\\wwwroot\\leaflet\\leaflet.css|C:\\ws\\github\\orgstrata\\HyTheme\\wwwroot\\" +
+[assembly: OrchardCore.Modules.Manifest.ModuleAssetAttribute(("Areas\\HyTheme\\wwwroot\\leaflet\\leaflet.css|c:\\ws\\github\\orgstrata\\HyTheme\\wwwroot\\" +
     "leaflet\\leaflet.css"))]
-[assembly: OrchardCore.Modules.Manifest.ModuleAssetAttribute(("Areas\\HyTheme\\wwwroot\\leaflet\\leaflet.draw.css|C:\\ws\\github\\orgstrata\\HyTheme\\www" +
+[assembly: OrchardCore.Modules.Manifest.ModuleAssetAttribute(("Areas\\HyTheme\\wwwroot\\leaflet\\leaflet.draw.css|c:\\ws\\github\\orgstrata\\HyTheme\\www" +
     "root\\leaflet\\leaflet.draw.css"))]
-[assembly: OrchardCore.Modules.Manifest.ModuleAssetAttribute(("Areas\\HyTheme\\wwwroot\\leaflet\\leaflet.draw.js|C:\\ws\\github\\orgstrata\\HyTheme\\wwwr" +
+[assembly: OrchardCore.Modules.Manifest.ModuleAssetAttribute(("Areas\\HyTheme\\wwwroot\\leaflet\\leaflet.draw.js|c:\\ws\\github\\orgstrata\\HyTheme\\wwwr" +
     "oot\\leaflet\\leaflet.draw.js"))]
-[assembly: OrchardCore.Modules.Manifest.ModuleAssetAttribute(("Areas\\HyTheme\\wwwroot\\leaflet\\leaflet.js|C:\\ws\\github\\orgstrata\\HyTheme\\wwwroot\\l" +
+[assembly: OrchardCore.Modules.Manifest.ModuleAssetAttribute(("Areas\\HyTheme\\wwwroot\\leaflet\\leaflet.js|c:\\ws\\github\\orgstrata\\HyTheme\\wwwroot\\l" +
     "eaflet\\leaflet.js"))]
-[assembly: OrchardCore.Modules.Manifest.ModuleAssetAttribute(("Areas\\HyTheme\\wwwroot\\mdi-icons\\css\\materialdesignicons.css|C:\\ws\\github\\orgstrat" +
+[assembly: OrchardCore.Modules.Manifest.ModuleAssetAttribute(("Areas\\HyTheme\\wwwroot\\mdi-icons\\css\\materialdesignicons.css|c:\\ws\\github\\orgstrat" +
     "a\\HyTheme\\wwwroot\\mdi-icons\\css\\materialdesignicons.css"))]
-[assembly: OrchardCore.Modules.Manifest.ModuleAssetAttribute(("Areas\\HyTheme\\wwwroot\\mdi-icons\\css\\materialdesignicons.css.map|C:\\ws\\github\\orgs" +
+[assembly: OrchardCore.Modules.Manifest.ModuleAssetAttribute(("Areas\\HyTheme\\wwwroot\\mdi-icons\\css\\materialdesignicons.css.map|c:\\ws\\github\\orgs" +
     "trata\\HyTheme\\wwwroot\\mdi-icons\\css\\materialdesignicons.css.map"))]
-[assembly: OrchardCore.Modules.Manifest.ModuleAssetAttribute(("Areas\\HyTheme\\wwwroot\\mdi-icons\\css\\materialdesignicons.min.css|C:\\ws\\github\\orgs" +
+[assembly: OrchardCore.Modules.Manifest.ModuleAssetAttribute(("Areas\\HyTheme\\wwwroot\\mdi-icons\\css\\materialdesignicons.min.css|c:\\ws\\github\\orgs" +
     "trata\\HyTheme\\wwwroot\\mdi-icons\\css\\materialdesignicons.min.css"))]
-[assembly: OrchardCore.Modules.Manifest.ModuleAssetAttribute(("Areas\\HyTheme\\wwwroot\\mdi-icons\\css\\materialdesignicons.min.css.map|C:\\ws\\github\\" +
+[assembly: OrchardCore.Modules.Manifest.ModuleAssetAttribute(("Areas\\HyTheme\\wwwroot\\mdi-icons\\css\\materialdesignicons.min.css.map|c:\\ws\\github\\" +
     "orgstrata\\HyTheme\\wwwroot\\mdi-icons\\css\\materialdesignicons.min.css.map"))]
-[assembly: OrchardCore.Modules.Manifest.ModuleAssetAttribute(("Areas\\HyTheme\\wwwroot\\mdi-icons\\fonts\\materialdesignicons-webfont.eot|C:\\ws\\githu" +
+[assembly: OrchardCore.Modules.Manifest.ModuleAssetAttribute(("Areas\\HyTheme\\wwwroot\\mdi-icons\\fonts\\materialdesignicons-webfont.eot|c:\\ws\\githu" +
     "b\\orgstrata\\HyTheme\\wwwroot\\mdi-icons\\fonts\\materialdesignicons-webfont.eot"))]
-[assembly: OrchardCore.Modules.Manifest.ModuleAssetAttribute(("Areas\\HyTheme\\wwwroot\\mdi-icons\\fonts\\materialdesignicons-webfont.ttf|C:\\ws\\githu" +
+[assembly: OrchardCore.Modules.Manifest.ModuleAssetAttribute(("Areas\\HyTheme\\wwwroot\\mdi-icons\\fonts\\materialdesignicons-webfont.ttf|c:\\ws\\githu" +
     "b\\orgstrata\\HyTheme\\wwwroot\\mdi-icons\\fonts\\materialdesignicons-webfont.ttf"))]
-[assembly: OrchardCore.Modules.Manifest.ModuleAssetAttribute(("Areas\\HyTheme\\wwwroot\\mdi-icons\\fonts\\materialdesignicons-webfont.woff|C:\\ws\\gith" +
+[assembly: OrchardCore.Modules.Manifest.ModuleAssetAttribute(("Areas\\HyTheme\\wwwroot\\mdi-icons\\fonts\\materialdesignicons-webfont.woff|c:\\ws\\gith" +
     "ub\\orgstrata\\HyTheme\\wwwroot\\mdi-icons\\fonts\\materialdesignicons-webfont.woff"))]
-[assembly: OrchardCore.Modules.Manifest.ModuleAssetAttribute(("Areas\\HyTheme\\wwwroot\\mdi-icons\\fonts\\materialdesignicons-webfont.woff2|C:\\ws\\git" +
+[assembly: OrchardCore.Modules.Manifest.ModuleAssetAttribute(("Areas\\HyTheme\\wwwroot\\mdi-icons\\fonts\\materialdesignicons-webfont.woff2|c:\\ws\\git" +
     "hub\\orgstrata\\HyTheme\\wwwroot\\mdi-icons\\fonts\\materialdesignicons-webfont.woff2"))]
-[assembly: OrchardCore.Modules.Manifest.ModuleAssetAttribute(("Areas\\HyTheme\\wwwroot\\scripts\\bootstrap-vue.min.css|C:\\ws\\github\\orgstrata\\HyThem" +
+[assembly: OrchardCore.Modules.Manifest.ModuleAssetAttribute(("Areas\\HyTheme\\wwwroot\\scripts\\bootstrap-vue.min.css|c:\\ws\\github\\orgstrata\\HyThem" +
     "e\\wwwroot\\scripts\\bootstrap-vue.min.css"))]
-[assembly: OrchardCore.Modules.Manifest.ModuleAssetAttribute(("Areas\\HyTheme\\wwwroot\\scripts\\bootstrap-vue.min.js|C:\\ws\\github\\orgstrata\\HyTheme" +
+[assembly: OrchardCore.Modules.Manifest.ModuleAssetAttribute(("Areas\\HyTheme\\wwwroot\\scripts\\bootstrap-vue.min.js|c:\\ws\\github\\orgstrata\\HyTheme" +
     "\\wwwroot\\scripts\\bootstrap-vue.min.js"))]
-[assembly: OrchardCore.Modules.Manifest.ModuleAssetAttribute(("Areas\\HyTheme\\wwwroot\\scripts\\bootstrap.min.css|C:\\ws\\github\\orgstrata\\HyTheme\\ww" +
+[assembly: OrchardCore.Modules.Manifest.ModuleAssetAttribute(("Areas\\HyTheme\\wwwroot\\scripts\\bootstrap.min.css|c:\\ws\\github\\orgstrata\\HyTheme\\ww" +
     "wroot\\scripts\\bootstrap.min.css"))]
-[assembly: OrchardCore.Modules.Manifest.ModuleAssetAttribute(("Areas\\HyTheme\\wwwroot\\scripts\\core.js|C:\\ws\\github\\orgstrata\\HyTheme\\wwwroot\\scri" +
+[assembly: OrchardCore.Modules.Manifest.ModuleAssetAttribute(("Areas\\HyTheme\\wwwroot\\scripts\\core.js|c:\\ws\\github\\orgstrata\\HyTheme\\wwwroot\\scri" +
     "pts\\core.js"))]
-[assembly: OrchardCore.Modules.Manifest.ModuleAssetAttribute(("Areas\\HyTheme\\wwwroot\\scripts\\custom.css|C:\\ws\\github\\orgstrata\\HyTheme\\wwwroot\\s" +
+[assembly: OrchardCore.Modules.Manifest.ModuleAssetAttribute(("Areas\\HyTheme\\wwwroot\\scripts\\custom.css|c:\\ws\\github\\orgstrata\\HyTheme\\wwwroot\\s" +
     "cripts\\custom.css"))]
-[assembly: OrchardCore.Modules.Manifest.ModuleAssetAttribute(("Areas\\HyTheme\\wwwroot\\scripts\\logo-white.png|C:\\ws\\github\\orgstrata\\HyTheme\\wwwro" +
+[assembly: OrchardCore.Modules.Manifest.ModuleAssetAttribute(("Areas\\HyTheme\\wwwroot\\scripts\\logo-white.png|c:\\ws\\github\\orgstrata\\HyTheme\\wwwro" +
     "ot\\scripts\\logo-white.png"))]
-[assembly: OrchardCore.Modules.Manifest.ModuleAssetAttribute(("Areas\\HyTheme\\wwwroot\\scripts\\Media (7).jfif|C:\\ws\\github\\orgstrata\\HyTheme\\wwwro" +
+[assembly: OrchardCore.Modules.Manifest.ModuleAssetAttribute(("Areas\\HyTheme\\wwwroot\\scripts\\Media (7).jfif|c:\\ws\\github\\orgstrata\\HyTheme\\wwwro" +
     "ot\\scripts\\Media (7).jfif"))]
-[assembly: OrchardCore.Modules.Manifest.ModuleAssetAttribute(("Areas\\HyTheme\\wwwroot\\scripts\\polyfill.min.js|C:\\ws\\github\\orgstrata\\HyTheme\\wwwr" +
+[assembly: OrchardCore.Modules.Manifest.ModuleAssetAttribute(("Areas\\HyTheme\\wwwroot\\scripts\\polyfill.min.js|c:\\ws\\github\\orgstrata\\HyTheme\\wwwr" +
     "oot\\scripts\\polyfill.min.js"))]
-[assembly: OrchardCore.Modules.Manifest.ModuleAssetAttribute(("Areas\\HyTheme\\wwwroot\\scripts\\qrcode.vue.browser.min.js|C:\\ws\\github\\orgstrata\\Hy" +
+[assembly: OrchardCore.Modules.Manifest.ModuleAssetAttribute(("Areas\\HyTheme\\wwwroot\\scripts\\qrcode.vue.browser.min.js|c:\\ws\\github\\orgstrata\\Hy" +
     "Theme\\wwwroot\\scripts\\qrcode.vue.browser.min.js"))]
-[assembly: OrchardCore.Modules.Manifest.ModuleAssetAttribute(("Areas\\HyTheme\\wwwroot\\scripts\\validators.js|C:\\ws\\github\\orgstrata\\HyTheme\\wwwroo" +
+[assembly: OrchardCore.Modules.Manifest.ModuleAssetAttribute(("Areas\\HyTheme\\wwwroot\\scripts\\validators.js|c:\\ws\\github\\orgstrata\\HyTheme\\wwwroo" +
     "t\\scripts\\validators.js"))]
-[assembly: OrchardCore.Modules.Manifest.ModuleAssetAttribute(("Areas\\HyTheme\\wwwroot\\scripts\\vue-demi.js|C:\\ws\\github\\orgstrata\\HyTheme\\wwwroot\\" +
+[assembly: OrchardCore.Modules.Manifest.ModuleAssetAttribute(("Areas\\HyTheme\\wwwroot\\scripts\\vue-demi.js|c:\\ws\\github\\orgstrata\\HyTheme\\wwwroot\\" +
     "scripts\\vue-demi.js"))]
-[assembly: OrchardCore.Modules.Manifest.ModuleAssetAttribute(("Areas\\HyTheme\\wwwroot\\scripts\\vue@3.js|C:\\ws\\github\\orgstrata\\HyTheme\\wwwroot\\scr" +
+[assembly: OrchardCore.Modules.Manifest.ModuleAssetAttribute(("Areas\\HyTheme\\wwwroot\\scripts\\vue@3.js|c:\\ws\\github\\orgstrata\\HyTheme\\wwwroot\\scr" +
     "ipts\\vue@3.js"))]
-[assembly: OrchardCore.Modules.Manifest.ModuleAssetAttribute(("Areas\\HyTheme\\wwwroot\\scripts\\vuetify.min.css|C:\\ws\\github\\orgstrata\\HyTheme\\wwwr" +
+[assembly: OrchardCore.Modules.Manifest.ModuleAssetAttribute(("Areas\\HyTheme\\wwwroot\\scripts\\vuetify.min.css|c:\\ws\\github\\orgstrata\\HyTheme\\wwwr" +
     "oot\\scripts\\vuetify.min.css"))]
-[assembly: OrchardCore.Modules.Manifest.ModuleAssetAttribute(("Areas\\HyTheme\\wwwroot\\scripts\\vuetify.min.js|C:\\ws\\github\\orgstrata\\HyTheme\\wwwro" +
+[assembly: OrchardCore.Modules.Manifest.ModuleAssetAttribute(("Areas\\HyTheme\\wwwroot\\scripts\\vuetify.min.js|c:\\ws\\github\\orgstrata\\HyTheme\\wwwro" +
     "ot\\scripts\\vuetify.min.js"))]
 [assembly: System.Reflection.AssemblyCompanyAttribute("HyTheme")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e0994e669b27fec5cb5a40e33c6dcaa383669b8a")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+09a3efb4aa1e07d86f061465449ddd46c36ec1f2")]
 [assembly: System.Reflection.AssemblyProductAttribute("HyTheme")]
 [assembly: System.Reflection.AssemblyTitleAttribute("HyTheme")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
