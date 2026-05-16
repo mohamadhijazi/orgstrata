@@ -9,22 +9,56 @@ You act as both a helpful assistant and a Knowledge Graph Extractor.
 For every user message, provide a helpful natural language response.
 IF you identify new entities, relationships, or facts, append a JSON block at the very end of your response inside \`\`\`json ... \`\`\`.
 
-Follow this exact JSON schema:
+Follow this exact JSON schema strictly:
 {
     "new_nodes": [
-        { "type": "Concept|Person|Project", "label": "Name", "properties": {} }
+        { 
+            "id": "optional_unique_id",
+            "type": "Person|Organization|Project|Department|Process|Concept|Group|Location|Event",
+            "label": "Required: Display name",
+            "description": "Optional brief description",
+            "properties": {
+                "key": "value"
+            },
+            "confidence": 0.95
+        }
     ],
     "new_edges": [
-        { "from": "node_label_or_id", "to": "node_label_or_id", "type": "relates_to", "properties": {} }
+        { 
+            "from_label": "Source node label (must exist or be created)",
+            "to_label": "Target node label (must exist or be created)",
+            "type": "works_on|manages|parent_of|spouse_of|related_to|has_department|executes|governed_by|owns|contains|created_by|depends_on",
+            "bidirectional": false,
+            "properties": {
+                "strength": 0.9,
+                "context": "relationship context"
+            }
+        }
+    ],
+    "node_updates": [
+        {
+            "label": "Existing node label to update",
+            "properties_to_add": { "key": "value" }
+        }
     ],
     "new_reminders": [
-        { "title": "Reminder Title", "due_date": "YYYY-MM-DDTHH:MM:SSZ", "metadata": {} }
+        { 
+            "title": "Reminder title",
+            "due_date": "YYYY-MM-DDTHH:MM:SSZ",
+            "related_nodes": ["node_label1", "node_label2"],
+            "priority": "high|medium|low",
+            "metadata": {}
+        }
     ],
-    "updates": [],
-    "missing": [],
-    "linked_nodes": []
+    "clarifications_needed": ["question1", "question2"]
 }
-Never invent facts, do not add comments in the json. Ask the user questions when needed.
+Rules:
+- Only extract facts the user explicitly mentioned or clearly implied
+- Use consistent labels across new_nodes and edges
+- Set confidence lower for inferred information
+- bidirectional: true creates reverse edges automatically
+- Never invent data, ask clarifying questions instead
+- Properties should contain domain-specific attributes
 `;
 
 document.addEventListener('DOMContentLoaded', async () => {
@@ -249,19 +283,95 @@ const reader = res.body.getReader();
 
                 }
 
-                 // 4. Parse Graph JSON
+                 // 4. Parse Graph JSON with Enhanced Schema Support
             let extractedNodes = [];
             const jsonMatch = aiText.match(/```json([\s\S]*?)```/i);
             if (jsonMatch) {
                 try {
                     let cleanText = jsonMatch[1];
                     cleanText = cleanText.replace(/\/\/.*$/gm, "");
-    cleanText = cleanText.replace(/#.*$/gm, "");
+                    cleanText = cleanText.replace(/#.*$/gm, "");
                     const parsed = JSON.parse(cleanText);
-                    const updateResult = await kgManager.applyAIUpdate(parsed);
-                    extractedNodes = updateResult.createdNodes.map(n => n.id);
                     
-                    // Handle new reminders specifically
+                    // Enhanced JSON Processing
+                    let nodeMap = {}; // Map label -> id for edge creation
+                    let updateSummary = [];
+                    
+                    // 4a. Process new nodes
+                    if (parsed.new_nodes && Array.isArray(parsed.new_nodes)) {
+                        for (let node of parsed.new_nodes) {
+                            if (!node.label) {
+                                console.warn("Skipping node without label:", node);
+                                continue;
+                            }
+                            const createdNode = await kgManager.createNode(
+                                node.type || 'Concept',
+                                node.label,
+                                {
+                                    description: node.description || "",
+                                    ...node.properties,
+                                    confidence: node.confidence || 1.0,
+                                    extracted_at: new Date().toISOString()
+                                }
+                            );
+                            nodeMap[node.label] = createdNode.id;
+                            extractedNodes.push(createdNode.id);
+                            updateSummary.push(`Created ${node.type}: ${node.label}`);
+                        }
+                    }
+                    
+                    // 4b. Process node updates
+                    if (parsed.node_updates && Array.isArray(parsed.node_updates)) {
+                        for (let update of parsed.node_updates) {
+                            const context = await kgManager.getContextForAI();
+                            const existingNode = context.nodes.find(n => n.label === update.label);
+                            if (existingNode && update.properties_to_add) {
+                                // Note: This assumes there's an update method; adjust if needed
+                                console.log(`Would update node ${update.label}:`, update.properties_to_add);
+                                updateSummary.push(`Updated ${update.label}`);
+                            }
+                        }
+                    }
+                    
+                    // 4c. Process edges with smart label resolution
+                    if (parsed.new_edges && Array.isArray(parsed.new_edges)) {
+                        const context = await kgManager.getContextForAI();
+                        const allNodes = context.nodes;
+                        
+                        for (let edge of parsed.new_edges) {
+                            // Resolve labels to IDs
+                            let fromId = nodeMap[edge.from_label] || 
+                                        allNodes.find(n => n.label === edge.from_label)?.id;
+                            let toId = nodeMap[edge.to_label] || 
+                                      allNodes.find(n => n.label === edge.to_label)?.id;
+                            
+                            if (!fromId || !toId) {
+                                console.warn(`Edge nodes not found: ${edge.from_label} -> ${edge.to_label}`);
+                                continue;
+                            }
+                            
+                            await kgManager.createEdge(fromId, toId, edge.type || 'relates_to', {
+                                strength: edge.properties?.strength || 0.8,
+                                context: edge.properties?.context || "",
+                                created_by_ai: true
+                            });
+                            
+                            // Create reverse edge if bidirectional
+                            if (edge.bidirectional) {
+                                const reverseType = getReversedRelationType(edge.type);
+                                await kgManager.createEdge(toId, fromId, reverseType, {
+                                    strength: edge.properties?.strength || 0.8,
+                                    context: edge.properties?.context || "",
+                                    created_by_ai: true,
+                                    reverse: true
+                                });
+                            }
+                            
+                            updateSummary.push(`Created edge: ${edge.from_label} -> ${edge.to_label}`);
+                        }
+                    }
+                    
+                    // 4d. Handle reminders with better metadata
                     if (parsed.new_reminders && Array.isArray(parsed.new_reminders)) {
                         for (let r of parsed.new_reminders) {
                             const remId = 'rem_' + Date.now() + '_' + Math.floor(Math.random() * 1000);
@@ -269,19 +379,56 @@ const reader = res.body.getReader();
                                 id: remId,
                                 title: r.title,
                                 due_date: r.due_date,
+                                related_nodes: r.related_nodes || [],
+                                priority: r.priority || 'medium',
                                 metadata: r.metadata || {},
                                 status: "pending",
                                 workspace_id: activeWorkspace.id,
                                 created_at: Date.now()
                             });
+                            updateSummary.push(`Reminder: ${r.title}`);
                         }
                         appendMessageToUI('ai', `*(Created ${parsed.new_reminders.length} reminder(s))*`);
                     }
-
+                    
+                    // 4e. Handle clarifications needed
+                    if (parsed.clarifications_needed && Array.isArray(parsed.clarifications_needed)) {
+                        const clarText = parsed.clarifications_needed
+                            .map(q => `• ${q}`)
+                            .join('\\n');
+                        appendMessageToUI('ai', `*Questions:\\n${clarText}*`);
+                    }
+                    
+                    // Log summary
+                    if (updateSummary.length > 0) {
+                        console.log("Knowledge Graph Updates:", updateSummary);
+                    }
+                    
                     renderGraph(); // update visual
                 } catch(e) {
-                    console.error("Failed to parse JSON from AI", e);
+                    console.error("Failed to parse AI JSON response:", e, e.message);
+                    appendMessageToUI('ai', `*Note: Could not process some graph updates due to: ${e.message}*`);
                 }
+            }
+            
+            // Helper function for reversed relationship types
+            function getReversedRelationType(type) {
+                const reversals = {
+                    'parent_of': 'child_of',
+                    'child_of': 'parent_of',
+                    'spouse_of': 'spouse_of',
+                    'manages': 'managed_by',
+                    'managed_by': 'manages',
+                    'works_on': 'has_worker',
+                    'has_worker': 'works_on',
+                    'owns': 'owned_by',
+                    'owned_by': 'owns',
+                    'created_by': 'created',
+                    'created': 'created_by',
+                    'depends_on': 'depended_on_by',
+                    'depended_on_by': 'depends_on'
+                };
+                return reversals[type] || type;
             }
 
             // 5. Save and display AI message

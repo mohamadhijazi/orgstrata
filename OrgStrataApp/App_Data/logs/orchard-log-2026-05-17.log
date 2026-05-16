@@ -1,1 +1,18 @@
 2026-05-17 00:10:21.2160||||Microsoft.Hosting.Lifetime|INFO|Application is shutting down... 
+2026-05-17 00:10:42.2858|||14|Microsoft.Hosting.Lifetime|INFO|Now listening on: https://localhost:5001 
+2026-05-17 00:10:42.3516|||14|Microsoft.Hosting.Lifetime|INFO|Now listening on: http://localhost:5000 
+2026-05-17 00:10:42.3604||||Microsoft.Hosting.Lifetime|INFO|Application started. Press Ctrl+C to shut down. 
+2026-05-17 00:10:42.3604||||Microsoft.Hosting.Lifetime|INFO|Hosting environment: Development 
+2026-05-17 00:10:42.3604||||Microsoft.Hosting.Lifetime|INFO|Content root path: C:\ws\github\orgstrata\OrgStrataApp 
+2026-05-17 00:11:11.2364|Default|00-e7849a225c1c8be99f309ca8c6ef39a4-fe90760cafd5d790-00||OrchardCore.OpenId.Configuration.OpenIdClientConfiguration|WARN|The OpenID client settings are invalid: The authority cannot be null or empty.
+The response type cannot be null or empty.
+The response mode cannot be null or empty. 
+2026-05-17 00:23:03.4768||||Microsoft.Hosting.Lifetime|INFO|Application is shutting down... 
+2026-05-17 00:23:28.2443|||14|Microsoft.Hosting.Lifetime|INFO|Now listening on: https://localhost:5001 
+2026-05-17 00:23:28.3076|||14|Microsoft.Hosting.Lifetime|INFO|Now listening on: http://localhost:5000 
+2026-05-17 00:23:28.3181||||Microsoft.Hosting.Lifetime|INFO|Application started. Press Ctrl+C to shut down. 
+2026-05-17 00:23:28.3181||||Microsoft.Hosting.Lifetime|INFO|Hosting environment: Development 
+2026-05-17 00:23:28.3181||||Microsoft.Hosting.Lifetime|INFO|Content root path: C:\ws\github\orgstrata\OrgStrataApp 
+2026-05-17 00:23:45.4189|Default|00-9ff5d68d3394cb82e778decdbfca6ba7-016789177e1d88e2-00||OrchardCore.OpenId.Configuration.OpenIdClientConfiguration|WARN|The OpenID client settings are invalid: The authority cannot be null or empty.
+The response type cannot be null or empty.
+The response mode cannot be null or empty. 
