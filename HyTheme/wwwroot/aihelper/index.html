@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AIJS Helper - Local Agentic Memory</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Highcharts -->
+    <script src="highcharts.js"></script>
+    
+    <!-- Cytoscape for Knowledge Graph Visualization -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/cytoscape/3.28.1/cytoscape.min.js"></script>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="Style.css">
+</head>
+<body>
+
+    <div class="app-container">
+        <!-- Sidebar: Workspace Switcher -->
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <h2>AIJS Helper</h2>
+                <span class="version-badge">v1.0</span>
+            </div>
+            
+            <div class="workspace-section">
+                <h3>Workspaces</h3>
+                <ul id="workspace-list" class="workspace-list">
+                    <!-- Workspaces injected dynamically -->
+                </ul>
+                <button id="btn-new-workspace" class="btn btn-outline">+ Create Workspace</button>
+            </div>
+
+            <div class="sidebar-footer">
+                <button id="btn-settings" class="btn btn-text">⚙️ Settings</button>
+            </div>
+        </aside>
+
+        <!-- Main Content Area -->
+        <main class="main-content">
+            <header class="top-nav">
+                <h1 id="active-workspace-title">Select a Workspace</h1>
+                
+                <div class="tabs">
+                    <button class="tab-btn active" data-tab="chat-tab">Chat</button>
+                    <button class="tab-btn" data-tab="knowledge-tab">Knowledge</button>
+                    <button class="tab-btn" data-tab="charts-tab">Charts</button>
+                </div>
+            </header>
+
+            <div class="tab-content-container">
+                <!-- Chat Tab -->
+                <section id="chat-tab" class="tab-pane active">
+                    <div class="chat-history" id="chat-history">
+                        <!-- Chat messages injected here -->
+                        <div class="welcome-msg">Welcome! Select or create a workspace to begin.</div>
+                    </div>
+                    <div class="chat-input-area">
+                        <textarea id="chat-input" placeholder="Ask a question or request a chart..."></textarea>
+                        <button id="btn-send-msg" class="btn btn-primary">Send</button>
+                    </div>
+                </section>
+
+                <!-- Knowledge Tab -->
+                <section id="knowledge-tab" class="tab-pane">
+                    <div class="knowledge-toolbar">
+                        <button id="btn-refresh-graph" class="btn btn-outline">🔄 Refresh Graph</button>
+                        <input type="text" id="search-nodes" placeholder="Search nodes...">
+                        <button id="btn-export-csv" class="btn btn-outline">📥 CSV Template</button>
+                        <input type="file" id="input-csv-upload" accept=".csv" style="display: none;">
+                        <button id="btn-import-csv" class="btn btn-outline" onclick="document.getElementById('input-csv-upload').click()">📤 Upload CSV</button>
+                    </div>
+                    <div id="cy" class="cy-container"></div>
+                </section>
+
+                <!-- Charts Tab -->
+                <section id="charts-tab" class="tab-pane">
+                    <div class="charts-toolbar">
+                        <button id="btn-request-chart" class="btn btn-primary">Request New Chart</button>
+                    </div>
+                    <div class="charts-gallery" id="charts-gallery">
+                        <!-- Highcharts containers injected here -->
+                    </div>
+                </section>
+            </div>
+        </main>
+    </div>
+
+    <!-- Modals -->
+    <!-- New Workspace Modal -->
+    <div id="modal-new-workspace" class="modal">
+        <div class="modal-content glass-panel">
+            <h3>Create New Workspace</h3>
+            <input type="text" id="input-workspace-name" placeholder="Workspace Name (e.g., Company AI Bot)">
+            <div class="modal-actions">
+                <button id="btn-cancel-workspace" class="btn btn-text">Cancel</button>
+                <button id="btn-save-workspace" class="btn btn-primary">Create</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Settings Modal -->
+    <div id="modal-settings" class="modal">
+        <div class="modal-content glass-panel">
+            <h3>Settings</h3>
+            <label for="input-api-key">LLM API Key (Bearer Token)</label>
+            <input type="password" id="input-api-key" placeholder="Enter API Key">
+            <div class="modal-actions">
+                <button id="btn-cancel-settings" class="btn btn-text">Cancel</button>
+                <button id="btn-save-settings" class="btn btn-primary">Save</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="workspace-Manager.js"></script>
+    <script src="KnowledgeGraph-Manager.js"></script>
+    <script src="highchart-Manager.js"></script>
+    <script src="reminderjob-manager.js"></script>
+    <script src="main.js"></script>
+
+</body>
+</html>
