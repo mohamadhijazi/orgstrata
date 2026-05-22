@@ -469,6 +469,14 @@ using System.Reflection;
     "ub\\orgstrata\\HyTheme\\wwwroot\\mdi-icons\\fonts\\materialdesignicons-webfont.woff"))]
 [assembly: OrchardCore.Modules.Manifest.ModuleAssetAttribute(("Areas\\HyTheme\\wwwroot\\mdi-icons\\fonts\\materialdesignicons-webfont.woff2|C:\\ws\\git" +
     "hub\\orgstrata\\HyTheme\\wwwroot\\mdi-icons\\fonts\\materialdesignicons-webfont.woff2"))]
+[assembly: OrchardCore.Modules.Manifest.ModuleAssetAttribute(("Areas\\HyTheme\\wwwroot\\metamodeljs\\app.js|C:\\ws\\github\\orgstrata\\HyTheme\\wwwroot\\m" +
+    "etamodeljs\\app.js"))]
+[assembly: OrchardCore.Modules.Manifest.ModuleAssetAttribute(("Areas\\HyTheme\\wwwroot\\metamodeljs\\index.html|C:\\ws\\github\\orgstrata\\HyTheme\\wwwro" +
+    "ot\\metamodeljs\\index.html"))]
+[assembly: OrchardCore.Modules.Manifest.ModuleAssetAttribute(("Areas\\HyTheme\\wwwroot\\metamodeljs\\MetaModel.csv|C:\\ws\\github\\orgstrata\\HyTheme\\ww" +
+    "wroot\\metamodeljs\\MetaModel.csv"))]
+[assembly: OrchardCore.Modules.Manifest.ModuleAssetAttribute(("Areas\\HyTheme\\wwwroot\\metamodeljs\\styles.css|C:\\ws\\github\\orgstrata\\HyTheme\\wwwro" +
+    "ot\\metamodeljs\\styles.css"))]
 [assembly: OrchardCore.Modules.Manifest.ModuleAssetAttribute(("Areas\\HyTheme\\wwwroot\\scripts\\bootstrap-vue.min.css|C:\\ws\\github\\orgstrata\\HyThem" +
     "e\\wwwroot\\scripts\\bootstrap-vue.min.css"))]
 [assembly: OrchardCore.Modules.Manifest.ModuleAssetAttribute(("Areas\\HyTheme\\wwwroot\\scripts\\bootstrap-vue.min.js|C:\\ws\\github\\orgstrata\\HyTheme" +
@@ -500,7 +508,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("HyTheme")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7cc3e579c799ca800e4444d48c9305157841b369")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d44b85c328d8b51abc9dc2003b1d0ba36655beb3")]
 [assembly: System.Reflection.AssemblyProductAttribute("HyTheme")]
 [assembly: System.Reflection.AssemblyTitleAttribute("HyTheme")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
