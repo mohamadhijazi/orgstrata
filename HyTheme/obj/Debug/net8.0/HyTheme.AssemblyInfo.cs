@@ -55,6 +55,32 @@ using System.Reflection;
     "ihelper\\Style.css"))]
 [assembly: OrchardCore.Modules.Manifest.ModuleAssetAttribute(("Areas\\HyTheme\\wwwroot\\aihelper\\workspace-Manager.js|C:\\ws\\github\\orgstrata\\HyThem" +
     "e\\wwwroot\\aihelper\\workspace-Manager.js"))]
+[assembly: OrchardCore.Modules.Manifest.ModuleAssetAttribute(("Areas\\HyTheme\\wwwroot\\AijsHelper3\\bpmn-manager.js|C:\\ws\\github\\orgstrata\\HyTheme\\" +
+    "wwwroot\\AijsHelper3\\bpmn-manager.js"))]
+[assembly: OrchardCore.Modules.Manifest.ModuleAssetAttribute(("Areas\\HyTheme\\wwwroot\\AijsHelper3\\highchart-Manager.js|C:\\ws\\github\\orgstrata\\HyT" +
+    "heme\\wwwroot\\AijsHelper3\\highchart-Manager.js"))]
+[assembly: OrchardCore.Modules.Manifest.ModuleAssetAttribute(("Areas\\HyTheme\\wwwroot\\AijsHelper3\\index.html|C:\\ws\\github\\orgstrata\\HyTheme\\wwwro" +
+    "ot\\AijsHelper3\\index.html"))]
+[assembly: OrchardCore.Modules.Manifest.ModuleAssetAttribute(("Areas\\HyTheme\\wwwroot\\AijsHelper3\\instruct2.txt|C:\\ws\\github\\orgstrata\\HyTheme\\ww" +
+    "wroot\\AijsHelper3\\instruct2.txt"))]
+[assembly: OrchardCore.Modules.Manifest.ModuleAssetAttribute(("Areas\\HyTheme\\wwwroot\\AijsHelper3\\instruct3.txt|C:\\ws\\github\\orgstrata\\HyTheme\\ww" +
+    "wroot\\AijsHelper3\\instruct3.txt"))]
+[assembly: OrchardCore.Modules.Manifest.ModuleAssetAttribute(("Areas\\HyTheme\\wwwroot\\AijsHelper3\\Instructions,txt|C:\\ws\\github\\orgstrata\\HyTheme" +
+    "\\wwwroot\\AijsHelper3\\Instructions,txt"))]
+[assembly: OrchardCore.Modules.Manifest.ModuleAssetAttribute(("Areas\\HyTheme\\wwwroot\\AijsHelper3\\KnowledgeGraph-Manager.js|C:\\ws\\github\\orgstrat" +
+    "a\\HyTheme\\wwwroot\\AijsHelper3\\KnowledgeGraph-Manager.js"))]
+[assembly: OrchardCore.Modules.Manifest.ModuleAssetAttribute(("Areas\\HyTheme\\wwwroot\\AijsHelper3\\linkedin_bpmn_article.txt|C:\\ws\\github\\orgstrat" +
+    "a\\HyTheme\\wwwroot\\AijsHelper3\\linkedin_bpmn_article.txt"))]
+[assembly: OrchardCore.Modules.Manifest.ModuleAssetAttribute(("Areas\\HyTheme\\wwwroot\\AijsHelper3\\main.js|C:\\ws\\github\\orgstrata\\HyTheme\\wwwroot\\" +
+    "AijsHelper3\\main.js"))]
+[assembly: OrchardCore.Modules.Manifest.ModuleAssetAttribute(("Areas\\HyTheme\\wwwroot\\AijsHelper3\\README.md|C:\\ws\\github\\orgstrata\\HyTheme\\wwwroo" +
+    "t\\AijsHelper3\\README.md"))]
+[assembly: OrchardCore.Modules.Manifest.ModuleAssetAttribute(("Areas\\HyTheme\\wwwroot\\AijsHelper3\\reminderjob-manager.js|C:\\ws\\github\\orgstrata\\H" +
+    "yTheme\\wwwroot\\AijsHelper3\\reminderjob-manager.js"))]
+[assembly: OrchardCore.Modules.Manifest.ModuleAssetAttribute(("Areas\\HyTheme\\wwwroot\\AijsHelper3\\Style.css|C:\\ws\\github\\orgstrata\\HyTheme\\wwwroo" +
+    "t\\AijsHelper3\\Style.css"))]
+[assembly: OrchardCore.Modules.Manifest.ModuleAssetAttribute(("Areas\\HyTheme\\wwwroot\\AijsHelper3\\workspace-Manager.js|C:\\ws\\github\\orgstrata\\HyT" +
+    "heme\\wwwroot\\AijsHelper3\\workspace-Manager.js"))]
 [assembly: OrchardCore.Modules.Manifest.ModuleAssetAttribute(("Areas\\HyTheme\\wwwroot\\blueprint3d\\css\\bootstrap.css|C:\\ws\\github\\orgstrata\\HyThem" +
     "e\\wwwroot\\blueprint3d\\css\\bootstrap.css"))]
 [assembly: OrchardCore.Modules.Manifest.ModuleAssetAttribute(("Areas\\HyTheme\\wwwroot\\blueprint3d\\css\\example.css|C:\\ws\\github\\orgstrata\\HyTheme\\" +
@@ -474,7 +500,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("HyTheme")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+21a79e00bcaf5eccc48b9b0b323d6f5f06dc6539")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7cc3e579c799ca800e4444d48c9305157841b369")]
 [assembly: System.Reflection.AssemblyProductAttribute("HyTheme")]
 [assembly: System.Reflection.AssemblyTitleAttribute("HyTheme")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
